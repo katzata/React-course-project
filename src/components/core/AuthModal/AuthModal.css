@@ -1,0 +1,61 @@
+#auth-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    padding: 20px;
+    max-height: 100vh;
+    background-color: #111111;
+    transform: translateX(100%);
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+}
+
+#auth-modal.visible {
+    transform: translateX(0%);
+}
+
+#auth-modal-top {
+    margin: 10px 0px 30px;
+    display: flex;
+}
+
+#auth-modal-top > * {
+    display: inline;
+    margin: auto 0;
+}
+
+#auth-modal button {
+    color: white;
+    cursor: pointer;
+}
+
+.fa-xmark {
+    font-size: 25px;
+}
+
+#auth-modal-top button {
+    padding: 2px 4px;
+    margin-left: auto;
+    font-size: 12px;
+    letter-spacing: .6px;
+}
+
+#auth-modal-mid {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+#auth-modal-bottom {
+    padding: 20px 16px 30px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+#auth-modal-bottom button {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}

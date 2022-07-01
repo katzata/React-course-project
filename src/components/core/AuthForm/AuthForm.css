@@ -1,0 +1,62 @@
+#auth-form {
+    width: 100%;
+}
+
+fieldset > * {
+    display: block;
+}
+
+label {
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, .8);;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#auth-form input,
+#forgot-pass,
+#submit {
+    font-size: 14px;
+}
+
+#auth-form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, .8);
+    line-height: 18px;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.required {
+    margin-left: 1px;
+    color: #e01020;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+#forgot-pass {
+    margin-bottom: 20px;
+}
+
+#forgot-pass .fa-life-ring {
+    margin-right: 10px;
+}
+
+#submit {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+    background-color: #a62626;
+    border-color: #a62626;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+#submit:hover {
+    background-color: #912121;
+    border-color: #912121;
+}

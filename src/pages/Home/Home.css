@@ -1,0 +1,12 @@
+#home {
+    height: 1500px;
+}
+
+#home-main-add {
+    height: 86vh;
+    max-height: 720px;
+    background-image: url("../../assets/ds3.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}

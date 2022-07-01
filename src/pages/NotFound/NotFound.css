@@ -1,0 +1,8 @@
+#not-found {
+    height: 100vh;
+    display: flex;
+}
+
+#not-found h1 {
+    margin: auto;
+}
