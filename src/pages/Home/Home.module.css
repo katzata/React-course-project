@@ -1,8 +1,8 @@
-#home {
+.home {
     height: 1500px;
 }
 
-#home-main-add {
+.homeMainAdd {
     height: 86vh;
     max-height: 720px;
     background-image: url("../../assets/ds3.jpg");

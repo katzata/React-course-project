@@ -1,46 +1,53 @@
-import { useState, useEffect } from "react";
+import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import "./AuthModal.css";
+import styles from "./AuthModal.module.css";
 
-import AuthForm from "../AuthForm/AuthForm";
+import AuthForm from "./AuthForm/AuthForm";
 
-function AuthModal({toggle}) {
-    const [isVisible, setIsVisible] = useState(toggle || false);
-    const [isRegistering, setIsRegistering] = useState(toggle || 0);
+function AuthModal({ setIslogged }) {
+    const [isRegistering, setIsRegistering] = useState(false);
+    const modalRef = useRef(null);
 
     function handleVisibility() {
-        setIsVisible(current => !current);
+        const { style, dataset } = modalRef.current;
+        dataset.status = dataset.status === "true" ? "false" : "true";
+        
+        const translate = dataset.status === "true" ? "0" : "100";
+        style.transform = `translateX(${translate}%)`;
     };
 
     function text() {
         return isRegistering ? ["already", "login"] : ["don't", "register"];
     };
 
-    useEffect(() => {
-        handleVisibility();
-    }, [toggle]);
+    return (
+        <div className={styles.authModalContainer}>
+            <button className={styles.authBtn} onClick={handleVisibility}>Login / Register</button>
 
-    return <div id="auth-modal" className={isVisible ? "visible" : null}>
-        <div id="auth-modal-top">
-            <h2>{isRegistering ? "SIGN UP" : "SIGN IN"}</h2>
-            <button onClick={handleVisibility}>
-                <FontAwesomeIcon icon={faXmark} />
-            </button>
-        </div>
+            <div ref={modalRef} data-status="false" className={styles.authModal}>
+                <div className={styles.authModalTop}>
+                    <h2>{isRegistering ? "SIGN UP" : "SIGN IN"}</h2>
 
-        <div id="auth-modal-mid">
-            <AuthForm toggle={isRegistering}/>
-        </div>
+                    <button onClick={handleVisibility}>
+                        <FontAwesomeIcon icon={faXmark} />
+                    </button>
+                </div>
 
-        <div id="auth-modal-bottom">
-            <p>{`If you ${text()[0]} have an account you can`}</p>
-            
-            <button onClick={() => setIsRegistering(current => !current)}>
-                {text()[1]}
-            </button>
+                <div className={styles.authModalMid}>
+                    <AuthForm toggle={isRegistering} setIslogged={setIslogged} />
+                </div>
+
+                <div className={styles.authModalBottom}>
+                    <p>{`If you ${text()[0]} have an account you can`}</p>
+
+                    <button onClick={() => setIsRegistering(current => !current)}>
+                        {text()[1]}
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>
+    )
 };
 
 export default AuthModal;

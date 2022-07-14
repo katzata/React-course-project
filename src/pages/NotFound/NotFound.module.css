@@ -1,8 +1,8 @@
-#not-found {
+.notFound {
     height: 100vh;
     display: flex;
 }
 
-#not-found h1 {
+.notFound h1 {
     margin: auto;
 }

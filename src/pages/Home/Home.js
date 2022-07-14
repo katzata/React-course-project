@@ -1,9 +1,9 @@
-import "./Home.css";
+import styles from "./Home.module.css";
 
 function Home() {
     return (
-        <section id="home">
-            <div id="home-main-add"></div>
+        <section className={styles.home}>
+            <div className={styles.homeMainAdd}></div>
         </section>
     );
 }

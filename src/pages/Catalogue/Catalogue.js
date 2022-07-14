@@ -1,8 +1,8 @@
-import "./Catalogue.css";
+import styles from "./Catalogue.module.css";
 
 function Catalogue() {
-     return (
-        <section id="catalogue">
+    return (
+        <section className={styles.catalogue}>
             
         </section>
     );
