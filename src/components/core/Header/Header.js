@@ -11,8 +11,7 @@ import logo from "../../../assets/logo2.png";
 import NavList from "../../shared/NavList/NavList";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
     const isLoged = useSelector((state) => state.isLoged.value);

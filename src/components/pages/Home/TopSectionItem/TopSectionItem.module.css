@@ -1,0 +1,95 @@
+.topSectionItem {
+    position: relative;
+    min-width: 100vw;
+    height: 100%;
+    padding: 110px 6vw 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topSectionItem img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .8;
+}
+
+.topSectionItem h3,
+.topSectionItem h4,
+.platformsContainer {
+    display: block;
+    position: relative;
+    user-select: none;
+}
+
+.topSectionItem h3 {
+    /* width: 36vw; */
+    /* margin: 0 auto auto 0; */
+    color: white;
+    /* font-size: 15px; */
+    /* line-height: 17px; */
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.topSectionItem h4 {
+    width: 36vw;
+    padding-top: 0vh;
+    margin: auto 0px 0 auto;
+    color: white;
+    font-size: 15px;
+    line-height: 17px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.topSectionItem h4 span {
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-size: 17px;
+    font-style: normal;
+}
+
+h4 strong {
+    color: rgb(0, 170, 0);
+}
+
+.platformsContainer {
+    padding: 0;
+}
+
+/* ne ba4ka */
+.platformsContainer > .fa-xbox {
+    fill: #107B10;
+    font-size: 20px;
+}
+
+.xbox,
+.playstation,
+.pc {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.xbox {
+    color: #107B10;
+    background-color: #FFFFFF;
+    /* color: white; */
+    font-size: 22px;
+    border-radius: 50%;
+}
+
+.playstation {
+    font-size: 24px;
+    color: #0070d1;
+}
+
+.pc {
+    /* font-size: 22px; */
+}
