@@ -9,9 +9,9 @@ function TopSection() {
     const [recommended, setRecommended] = useState([]);
     // const [offset, setOffset] = useState(0);
 
-    function handleOffset() {
-        // setOffset();
-    };
+    // function handleOffset() {
+    //     // setOffset();
+    // };
     
     useEffect(() => {
         getRecommended().then(res => setRecommended(res));

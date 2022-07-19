@@ -1,28 +1,27 @@
 import styles from "./TopSectionItem.module.css";
 
-import { getIcon } from "../../../../services/catalogueService/catalogueService";
+import PlatformIcon from "../../../shared/PlatformIcon/PlatformIcon";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXbox, faPlaystation, faAppStoreIos, faAndroid } from "@fortawesome/free-brands-svg-icons";
-import { faDesktop, faGamepad } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faXbox, faPlaystation, faAppStoreIos, faAndroid } from "@fortawesome/free-brands-svg-icons";
+// import { faDesktop, faGamepad } from "@fortawesome/free-solid-svg-icons";
 
 function TopSectionItem({ data }) {
     const { /* id, */ name, platforms, /* rating, rating_top, */ background_image/* , background_image_additional */ } = data;
     const platformIcons = handlePlatformIcons(platforms);
 
-    const icons = {
-        xbox: faXbox,
-        playstation: faPlaystation,
-        pc: faDesktop,
-        ios: faAppStoreIos,
-        android: faAndroid,
-        genesis: faGamepad,
-        nintendo: faGamepad,
-        gamecube: 1,
-        dreamcast: 1,
-        switch: 1,
-
-    };
+    // const icons = {
+    //     xbox: faXbox,
+    //     playstation: faPlaystation,
+    //     pc: faDesktop,
+    //     ios: faAppStoreIos,
+    //     android: faAndroid,
+    //     genesis: faGamepad,
+    //     nintendo: faGamepad,
+    //     gamecube: 1,
+    //     dreamcast: 1,
+    //     switch: 1,
+    // };
 
     function handlePlatformIcons(currentPlatforms) {
         const availablePlatforms = ["xbox", "playstation", "pc", "ios"];
@@ -52,7 +51,7 @@ function TopSectionItem({ data }) {
             </h4>
 
             <div className={styles.platformsContainer}>
-                {platformIcons.map(el => <img src={`./icons/${el}.svg`}/>)}
+                {platformIcons.map(el => <PlatformIcon currentIcon={el} key={el}/>)}
                 {/* {platformIcons.map(el => <FontAwesomeIcon icon={icons[el]} className={styles[el]} key={el} />)} */}
             </div>
         </div>

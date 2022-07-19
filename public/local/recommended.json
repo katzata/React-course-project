@@ -322,5 +322,1965 @@
         "esrb_rating": null,
         "clip": null,
         "description_raw": "Max Payne 2: The Fall of Max Payne is a third-person shooter, serving as a direct sequel to the first game. The player follows the story of an NYPD detective, tasked with resolving crimes and answering many questions of its predecessor’s story. The game is set in noir tones, providing with main character’s monologues and various cutscenes.\nThe titular protagonist, Max Payne, is a traumatized officer of the police. After the first game’s events, Max is once again involved in the bloody conflicts of the mafia, with its drama, romance, and bitterness. The game offers its players various game mechanics for maximum replayability. For instance, the difficulty of each level adapts to how you play overall, with enemies dealing less damage and painkillers being more effective if the player has died too many times. The series’s feature mechanic, Bullet Time, is also present in the game, allowing players to plan their movements and save precious ammunition during the slowed time. \nThe game’s physics engine allows the players to experience the most fearsome battles hand-to-hand, with the realistic destruction of surroundings, cinematographic kills, and dramatic deaths. Max Payne 2 also features a game editor, with user-created modifications serving as a tool to further enhance every playthrough."
+    },
+    {
+        "id": 2551,
+        "slug": "dark-souls-iii",
+        "name": "Dark Souls III",
+        "name_original": "Dark Souls III",
+        "description": "<p>Dark Souls III is the fourth installment in the Dark Souls series, now introducing the players to the world of Lothric, a kingdom which has suffered the fate similar to its counterparts from the previous games, descending from its height to utter darkness. A new tale of dark fantasy offers to create and guide the path of game’s protagonist, the Ashen One, through the dangers of the world before him.<br />\nSharing many gameplay similarities with previous installments of the Souls series, Dark Souls III improves at what it is best. These features are the unforgiving difficulty and unique, overwhelming environments. Let alone the soundtracks, allowing players to travel through the familiar locations and encounter new obstacles alike, resulting in a great test of nerves, while also giving the fruit of resolving the secrets and echoes of the past of Dark Souls series.<br />\nThe new changes to the systems of multiplayer, crafting and combat will offer new and experienced players to challenge themselves on the field of battle, and to enhance the playthrough with each consecutive New Game +, where the in-game cycle never indeed ends, allowing for a multitude of different playstyles, and showing different events based on player’s actions.</p>",
+        "metacritic": 89,
+        "metacritic_platforms": [],
+        "released": "2016-04-11",
+        "tba": false,
+        "updated": "2022-07-12T14:18:56",
+        "background_image": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg",
+        "background_image_additional": "https://media.rawg.io/media/screenshots/a83/a8339e1219e8e4147c157a3d5bbdb36f.jpg",
+        "website": "",
+        "rating": 4.4,
+        "rating_top": 5,
+        "ratings": [
+            {
+                "id": 5,
+                "title": "exceptional",
+                "count": 1358,
+                "percent": 61.28
+            },
+            {
+                "id": 4,
+                "title": "recommended",
+                "count": 598,
+                "percent": 26.99
+            },
+            {
+                "id": 3,
+                "title": "meh",
+                "count": 157,
+                "percent": 7.08
+            },
+            {
+                "id": 1,
+                "title": "skip",
+                "count": 103,
+                "percent": 4.65
+            }
+        ],
+        "reactions": {
+            "1": 2,
+            "4": 1,
+            "6": 9,
+            "8": 1,
+            "11": 2,
+            "12": 2,
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 1,
+            "20": 1,
+            "21": 1
+        },
+        "added": 8635,
+        "added_by_status": {
+            "yet": 541,
+            "owned": 5331,
+            "beaten": 1584,
+            "toplay": 446,
+            "dropped": 481,
+            "playing": 252
+        },
+        "playtime": 27,
+        "screenshots_count": 36,
+        "movies_count": 0,
+        "creators_count": 10,
+        "achievements_count": 182,
+        "parent_achievements_count": 12,
+        "reddit_url": "https://www.reddit.com/r/darksouls/",
+        "reddit_name": "Dark Souls",
+        "reddit_description": "A community dedicated to Dark Souls I, game released for PC, PlayStation 3 and 4, Xbox 360/One, and Switch (Remastered).",
+        "reddit_logo": "https://b.thumbs.redditmedia.com/HI0MibQLRQL0ijz7.png",
+        "reddit_count": 11752,
+        "twitch_count": 126,
+        "youtube_count": 1000000,
+        "reviews_text_count": 14,
+        "ratings_count": 2202,
+        "suggestions_count": 708,
+        "alternative_names": [],
+        "metacritic_url": "",
+        "parents_count": 0,
+        "additions_count": 2,
+        "game_series_count": 9,
+        "user_game": null,
+        "reviews_count": 2216,
+        "saturated_color": "0f0f0f",
+        "dominant_color": "0f0f0f",
+        "parent_platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "PC",
+                    "slug": "pc"
+                }
+            },
+            {
+                "platform": {
+                    "id": 2,
+                    "name": "PlayStation",
+                    "slug": "playstation"
+                }
+            },
+            {
+                "platform": {
+                    "id": 3,
+                    "name": "Xbox",
+                    "slug": "xbox"
+                }
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "Xbox One",
+                    "slug": "xbox-one",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 5337,
+                    "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+                },
+                "released_at": "2016-04-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 18,
+                    "name": "PlayStation 4",
+                    "slug": "playstation4",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 6424,
+                    "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+                },
+                "released_at": "2016-04-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 4,
+                    "name": "PC",
+                    "slug": "pc",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 460709,
+                    "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+                },
+                "released_at": "2016-04-11",
+                "requirements": {
+                    "minimum": "Minimum:\nOS: Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit\nProcessor: Intel Core i3-2100 / AMD® FX-6300\nMemory: 4 GB RAM\nGraphics: NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 25 GB available space\nSound Card: DirectX 11 sound device\nAdditional Notes: Internet connection required for online play and product activation",
+                    "recommended": "Recommended:\nOS: Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit\nProcessor: Intel Core i7-3770 / AMD® FX-8350\nMemory: 8 GB RAM\nGraphics: NVIDIA® GeForce GTX 970 / ATI Radeon R9 series\nDirectX: Version 11\nNetwork: Broadband Internet connection\nStorage: 25 GB available space\nSound Card: DirectX 11 sound device\nAdditional Notes: Internet connection required for online play and product activation"
+                }
+            }
+        ],
+        "stores": [
+            {
+                "id": 2679,
+                "url": "",
+                "store": {
+                    "id": 3,
+                    "name": "PlayStation Store",
+                    "slug": "playstation-store",
+                    "domain": "store.playstation.com",
+                    "games_count": 7792,
+                    "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+                }
+            },
+            {
+                "id": 9067,
+                "url": "",
+                "store": {
+                    "id": 2,
+                    "name": "Xbox Store",
+                    "slug": "xbox-store",
+                    "domain": "microsoft.com",
+                    "games_count": 4720,
+                    "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+                }
+            },
+            {
+                "id": 11140,
+                "url": "",
+                "store": {
+                    "id": 1,
+                    "name": "Steam",
+                    "slug": "steam",
+                    "domain": "store.steampowered.com",
+                    "games_count": 64932,
+                    "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+                }
+            }
+        ],
+        "developers": [
+            {
+                "id": 386,
+                "name": "BANDAI NAMCO Entertainment America",
+                "slug": "bandai-namco-entertainment-america-inc",
+                "games_count": 147,
+                "image_background": "https://media.rawg.io/media/games/8fc/8fc59e74133fd8a8a436b7e2d0fb36c2.jpg"
+            },
+            {
+                "id": 6763,
+                "name": "FromSoftware",
+                "slug": "fromsoftware",
+                "games_count": 64,
+                "image_background": "https://media.rawg.io/media/screenshots/364/364395d013652e46f18b2cc112e88862.jpg"
+            }
+        ],
+        "genres": [
+            {
+                "id": 4,
+                "name": "Action",
+                "slug": "action",
+                "games_count": 155362,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 5,
+                "name": "RPG",
+                "slug": "role-playing-games-rpg",
+                "games_count": 47464,
+                "image_background": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg"
+            }
+        ],
+        "tags": [
+            {
+                "id": 31,
+                "name": "Singleplayer",
+                "slug": "singleplayer",
+                "language": "eng",
+                "games_count": 172174,
+                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+            },
+            {
+                "id": 40847,
+                "name": "Steam Achievements",
+                "slug": "steam-achievements",
+                "language": "eng",
+                "games_count": 26500,
+                "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Multiplayer",
+                "slug": "multiplayer",
+                "language": "eng",
+                "games_count": 31817,
+                "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg"
+            },
+            {
+                "id": 13,
+                "name": "Atmospheric",
+                "slug": "atmospheric",
+                "language": "eng",
+                "games_count": 23160,
+                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+            },
+            {
+                "id": 7808,
+                "name": "steam-trading-cards",
+                "slug": "steam-trading-cards",
+                "language": "eng",
+                "games_count": 7582,
+                "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+            },
+            {
+                "id": 40836,
+                "name": "Full controller support",
+                "slug": "full-controller-support",
+                "language": "eng",
+                "games_count": 12330,
+                "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+            },
+            {
+                "id": 42,
+                "name": "Great Soundtrack",
+                "slug": "great-soundtrack",
+                "language": "eng",
+                "games_count": 3206,
+                "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+            },
+            {
+                "id": 24,
+                "name": "RPG",
+                "slug": "rpg",
+                "language": "eng",
+                "games_count": 14843,
+                "image_background": "https://media.rawg.io/media/games/c24/c24ec439abf4a2e92f3429dfa83f7f94.jpg"
+            },
+            {
+                "id": 18,
+                "name": "Co-op",
+                "slug": "co-op",
+                "language": "eng",
+                "games_count": 8582,
+                "image_background": "https://media.rawg.io/media/games/ec3/ec3a7db7b8ab5a71aad622fe7c62632f.jpg"
+            },
+            {
+                "id": 118,
+                "name": "Story Rich",
+                "slug": "story-rich",
+                "language": "eng",
+                "games_count": 15204,
+                "image_background": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg"
+            },
+            {
+                "id": 36,
+                "name": "Open World",
+                "slug": "open-world",
+                "language": "eng",
+                "games_count": 5286,
+                "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+            },
+            {
+                "id": 411,
+                "name": "cooperative",
+                "slug": "cooperative",
+                "language": "eng",
+                "games_count": 3483,
+                "image_background": "https://media.rawg.io/media/games/55e/55ee6432ac2bf224610fa17e4c652107.jpg"
+            },
+            {
+                "id": 149,
+                "name": "Third Person",
+                "slug": "third-person",
+                "language": "eng",
+                "games_count": 7425,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 16,
+                "name": "Horror",
+                "slug": "horror",
+                "language": "eng",
+                "games_count": 34555,
+                "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+            },
+            {
+                "id": 49,
+                "name": "Difficult",
+                "slug": "difficult",
+                "language": "eng",
+                "games_count": 11235,
+                "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Exploration",
+                "slug": "exploration",
+                "language": "eng",
+                "games_count": 16024,
+                "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg"
+            },
+            {
+                "id": 97,
+                "name": "Action RPG",
+                "slug": "action-rpg",
+                "language": "eng",
+                "games_count": 4889,
+                "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+            },
+            {
+                "id": 157,
+                "name": "PvP",
+                "slug": "pvp",
+                "language": "eng",
+                "games_count": 5781,
+                "image_background": "https://media.rawg.io/media/games/651/651ae84f2d5e36206aad90976a453329.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Replay Value",
+                "slug": "replay-value",
+                "language": "eng",
+                "games_count": 1105,
+                "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+            },
+            {
+                "id": 121,
+                "name": "Character Customization",
+                "slug": "character-customization",
+                "language": "eng",
+                "games_count": 2648,
+                "image_background": "https://media.rawg.io/media/games/214/214b29aeff13a0ae6a70fc4426e85991.jpg"
+            },
+            {
+                "id": 40,
+                "name": "Dark Fantasy",
+                "slug": "dark-fantasy",
+                "language": "eng",
+                "games_count": 2552,
+                "image_background": "https://media.rawg.io/media/games/cfe/cfe5960b5caca432f3575fc7d8ff736b.jpg"
+            },
+            {
+                "id": 205,
+                "name": "Lore-Rich",
+                "slug": "lore-rich",
+                "language": "eng",
+                "games_count": 506,
+                "image_background": "https://media.rawg.io/media/screenshots/525/525b5da62342fa726bfe2820e8f93c09.jpg"
+            }
+        ],
+        "publishers": [
+            {
+                "id": 8352,
+                "name": "Bandai Namco Entertainment",
+                "slug": "bandai-namco-entertainment",
+                "games_count": 551,
+                "image_background": "https://media.rawg.io/media/games/84f/84f3b9c804cbc2b39b4023531427e7e9.jpg"
+            },
+            {
+                "id": 31896,
+                "name": "BANDAI NAMCO Entertainment US",
+                "slug": "bandai-namco-entertainment-us",
+                "games_count": 44,
+                "image_background": "https://media.rawg.io/media/games/bbc/bbcb99369022020f42e2006e454133bb.jpg"
+            },
+            {
+                "id": 11230,
+                "name": "FromSoftware",
+                "slug": "fromsoftware",
+                "games_count": 26,
+                "image_background": "https://media.rawg.io/media/games/5ec/5ecac5cb026ec26a56efcc546364e348.jpg"
+            }
+        ],
+        "esrb_rating": {
+            "id": 4,
+            "name": "Mature",
+            "slug": "mature"
+        },
+        "clip": null,
+        "description_raw": "Dark Souls III is the fourth installment in the Dark Souls series, now introducing the players to the world of Lothric, a kingdom which has suffered the fate similar to its counterparts from the previous games, descending from its height to utter darkness. A new tale of dark fantasy offers to create and guide the path of game’s protagonist, the Ashen One, through the dangers of the world before him.\nSharing many gameplay similarities with previous installments of the Souls series, Dark Souls III improves at what it is best. These features are the unforgiving difficulty and unique, overwhelming environments. Let alone the soundtracks, allowing players to travel through the familiar locations and encounter new obstacles alike, resulting in a great test of nerves, while also giving the fruit of resolving the secrets and echoes of the past of Dark Souls series.\nThe new changes to the systems of multiplayer, crafting and combat will offer new and experienced players to challenge themselves on the field of battle, and to enhance the playthrough with each consecutive New Game +, where the in-game cycle never indeed ends, allowing for a multitude of different playstyles, and showing different events based on player’s actions."
+    },
+    {
+        "id": 29642,
+        "slug": "silent-hill-2",
+        "name": "Silent Hill 2",
+        "name_original": "Silent Hill 2",
+        "description": "<p>Silent Hill 2 is an action-adventure game developed by Team Silent and Creature Labs. It came out on 24-09-2001. It was published by Konami. On review aggregator Metacritic, Silent Hill 2 has a score of 89. The game is rated as \"Exceptional\" on RAWG. <br>You can play Silent Hill 2 on PlayStation 3, Xbox, Xbox 360 and PC. <br>It was produced by Akihiro Imamura. It was directed by Masashi Tsuboyama. It was scored by Akira Yamaoka. <br></p>",
+        "metacritic": 89,
+        "metacritic_platforms": [
+            {
+                "metascore": 89,
+                "url": "https://www.metacritic.com/game/playstation-2/silent-hill-2",
+                "platform": {
+                    "platform": 15,
+                    "name": "PlayStation 2",
+                    "slug": "playstation2"
+                }
+            }
+        ],
+        "released": "2001-09-24",
+        "tba": false,
+        "updated": "2022-07-12T04:54:35",
+        "background_image": "https://media.rawg.io/media/games/003/0033ae7d21418ff5a7807ab2c7d90247.jpg",
+        "background_image_additional": "https://media.rawg.io/media/screenshots/884/884f703d9e53ee31343330508e786114.jpg",
+        "website": "",
+        "rating": 4.42,
+        "rating_top": 5,
+        "ratings": [
+            {
+                "id": 5,
+                "title": "exceptional",
+                "count": 494,
+                "percent": 69.19
+            },
+            {
+                "id": 4,
+                "title": "recommended",
+                "count": 131,
+                "percent": 18.35
+            },
+            {
+                "id": 1,
+                "title": "skip",
+                "count": 54,
+                "percent": 7.56
+            },
+            {
+                "id": 3,
+                "title": "meh",
+                "count": 35,
+                "percent": 4.9
+            }
+        ],
+        "reactions": {
+            "1": 8,
+            "2": 1,
+            "3": 5,
+            "4": 4,
+            "6": 1,
+            "7": 1,
+            "10": 6,
+            "11": 2,
+            "12": 5,
+            "19": 1,
+            "20": 1
+        },
+        "added": 1299,
+        "added_by_status": {
+            "yet": 109,
+            "owned": 322,
+            "beaten": 567,
+            "toplay": 199,
+            "dropped": 86,
+            "playing": 16
+        },
+        "playtime": 0,
+        "screenshots_count": 91,
+        "movies_count": 0,
+        "creators_count": 5,
+        "achievements_count": 0,
+        "parent_achievements_count": 0,
+        "reddit_url": "",
+        "reddit_name": "",
+        "reddit_description": "",
+        "reddit_logo": "",
+        "reddit_count": 0,
+        "twitch_count": 150,
+        "youtube_count": 1000000,
+        "reviews_text_count": 11,
+        "ratings_count": 703,
+        "suggestions_count": 371,
+        "alternative_names": [],
+        "metacritic_url": "https://www.metacritic.com/game/playstation-2/silent-hill-2",
+        "parents_count": 0,
+        "additions_count": 0,
+        "game_series_count": 11,
+        "user_game": null,
+        "reviews_count": 714,
+        "saturated_color": "0f0f0f",
+        "dominant_color": "0f0f0f",
+        "parent_platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "PC",
+                    "slug": "pc"
+                }
+            },
+            {
+                "platform": {
+                    "id": 2,
+                    "name": "PlayStation",
+                    "slug": "playstation"
+                }
+            },
+            {
+                "platform": {
+                    "id": 3,
+                    "name": "Xbox",
+                    "slug": "xbox"
+                }
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "id": 16,
+                    "name": "PlayStation 3",
+                    "slug": "playstation3",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 3610,
+                    "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+                },
+                "released_at": "2001-09-24",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 80,
+                    "name": "Xbox",
+                    "slug": "xbox-old",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 709,
+                    "image_background": "https://media.rawg.io/media/games/9c4/9c47f320eb73c9a02d462e12f6206b26.jpg"
+                },
+                "released_at": "2001-09-24",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 14,
+                    "name": "Xbox 360",
+                    "slug": "xbox360",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 2770,
+                    "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg"
+                },
+                "released_at": "2001-09-24",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 4,
+                    "name": "PC",
+                    "slug": "pc",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 460708,
+                    "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg"
+                },
+                "released_at": "2001-09-24",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 15,
+                    "name": "PlayStation 2",
+                    "slug": "playstation2",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 1931,
+                    "image_background": "https://media.rawg.io/media/games/97a/97a5fee8bba1189f70a9874171f45195.jpg"
+                },
+                "released_at": "2001-09-24",
+                "requirements": []
+            }
+        ],
+        "stores": [],
+        "developers": [
+            {
+                "id": 14595,
+                "name": "Team Silent",
+                "slug": "team-silent",
+                "games_count": 4,
+                "image_background": "https://media.rawg.io/media/screenshots/333/333b1a057a32979e02fcd4fc933df42e.jpg"
+            },
+            {
+                "id": 13199,
+                "name": "Creature Labs",
+                "slug": "creature-labs",
+                "games_count": 13,
+                "image_background": "https://media.rawg.io/media/screenshots/e22/e226c20190666caafc69ce8793e50449.jpg"
+            }
+        ],
+        "genres": [
+            {
+                "id": 4,
+                "name": "Action",
+                "slug": "action",
+                "games_count": 155362,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Adventure",
+                "slug": "adventure",
+                "games_count": 117922,
+                "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+        ],
+        "tags": [
+            {
+                "id": 13,
+                "name": "Atmospheric",
+                "slug": "atmospheric",
+                "language": "eng",
+                "games_count": 23160,
+                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+            },
+            {
+                "id": 42,
+                "name": "Great Soundtrack",
+                "slug": "great-soundtrack",
+                "language": "eng",
+                "games_count": 3206,
+                "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+            },
+            {
+                "id": 41,
+                "name": "Dark",
+                "slug": "dark",
+                "language": "eng",
+                "games_count": 11313,
+                "image_background": "https://media.rawg.io/media/games/5c0/5c0dd63002cb23f804aab327d40ef119.jpg"
+            },
+            {
+                "id": 17,
+                "name": "Survival Horror",
+                "slug": "survival-horror",
+                "language": "eng",
+                "games_count": 6493,
+                "image_background": "https://media.rawg.io/media/games/dd5/dd50d4266915d56dd5b63ae1bf72606a.jpg"
+            },
+            {
+                "id": 2114,
+                "name": "psychological-horror",
+                "slug": "psychological-horror-2",
+                "language": "eng",
+                "games_count": 29,
+                "image_background": "https://media.rawg.io/media/screenshots/8c2/8c2efb985970270137f877a670bcc3cf.jpg"
+            }
+        ],
+        "publishers": [
+            {
+                "id": 10691,
+                "name": "Konami",
+                "slug": "konami",
+                "games_count": 734,
+                "image_background": "https://media.rawg.io/media/games/85e/85e4c8a78cf9b82b5ed19262fe00c00f.jpg"
+            }
+        ],
+        "esrb_rating": null,
+        "clip": null,
+        "description_raw": ""
+    },
+    {
+        "id": 2454,
+        "slug": "doom",
+        "name": "DOOM (2016)",
+        "name_original": "DOOM (2016)",
+        "description": "<p>Return of the classic FPS, Doom (2016) acts as a reboot of the series and brings back the Doomslayer, protagonist of the original Doom games. In order to solve the energy crisis, humanity learned to harvest the energy from Hell, and when something went wrong and a demon invasion has started, it’s up to the player to control the Doomslayer and destroy the evil.</p>\n<p>Doom is a fast-paced game that restores the concept of instant health packs and leaves the player against armies of Hell with no cover, no health regeneration, or help from anyone. After damaging monsters enough, they will start glowing, which will allow players to perform glory kills to restore some health. While exploring the levels, players will come across secrets, collectible items, or upgrade points for the weapons and armor. The single-player campaign silent protagonist has a noticeable personality. He gets visibly annoyed and angry in his actions during expository cutscenes and forces his way through the game. Multiplayer maps gather players in Deathmatch/”king-of-the-hill” type game modes, with all the weapons from the single-player campaign.</p>",
+        "metacritic": 85,
+        "metacritic_platforms": [],
+        "released": "2016-05-13",
+        "tba": false,
+        "updated": "2022-07-18T04:37:47",
+        "background_image": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg",
+        "background_image_additional": "https://media.rawg.io/media/screenshots/d3b/d3b881ae214f9ad14724afc41b49dcea.jpg",
+        "website": "https://bethesda.net/game/doom",
+        "rating": 4.39,
+        "rating_top": 5,
+        "ratings": [
+            {
+                "id": 5,
+                "title": "exceptional",
+                "count": 1645,
+                "percent": 52.94
+            },
+            {
+                "id": 4,
+                "title": "recommended",
+                "count": 1169,
+                "percent": 37.62
+            },
+            {
+                "id": 3,
+                "title": "meh",
+                "count": 224,
+                "percent": 7.21
+            },
+            {
+                "id": 1,
+                "title": "skip",
+                "count": 69,
+                "percent": 2.22
+            }
+        ],
+        "reactions": {
+            "1": 9,
+            "2": 3,
+            "3": 7,
+            "4": 2,
+            "5": 1,
+            "6": 5,
+            "7": 1,
+            "10": 2,
+            "11": 6,
+            "12": 8,
+            "15": 1,
+            "16": 1
+        },
+        "added": 11161,
+        "added_by_status": {
+            "yet": 492,
+            "owned": 6999,
+            "beaten": 2372,
+            "toplay": 417,
+            "dropped": 592,
+            "playing": 289
+        },
+        "playtime": 10,
+        "screenshots_count": 17,
+        "movies_count": 1,
+        "creators_count": 50,
+        "achievements_count": 334,
+        "parent_achievements_count": 71,
+        "reddit_url": "https://www.reddit.com/r/Doom/",
+        "reddit_name": "DOOM",
+        "reddit_description": "Welcome to the DOOM Universe on reddit!",
+        "reddit_logo": "https://b.thumbs.redditmedia.com/p60UBbdwv9WJ0iDnWgRqeodShzlKKwymP89AKIi_Xwg.png",
+        "reddit_count": 817,
+        "twitch_count": 0,
+        "youtube_count": 1000000,
+        "reviews_text_count": 35,
+        "ratings_count": 3072,
+        "suggestions_count": 635,
+        "alternative_names": [],
+        "metacritic_url": "",
+        "parents_count": 0,
+        "additions_count": 1,
+        "game_series_count": 9,
+        "user_game": null,
+        "reviews_count": 3107,
+        "saturated_color": "0f0f0f",
+        "dominant_color": "0f0f0f",
+        "parent_platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "PC",
+                    "slug": "pc"
+                }
+            },
+            {
+                "platform": {
+                    "id": 2,
+                    "name": "PlayStation",
+                    "slug": "playstation"
+                }
+            },
+            {
+                "platform": {
+                    "id": 3,
+                    "name": "Xbox",
+                    "slug": "xbox"
+                }
+            },
+            {
+                "platform": {
+                    "id": 7,
+                    "name": "Nintendo",
+                    "slug": "nintendo"
+                }
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "Xbox One",
+                    "slug": "xbox-one",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 5337,
+                    "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+                },
+                "released_at": "2016-05-13",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 4,
+                    "name": "PC",
+                    "slug": "pc",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 460709,
+                    "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+                },
+                "released_at": "2016-05-13",
+                "requirements": {
+                    "minimum": "Minimum:\nOS: Windows7,Windows8,Windows10\nProcessor: Intel cpu i3\nMemory: 4 GB RAM\nGraphics: GTX 650\nStorage: 2 GB available space\nSound Card: Realtek",
+                    "recommended": "Recommended:\nOS: Windows7,Windows8,Windows10\nProcessor: Intel cpu i5\nMemory: 8 GB RAM\nGraphics: GTX 770\nStorage: 4 GB available space\nSound Card: Realtek"
+                }
+            },
+            {
+                "platform": {
+                    "id": 7,
+                    "name": "Nintendo Switch",
+                    "slug": "nintendo-switch",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 4879,
+                    "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+                },
+                "released_at": "2016-05-13",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 18,
+                    "name": "PlayStation 4",
+                    "slug": "playstation4",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 6424,
+                    "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+                },
+                "released_at": "2016-05-13",
+                "requirements": []
+            }
+        ],
+        "stores": [
+            {
+                "id": 355582,
+                "url": "",
+                "store": {
+                    "id": 1,
+                    "name": "Steam",
+                    "slug": "steam",
+                    "domain": "store.steampowered.com",
+                    "games_count": 64932,
+                    "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+                }
+            },
+            {
+                "id": 2571,
+                "url": "",
+                "store": {
+                    "id": 3,
+                    "name": "PlayStation Store",
+                    "slug": "playstation-store",
+                    "domain": "store.playstation.com",
+                    "games_count": 7792,
+                    "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+                }
+            },
+            {
+                "id": 38659,
+                "url": "",
+                "store": {
+                    "id": 6,
+                    "name": "Nintendo Store",
+                    "slug": "nintendo",
+                    "domain": "nintendo.com",
+                    "games_count": 8834,
+                    "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+                }
+            },
+            {
+                "id": 8223,
+                "url": "",
+                "store": {
+                    "id": 2,
+                    "name": "Xbox Store",
+                    "slug": "xbox-store",
+                    "domain": "microsoft.com",
+                    "games_count": 4720,
+                    "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+                }
+            }
+        ],
+        "developers": [
+            {
+                "id": 4,
+                "name": "Bethesda Softworks",
+                "slug": "bethesda-softworks",
+                "games_count": 62,
+                "image_background": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+            },
+            {
+                "id": 343,
+                "name": "id Software",
+                "slug": "id-software",
+                "games_count": 83,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 28246,
+                "name": "Panic Button",
+                "slug": "panic-button",
+                "games_count": 15,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 8770,
+                "name": "Tango Gameworks",
+                "slug": "tango-gameworks",
+                "games_count": 10,
+                "image_background": "https://media.rawg.io/media/screenshots/102/1020cf71c34ae82b0fbd53f7dfe04c19.jpg"
+            },
+            {
+                "id": 7693,
+                "name": "Escalation Studios",
+                "slug": "escalation-studios",
+                "games_count": 8,
+                "image_background": "https://media.rawg.io/media/games/8a7/8a75028028592f9323d1e6e86668bb91.jpg"
+            },
+            {
+                "id": 14037,
+                "name": "Certain Affinity",
+                "slug": "certain-affinity",
+                "games_count": 4,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 15466,
+                "name": "Digital Domain",
+                "slug": "digital-domain",
+                "games_count": 5,
+                "image_background": "https://media.rawg.io/media/screenshots/ffa/ffab7b32ec8e11ba69565bf5e810ee21.jpg"
+            },
+            {
+                "id": 19800,
+                "name": "BattleCry Studios",
+                "slug": "battlecry-studios",
+                "games_count": 2,
+                "image_background": "https://media.rawg.io/media/screenshots/475/4751a16ab53098e55dc2958a4c0a8fac.jpg"
+            }
+        ],
+        "genres": [
+            {
+                "id": 4,
+                "name": "Action",
+                "slug": "action",
+                "games_count": 155362,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Shooter",
+                "slug": "shooter",
+                "games_count": 53883,
+                "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+            }
+        ],
+        "tags": [
+            {
+                "id": 31,
+                "name": "Singleplayer",
+                "slug": "singleplayer",
+                "language": "eng",
+                "games_count": 172174,
+                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Multiplayer",
+                "slug": "multiplayer",
+                "language": "eng",
+                "games_count": 31817,
+                "image_background": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg"
+            },
+            {
+                "id": 13,
+                "name": "Atmospheric",
+                "slug": "atmospheric",
+                "language": "eng",
+                "games_count": 23160,
+                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+            },
+            {
+                "id": 42,
+                "name": "Great Soundtrack",
+                "slug": "great-soundtrack",
+                "language": "eng",
+                "games_count": 3206,
+                "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+            },
+            {
+                "id": 18,
+                "name": "Co-op",
+                "slug": "co-op",
+                "language": "eng",
+                "games_count": 8582,
+                "image_background": "https://media.rawg.io/media/games/ec3/ec3a7db7b8ab5a71aad622fe7c62632f.jpg"
+            },
+            {
+                "id": 411,
+                "name": "cooperative",
+                "slug": "cooperative",
+                "language": "eng",
+                "games_count": 3483,
+                "image_background": "https://media.rawg.io/media/games/55e/55ee6432ac2bf224610fa17e4c652107.jpg"
+            },
+            {
+                "id": 8,
+                "name": "First-Person",
+                "slug": "first-person",
+                "language": "eng",
+                "games_count": 22688,
+                "image_background": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg"
+            },
+            {
+                "id": 32,
+                "name": "Sci-fi",
+                "slug": "sci-fi",
+                "language": "eng",
+                "games_count": 14811,
+                "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+            },
+            {
+                "id": 40845,
+                "name": "Partial Controller Support",
+                "slug": "partial-controller-support",
+                "language": "eng",
+                "games_count": 8583,
+                "image_background": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg"
+            },
+            {
+                "id": 16,
+                "name": "Horror",
+                "slug": "horror",
+                "language": "eng",
+                "games_count": 34555,
+                "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+            },
+            {
+                "id": 30,
+                "name": "FPS",
+                "slug": "fps",
+                "language": "eng",
+                "games_count": 10801,
+                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+            },
+            {
+                "id": 49,
+                "name": "Difficult",
+                "slug": "difficult",
+                "language": "eng",
+                "games_count": 11235,
+                "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+            },
+            {
+                "id": 26,
+                "name": "Gore",
+                "slug": "gore",
+                "language": "eng",
+                "games_count": 4535,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 193,
+                "name": "Classic",
+                "slug": "classic",
+                "language": "eng",
+                "games_count": 1692,
+                "image_background": "https://media.rawg.io/media/games/cee/cee577e2097a59b77193fe2bce94667d.jpg"
+            },
+            {
+                "id": 63,
+                "name": "Zombies",
+                "slug": "zombies",
+                "language": "eng",
+                "games_count": 8770,
+                "image_background": "https://media.rawg.io/media/games/476/476178ef18ab0534771d099f51cdc694.jpg"
+            },
+            {
+                "id": 131,
+                "name": "Fast-Paced",
+                "slug": "fast-paced",
+                "language": "eng",
+                "games_count": 9358,
+                "image_background": "https://media.rawg.io/media/games/eb2/eb24800b4491701eca481e7c990bce4a.jpg"
+            },
+            {
+                "id": 120,
+                "name": "Memes",
+                "slug": "memes",
+                "language": "eng",
+                "games_count": 1417,
+                "image_background": "https://media.rawg.io/media/games/6cc/6cc68fa183b905ac9d85efb9797776f6.jpg"
+            },
+            {
+                "id": 271,
+                "name": "Remake",
+                "slug": "remake",
+                "language": "eng",
+                "games_count": 1515,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 270,
+                "name": "Blood",
+                "slug": "blood",
+                "language": "eng",
+                "games_count": 1740,
+                "image_background": "https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg"
+            },
+            {
+                "id": 187,
+                "name": "Demons",
+                "slug": "demons",
+                "language": "eng",
+                "games_count": 1534,
+                "image_background": "https://media.rawg.io/media/games/3b0/3b01313965c19adc6b6c37a3d9d33576.jpg"
+            }
+        ],
+        "publishers": [
+            {
+                "id": 339,
+                "name": "Bethesda Softworks",
+                "slug": "bethesda-softworks",
+                "games_count": 165,
+                "image_background": "https://media.rawg.io/media/games/c80/c80bcf321da44d69b18a06c04d942662.jpg"
+            }
+        ],
+        "esrb_rating": {
+            "id": 4,
+            "name": "Mature",
+            "slug": "mature"
+        },
+        "clip": null,
+        "description_raw": "Return of the classic FPS, Doom (2016) acts as a reboot of the series and brings back the Doomslayer, protagonist of the original Doom games. In order to solve the energy crisis, humanity learned to harvest the energy from Hell, and when something went wrong and a demon invasion has started, it’s up to the player to control the Doomslayer and destroy the evil.\n\nDoom is a fast-paced game that restores the concept of instant health packs and leaves the player against armies of Hell with no cover, no health regeneration, or help from anyone. After damaging monsters enough, they will start glowing, which will allow players to perform glory kills to restore some health. While exploring the levels, players will come across secrets, collectible items, or upgrade points for the weapons and armor. The single-player campaign silent protagonist has a noticeable personality. He gets visibly annoyed and angry in his actions during expository cutscenes and forces his way through the game. Multiplayer maps gather players in Deathmatch/”king-of-the-hill” type game modes, with all the weapons from the single-player campaign."
+    },
+    {
+        "id": 56184,
+        "slug": "resident-evil-4",
+        "name": "Resident Evil 4 (2005)",
+        "name_original": "Resident Evil 4 (2005)",
+        "description": "<p>Resident Evil 4 is a third-person shooter game developed by Capcom Production Studio 4 and published by Capcom. The sixth major installment in the Resident Evil series, it was originally released for the GameCube in 2005. Players control U.S. government special agent Leon S. Kennedy, who is sent on a mission to rescue the U.S. president&#39;s daughter Ashley Graham, who has been kidnapped by a cult. In a rural part of Europe, Leon fights hordes of villagers infected by a mind-controlling parasite, and reunites with the spy Ada Wong.<br />\nDevelopment began for PlayStation 2 in 1999. Four proposed versions were discarded; the first attempt was directed by Hideki Kamiya after producer Shinji Mikami. In a departure from the fixed camera angles and slower survival horror gameplay of previous instalments, the team focused on developing more dynamic shooting action.<br />\nResident Evil 4 was announced as a GameCube exclusive as part of the Capcom Five, but was ported to numerous formats, becoming a cross-platform hit, selling over 10 million copies across all platforms. It garnered acclaim for its narrative, gameplay, voice acting, and characters, and is often named one of the best video games, winning multiple Game of the Year awards in 2005. It influenced the evolution of the survival horror and third-person genres, popularizing the &quot;over-the-shoulder&quot; third-person view. Resident Evil 5 was released in 2009.</p>\n<h1>Gameplay</h1>\n<p>The player controls the protagonist, Leon S. Kennedy, from a third-person perspective. Departing significantly from the series&#39; previous games, the gameplay focuses on action and shootouts with fewer survival horror elements. The camera is placed behind Leon and zooms in for an over-the-shoulder view when aiming a weapon, or a first-person view when aiming with a sniper rifle. There is no crosshair for firearms; instead, every firearm has a laser sight. Unlike previous games where players can only shoot straight, up, or down, players have more options. For example, shots to the feet can cause enemies to stumble, and shots to the arms can make them drop their weapons. Players can also shoot down projectiles like thrown axes or scythes.<br />\nResident Evil 4 adds context-sensitive controls. Based on the situation, players can interact with the environment: kicking down a ladder, jumping out of a window, dodging an attack or executing a &quot;finishing move&quot; on weakened enemies. There are also quick time events, in which the player must press buttons indicated on-screen to execute actions such as dodging a falling boulder or wrestling an enemy to stay alive. These are often incorporated into the game&#39;s many boss fights, in which the player must avoid instant-kill attacks.<br />\nThe main enemies are violent villagers referred to as Los Ganados (&quot;The Cattle&quot; in Spanish). Los Ganados can dodge, wield melee and projectile weapons, and are capable of working collectively and communicating with each other.<br />\nThe inventory system features a grid system, represented by an attaché case, that has each item take up a certain number of spaces. The case can be upgraded several times, allowing for more space. Weapons, ammunition, and healing items are kept in the case, while key items and treasures are kept in a separate menu. Items may be bought from and sold to a merchant that appears in various locations. He sells first aid sprays, weapons, allows for weapons to be upgraded and buys various treasures that Leon finds. The various weapons each have their own advantages and disadvantages.<br />\nCapcom added content for the PlayStation 2 version, which was later incorporated into the PC and Wii releases. The largest addition is &quot;Separate Ways&quot;, a minigame which focuses on Ada Wong&#39;s involvement in Resident Evil 4 and her connection to the series&#39; villain Albert Wesker. &quot;Ada&#39;s Report&quot;, a five-part documentary, analyzes Ada&#39;s relationship with Wesker and his role in the plot. Other unlockable content in all versions includes the minigames &quot;The Mercenaries&quot; and &quot;Assignment Ada&quot; (using Ada to retrieve Las Plagas samples), new costumes for Leon and Ashley, new weapons, and a cutscene browser.</p>\n<h1>Plot</h1>\n<p>U.S. government agent Leon S. Kennedy (Paul Mercier) is on a mission to rescue Ashley Graham (Carolyn Lawrence), the U.S. President&#39;s daughter, who has been kidnapped by a mysterious cult. He travels to a nameless rural village in Spain, where he encounters a group of hostile villagers who pledge their lives to Los Illuminados, the cult that kidnapped Ashley. The villagers were once simple farmers until becoming infected by a mind-controlling parasite known as Las Plagas.<br />\nWhile in the village, Leon is captured by its chief, Bitores Mendez, and injected with Las Plagas. He finds himself held captive with Luis Sera (Rino Romano), a former Los Illuminados researcher. The two work together to escape, but soon go their separate ways. Leon finds out Ashley is being held in a church and rescues her. They both escape from the church after Osmund Saddler (Michael Gough), leader of Los Illuminados, reveals his plan to use the plaga they injected into Ashley to manipulate her into injecting the president of the United States with a &quot;sample&quot; once she returns home, allowing Saddler to begin his conquest of the world.<br />\nAfter killing Mendez, Leon and Ashley try to take refuge in a castle but are attacked by more Illuminados under the command of Ramon Salazar (Rene Mujica), another of Saddler&#39;s henchmen who owns the castle, and the two become separated by Salazar&#39;s traps. Meanwhile, Luis searches for pills that will slow Leon and Ashley&#39;s infection, as well as a sample of Las Plagas. He brings the two items to Leon but is killed by Saddler, who takes the sample, while the pills to suppress the infection remain in Leon&#39;s hands. While in the castle, Leon briefly encounters Ada Wong (Sally Cahill), a woman from his past who supports him during his mission. He battles his way through the castle before killing Salazar.<br />\nAfterward, Leon travels to a nearby island research facility, where he continues the search for Ashley. He discovers that one of his former training comrades, Jack Krauser (Jim Ward), who was believed to have been killed in a helicopter crash two years prior, is responsible for her kidnapping. Ada and Krauser are working with Albert Wesker (Richard Waugh), for whom both intend to secure a Plagas sample. Suspicious of the mercenary&#39;s intentions, Saddler orders Krauser to kill Leon, believing that no matter which one dies, he will benefit. After Krauser&#39;s fatal defeat, Leon rescues Ashley, and they remove the Plagas from their bodies using a specialized radiotherapeutic device. Leon confronts Saddler, and with Ada&#39;s help, manages to kill him. However, Ada takes the sample from Leon at gunpoint before escaping in a helicopter, leaving Leon and Ashley to escape via her jet-ski as the island explodes.</p>",
+        "metacritic": 84,
+        "metacritic_platforms": [
+            {
+                "metascore": 76,
+                "url": "https://www.metacritic.com/game/xbox-one/resident-evil-4",
+                "platform": {
+                    "platform": 1,
+                    "name": "Xbox One",
+                    "slug": "xbox-one"
+                }
+            },
+            {
+                "metascore": 84,
+                "url": "https://www.metacritic.com/game/xbox-360/resident-evil-4-hd",
+                "platform": {
+                    "platform": 14,
+                    "name": "Xbox 360",
+                    "slug": "xbox360"
+                }
+            },
+            {
+                "metascore": 82,
+                "url": "https://www.metacritic.com/game/playstation-4/resident-evil-4",
+                "platform": {
+                    "platform": 18,
+                    "name": "PlayStation 4",
+                    "slug": "playstation4"
+                }
+            },
+            {
+                "metascore": 84,
+                "url": "https://www.metacritic.com/game/playstation-3/resident-evil-4-hd",
+                "platform": {
+                    "platform": 16,
+                    "name": "PlayStation 3",
+                    "slug": "playstation3"
+                }
+            },
+            {
+                "metascore": 79,
+                "url": "https://www.metacritic.com/game/pc/resident-evil-4-ultimate-hd-edition",
+                "platform": {
+                    "platform": 4,
+                    "name": "PC",
+                    "slug": "pc"
+                }
+            },
+            {
+                "metascore": 96,
+                "url": "https://www.metacritic.com/game/playstation-2/resident-evil-4",
+                "platform": {
+                    "platform": 15,
+                    "name": "PlayStation 2",
+                    "slug": "playstation2"
+                }
+            }
+        ],
+        "released": "2005-01-11",
+        "tba": false,
+        "updated": "2022-07-12T05:36:20",
+        "background_image": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg",
+        "background_image_additional": "https://media.rawg.io/media/screenshots/0ed/0ede45d60053d02b8547cf487940dda3.jpg",
+        "website": "https://www.residentevil.com/4/",
+        "rating": 4.4,
+        "rating_top": 5,
+        "ratings": [
+            {
+                "id": 5,
+                "title": "exceptional",
+                "count": 884,
+                "percent": 60.3
+            },
+            {
+                "id": 4,
+                "title": "recommended",
+                "count": 428,
+                "percent": 29.2
+            },
+            {
+                "id": 3,
+                "title": "meh",
+                "count": 82,
+                "percent": 5.59
+            },
+            {
+                "id": 1,
+                "title": "skip",
+                "count": 72,
+                "percent": 4.91
+            }
+        ],
+        "reactions": {
+            "1": 8,
+            "2": 2,
+            "3": 3,
+            "4": 5,
+            "5": 1,
+            "6": 3,
+            "7": 1,
+            "8": 2,
+            "11": 5,
+            "12": 2
+        },
+        "added": 5375,
+        "added_by_status": {
+            "yet": 278,
+            "owned": 3275,
+            "beaten": 1299,
+            "toplay": 229,
+            "dropped": 238,
+            "playing": 56
+        },
+        "playtime": 5,
+        "screenshots_count": 236,
+        "movies_count": 0,
+        "creators_count": 13,
+        "achievements_count": 96,
+        "parent_achievements_count": 12,
+        "reddit_url": "https://www.reddit.com/r/residentevil4/",
+        "reddit_name": "Resident Evil 4!",
+        "reddit_description": "The place to come for Resident Evil 4.",
+        "reddit_logo": "",
+        "reddit_count": 515,
+        "twitch_count": 0,
+        "youtube_count": 732688,
+        "reviews_text_count": 14,
+        "ratings_count": 1452,
+        "suggestions_count": 485,
+        "alternative_names": [
+            "Biohazard 4"
+        ],
+        "metacritic_url": "https://www.metacritic.com/game/playstation-2/resident-evil-4",
+        "parents_count": 0,
+        "additions_count": 3,
+        "game_series_count": 20,
+        "user_game": null,
+        "reviews_count": 1466,
+        "saturated_color": "0f0f0f",
+        "dominant_color": "0f0f0f",
+        "parent_platforms": [
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "PC",
+                    "slug": "pc"
+                }
+            },
+            {
+                "platform": {
+                    "id": 2,
+                    "name": "PlayStation",
+                    "slug": "playstation"
+                }
+            },
+            {
+                "platform": {
+                    "id": 3,
+                    "name": "Xbox",
+                    "slug": "xbox"
+                }
+            },
+            {
+                "platform": {
+                    "id": 4,
+                    "name": "iOS",
+                    "slug": "ios"
+                }
+            },
+            {
+                "platform": {
+                    "id": 8,
+                    "name": "Android",
+                    "slug": "android"
+                }
+            },
+            {
+                "platform": {
+                    "id": 7,
+                    "name": "Nintendo",
+                    "slug": "nintendo"
+                }
+            }
+        ],
+        "platforms": [
+            {
+                "platform": {
+                    "id": 105,
+                    "name": "GameCube",
+                    "slug": "gamecube",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 640,
+                    "image_background": "https://media.rawg.io/media/screenshots/33c/33c4f185c9f312cfcf5243d496178b11.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 21,
+                    "name": "Android",
+                    "slug": "android",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 49103,
+                    "image_background": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 18,
+                    "name": "PlayStation 4",
+                    "slug": "playstation4",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 6424,
+                    "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 15,
+                    "name": "PlayStation 2",
+                    "slug": "playstation2",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 1931,
+                    "image_background": "https://media.rawg.io/media/games/97a/97a5fee8bba1189f70a9874171f45195.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 14,
+                    "name": "Xbox 360",
+                    "slug": "xbox360",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 2770,
+                    "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 11,
+                    "name": "Wii",
+                    "slug": "wii",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 2360,
+                    "image_background": "https://media.rawg.io/media/screenshots/157/1571cdfb52888191eabaf53c2b897240.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 10,
+                    "name": "Wii U",
+                    "slug": "wii-u",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 1269,
+                    "image_background": "https://media.rawg.io/media/games/926/926928beb8a9f9b31cf202965aa4cbbc.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 7,
+                    "name": "Nintendo Switch",
+                    "slug": "nintendo-switch",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 4879,
+                    "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 4,
+                    "name": "PC",
+                    "slug": "pc",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 460708,
+                    "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 3,
+                    "name": "iOS",
+                    "slug": "ios",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 74681,
+                    "image_background": "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 16,
+                    "name": "PlayStation 3",
+                    "slug": "playstation3",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 3610,
+                    "image_background": "https://media.rawg.io/media/games/588/588c6bdff3d4baf66ec36b1c05b793bf.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            },
+            {
+                "platform": {
+                    "id": 1,
+                    "name": "Xbox One",
+                    "slug": "xbox-one",
+                    "image": null,
+                    "year_end": null,
+                    "year_start": null,
+                    "games_count": 5337,
+                    "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+                },
+                "released_at": "2005-01-11",
+                "requirements": []
+            }
+        ],
+        "stores": [
+            {
+                "id": 776176,
+                "url": "",
+                "store": {
+                    "id": 8,
+                    "name": "Google Play",
+                    "slug": "google-play",
+                    "domain": "play.google.com",
+                    "games_count": 16836,
+                    "image_background": "https://media.rawg.io/media/games/fc3/fc30790a3b3c738d7a271b02c1e26dc2.jpg"
+                }
+            },
+            {
+                "id": 249023,
+                "url": "",
+                "store": {
+                    "id": 3,
+                    "name": "PlayStation Store",
+                    "slug": "playstation-store",
+                    "domain": "store.playstation.com",
+                    "games_count": 7792,
+                    "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+                }
+            },
+            {
+                "id": 351402,
+                "url": "",
+                "store": {
+                    "id": 4,
+                    "name": "App Store",
+                    "slug": "apple-appstore",
+                    "domain": "apps.apple.com",
+                    "games_count": 73001,
+                    "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+                }
+            },
+            {
+                "id": 315294,
+                "url": "",
+                "store": {
+                    "id": 6,
+                    "name": "Nintendo Store",
+                    "slug": "nintendo",
+                    "domain": "nintendo.com",
+                    "games_count": 8834,
+                    "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+                }
+            },
+            {
+                "id": 249021,
+                "url": "",
+                "store": {
+                    "id": 1,
+                    "name": "Steam",
+                    "slug": "steam",
+                    "domain": "store.steampowered.com",
+                    "games_count": 64932,
+                    "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+                }
+            },
+            {
+                "id": 249022,
+                "url": "",
+                "store": {
+                    "id": 2,
+                    "name": "Xbox Store",
+                    "slug": "xbox-store",
+                    "domain": "microsoft.com",
+                    "games_count": 4720,
+                    "image_background": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg"
+                }
+            },
+            {
+                "id": 249024,
+                "url": "",
+                "store": {
+                    "id": 7,
+                    "name": "Xbox 360 Store",
+                    "slug": "xbox360",
+                    "domain": "marketplace.xbox.com",
+                    "games_count": 1915,
+                    "image_background": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg"
+                }
+            }
+        ],
+        "developers": [
+            {
+                "id": 3678,
+                "name": "Capcom",
+                "slug": "capcom",
+                "games_count": 425,
+                "image_background": "https://media.rawg.io/media/games/3cf/3cf4e76bfd5283331c83958c830a761c.jpg"
+            },
+            {
+                "id": 17,
+                "name": "Capcom U.S.A",
+                "slug": "capcom-usa-inc",
+                "games_count": 88,
+                "image_background": "https://media.rawg.io/media/games/65d/65d65ee902f66bdc01d8b6c3d2a0a588.jpg"
+            },
+            {
+                "id": 17756,
+                "name": "Capcom Production Studio 4",
+                "slug": "capcom-production-studio-4",
+                "games_count": 10,
+                "image_background": "https://media.rawg.io/media/screenshots/37a/37a008c45d5576f04249e775c9e2d1ac.jpg"
+            }
+        ],
+        "genres": [
+            {
+                "id": 4,
+                "name": "Action",
+                "slug": "action",
+                "games_count": 155362,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Shooter",
+                "slug": "shooter",
+                "games_count": 53883,
+                "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Adventure",
+                "slug": "adventure",
+                "games_count": 117922,
+                "image_background": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg"
+            }
+        ],
+        "tags": [
+            {
+                "id": 31,
+                "name": "Singleplayer",
+                "slug": "singleplayer",
+                "language": "eng",
+                "games_count": 172174,
+                "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+            },
+            {
+                "id": 40847,
+                "name": "Steam Achievements",
+                "slug": "steam-achievements",
+                "language": "eng",
+                "games_count": 26500,
+                "image_background": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg"
+            },
+            {
+                "id": 13,
+                "name": "Atmospheric",
+                "slug": "atmospheric",
+                "language": "eng",
+                "games_count": 23160,
+                "image_background": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg"
+            },
+            {
+                "id": 7808,
+                "name": "steam-trading-cards",
+                "slug": "steam-trading-cards",
+                "language": "eng",
+                "games_count": 7582,
+                "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+            },
+            {
+                "id": 40836,
+                "name": "Full controller support",
+                "slug": "full-controller-support",
+                "language": "eng",
+                "games_count": 12330,
+                "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+            },
+            {
+                "id": 40849,
+                "name": "Steam Cloud",
+                "slug": "steam-cloud",
+                "language": "eng",
+                "games_count": 12057,
+                "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+            },
+            {
+                "id": 42,
+                "name": "Great Soundtrack",
+                "slug": "great-soundtrack",
+                "language": "eng",
+                "games_count": 3206,
+                "image_background": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg"
+            },
+            {
+                "id": 149,
+                "name": "Third Person",
+                "slug": "third-person",
+                "language": "eng",
+                "games_count": 7425,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 32,
+                "name": "Sci-fi",
+                "slug": "sci-fi",
+                "language": "eng",
+                "games_count": 14811,
+                "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+            },
+            {
+                "id": 16,
+                "name": "Horror",
+                "slug": "horror",
+                "language": "eng",
+                "games_count": 34555,
+                "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+            },
+            {
+                "id": 40850,
+                "name": "Steam Leaderboards",
+                "slug": "steam-leaderboards",
+                "language": "eng",
+                "games_count": 5314,
+                "image_background": "https://media.rawg.io/media/games/995/9951d9d55323d08967640f7b9ab3e342.jpg"
+            },
+            {
+                "id": 49,
+                "name": "Difficult",
+                "slug": "difficult",
+                "language": "eng",
+                "games_count": 11235,
+                "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+            },
+            {
+                "id": 26,
+                "name": "Gore",
+                "slug": "gore",
+                "language": "eng",
+                "games_count": 4535,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 193,
+                "name": "Classic",
+                "slug": "classic",
+                "language": "eng",
+                "games_count": 1692,
+                "image_background": "https://media.rawg.io/media/games/cee/cee577e2097a59b77193fe2bce94667d.jpg"
+            },
+            {
+                "id": 1,
+                "name": "Survival",
+                "slug": "survival",
+                "language": "eng",
+                "games_count": 6144,
+                "image_background": "https://media.rawg.io/media/games/995/9951d9d55323d08967640f7b9ab3e342.jpg"
+            },
+            {
+                "id": 150,
+                "name": "Third-Person Shooter",
+                "slug": "third-person-shooter",
+                "language": "eng",
+                "games_count": 2411,
+                "image_background": "https://media.rawg.io/media/games/10d/10d19e52e5e8415d16a4d344fe711874.jpg"
+            },
+            {
+                "id": 63,
+                "name": "Zombies",
+                "slug": "zombies",
+                "language": "eng",
+                "games_count": 8770,
+                "image_background": "https://media.rawg.io/media/games/476/476178ef18ab0534771d099f51cdc694.jpg"
+            },
+            {
+                "id": 40833,
+                "name": "Captions available",
+                "slug": "captions-available",
+                "language": "eng",
+                "games_count": 1169,
+                "image_background": "https://media.rawg.io/media/games/a77/a7773acbce8720869fcb61d7a1e5c88f.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Replay Value",
+                "slug": "replay-value",
+                "language": "eng",
+                "games_count": 1105,
+                "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+            },
+            {
+                "id": 17,
+                "name": "Survival Horror",
+                "slug": "survival-horror",
+                "language": "eng",
+                "games_count": 6493,
+                "image_background": "https://media.rawg.io/media/games/dd5/dd50d4266915d56dd5b63ae1bf72606a.jpg"
+            },
+            {
+                "id": 271,
+                "name": "Remake",
+                "slug": "remake",
+                "language": "eng",
+                "games_count": 1515,
+                "image_background": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg"
+            },
+            {
+                "id": 269,
+                "name": "Quick-Time Events",
+                "slug": "quick-time-events",
+                "language": "eng",
+                "games_count": 273,
+                "image_background": "https://media.rawg.io/media/games/7a5/7a5f7a3e58593bfda983507c2ddbc891.jpg"
+            },
+            {
+                "id": 272,
+                "name": "Inventory Management",
+                "slug": "inventory-management",
+                "language": "eng",
+                "games_count": 454,
+                "image_background": "https://media.rawg.io/media/games/68e/68e34eb2122fe9e23f634e0b5f5ea6ae.jpg"
+            },
+            {
+                "id": 49992,
+                "name": "first person shooter",
+                "slug": "first-person-shooter-3",
+                "language": "eng",
+                "games_count": 7,
+                "image_background": "https://media.rawg.io/media/games/2a4/2a46b3821f99c0fcfe01b56d0a20e551.jpg"
+            },
+            {
+                "id": 37996,
+                "name": "tank controls",
+                "slug": "tank-controls",
+                "language": "eng",
+                "games_count": 6,
+                "image_background": "https://media.rawg.io/media/games/15d/15db2360d1130ba8c10573586588b0bd.jpg"
+            },
+            {
+                "id": 40641,
+                "name": "survival-horror-game",
+                "slug": "survival-horror-game",
+                "language": "eng",
+                "games_count": 2,
+                "image_background": "https://media.rawg.io/media/screenshots/ceb/ceb4062e27c590f08081f077a0604bb2.jpg"
+            }
+        ],
+        "publishers": [
+            {
+                "id": 918,
+                "name": "Ubisoft Entertainment",
+                "slug": "ubisoft-entertainment",
+                "games_count": 1032,
+                "image_background": "https://media.rawg.io/media/games/0bc/0bcc108295a244b488d5c25f7d867220.jpg"
+            },
+            {
+                "id": 2150,
+                "name": "Capcom",
+                "slug": "capcom",
+                "games_count": 587,
+                "image_background": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg"
+            },
+            {
+                "id": 10681,
+                "name": "Nintendo",
+                "slug": "nintendo",
+                "games_count": 1215,
+                "image_background": "https://media.rawg.io/media/games/3a0/3a0c8e9ed3a711c542218831b893a0fa.jpg"
+            },
+            {
+                "id": 6062,
+                "name": "THQ",
+                "slug": "thq",
+                "games_count": 492,
+                "image_background": "https://media.rawg.io/media/games/910/910d547965a5c4928ca19112778a1b4f.jpg"
+            },
+            {
+                "id": 19793,
+                "name": "Nintendo Australia",
+                "slug": "nintendo-australia",
+                "games_count": 6,
+                "image_background": "https://media.rawg.io/media/screenshots/fb5/fb5a4020b5f91914730da1c1ae1a42e3.jpg"
+            },
+            {
+                "id": 20461,
+                "name": "Red Ant Enterprises",
+                "slug": "red-ant-enterprises",
+                "games_count": 2,
+                "image_background": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg"
+            }
+        ],
+        "esrb_rating": {
+            "id": 4,
+            "name": "Mature",
+            "slug": "mature"
+        },
+        "clip": null,
+        "description_raw": "Resident Evil 4 is a third-person shooter game developed by Capcom Production Studio 4 and published by Capcom. The sixth major installment in the Resident Evil series, it was originally released for the GameCube in 2005. Players control U.S. government special agent Leon S. Kennedy, who is sent on a mission to rescue the U.S. president's daughter Ashley Graham, who has been kidnapped by a cult. In a rural part of Europe, Leon fights hordes of villagers infected by a mind-controlling parasite, and reunites with the spy Ada Wong.\nDevelopment began for PlayStation 2 in 1999. Four proposed versions were discarded; the first attempt was directed by Hideki Kamiya after producer Shinji Mikami. In a departure from the fixed camera angles and slower survival horror gameplay of previous instalments, the team focused on developing more dynamic shooting action.\nResident Evil 4 was announced as a GameCube exclusive as part of the Capcom Five, but was ported to numerous formats, becoming a cross-platform hit, selling over 10 million copies across all platforms. It garnered acclaim for its narrative, gameplay, voice acting, and characters, and is often named one of the best video games, winning multiple Game of the Year awards in 2005. It influenced the evolution of the survival horror and third-person genres, popularizing the \"over-the-shoulder\" third-person view. Resident Evil 5 was released in 2009.\n\n#Gameplay\nThe player controls the protagonist, Leon S. Kennedy, from a third-person perspective. Departing significantly from the series' previous games, the gameplay focuses on action and shootouts with fewer survival horror elements. The camera is placed behind Leon and zooms in for an over-the-shoulder view when aiming a weapon, or a first-person view when aiming with a sniper rifle. There is no crosshair for firearms; instead, every firearm has a laser sight. Unlike previous games where players can only shoot straight, up, or down, players have more options. For example, shots to the feet can cause enemies to stumble, and shots to the arms can make them drop their weapons. Players can also shoot down projectiles like thrown axes or scythes.\nResident Evil 4 adds context-sensitive controls. Based on the situation, players can interact with the environment: kicking down a ladder, jumping out of a window, dodging an attack or executing a \"finishing move\" on weakened enemies. There are also quick time events, in which the player must press buttons indicated on-screen to execute actions such as dodging a falling boulder or wrestling an enemy to stay alive. These are often incorporated into the game's many boss fights, in which the player must avoid instant-kill attacks.\nThe main enemies are violent villagers referred to as Los Ganados (\"The Cattle\" in Spanish). Los Ganados can dodge, wield melee and projectile weapons, and are capable of working collectively and communicating with each other.\nThe inventory system features a grid system, represented by an attaché case, that has each item take up a certain number of spaces. The case can be upgraded several times, allowing for more space. Weapons, ammunition, and healing items are kept in the case, while key items and treasures are kept in a separate menu. Items may be bought from and sold to a merchant that appears in various locations. He sells first aid sprays, weapons, allows for weapons to be upgraded and buys various treasures that Leon finds. The various weapons each have their own advantages and disadvantages.\nCapcom added content for the PlayStation 2 version, which was later incorporated into the PC and Wii releases. The largest addition is \"Separate Ways\", a minigame which focuses on Ada Wong's involvement in Resident Evil 4 and her connection to the series' villain Albert Wesker. \"Ada's Report\", a five-part documentary, analyzes Ada's relationship with Wesker and his role in the plot. Other unlockable content in all versions includes the minigames \"The Mercenaries\" and \"Assignment Ada\" (using Ada to retrieve Las Plagas samples), new costumes for Leon and Ashley, new weapons, and a cutscene browser.\n\n#Plot\nU.S. government agent Leon S. Kennedy (Paul Mercier) is on a mission to rescue Ashley Graham (Carolyn Lawrence), the U.S. President's daughter, who has been kidnapped by a mysterious cult. He travels to a nameless rural village in Spain, where he encounters a group of hostile villagers who pledge their lives to Los Illuminados, the cult that kidnapped Ashley. The villagers were once simple farmers until becoming infected by a mind-controlling parasite known as Las Plagas.\nWhile in the village, Leon is captured by its chief, Bitores Mendez, and injected with Las Plagas. He finds himself held captive with Luis Sera (Rino Romano), a former Los Illuminados researcher. The two work together to escape, but soon go their separate ways. Leon finds out Ashley is being held in a church and rescues her. They both escape from the church after Osmund Saddler (Michael Gough), leader of Los Illuminados, reveals his plan to use the plaga they injected into Ashley to manipulate her into injecting the president of the United States with a \"sample\" once she returns home, allowing Saddler to begin his conquest of the world.\nAfter killing Mendez, Leon and Ashley try to take refuge in a castle but are attacked by more Illuminados under the command of Ramon Salazar (Rene Mujica), another of Saddler's henchmen who owns the castle, and the two become separated by Salazar's traps. Meanwhile, Luis searches for pills that will slow Leon and Ashley's infection, as well as a sample of Las Plagas. He brings the two items to Leon but is killed by Saddler, who takes the sample, while the pills to suppress the infection remain in Leon's hands. While in the castle, Leon briefly encounters Ada Wong (Sally Cahill), a woman from his past who supports him during his mission. He battles his way through the castle before killing Salazar.\nAfterward, Leon travels to a nearby island research facility, where he continues the search for Ashley. He discovers that one of his former training comrades, Jack Krauser (Jim Ward), who was believed to have been killed in a helicopter crash two years prior, is responsible for her kidnapping. Ada and Krauser are working with Albert Wesker (Richard Waugh), for whom both intend to secure a Plagas sample. Suspicious of the mercenary's intentions, Saddler orders Krauser to kill Leon, believing that no matter which one dies, he will benefit. After Krauser's fatal defeat, Leon rescues Ashley, and they remove the Plagas from their bodies using a specialized radiotherapeutic device. Leon confronts Saddler, and with Ada's help, manages to kill him. However, Ada takes the sample from Leon at gunpoint before escaping in a helicopter, leaving Leon and Ashley to escape via her jet-ski as the island explodes."
     }
 ]
