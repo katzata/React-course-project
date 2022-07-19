@@ -2,7 +2,7 @@
     position: relative;
     min-width: 100vw;
     height: 100%;
-    padding: 110px 6vw 20px;
+    padding: 110px 2vw 20px;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .8;
+    filter: brightness(70%);
 }
 
 .topSectionItem h3,
@@ -27,7 +27,7 @@
 
 .topSectionItem h3 {
     /* width: 36vw; */
-    /* margin: 0 auto auto 0; */
+    margin: 0 auto auto 4vw;
     color: white;
     /* font-size: 15px; */
     /* line-height: 17px; */
@@ -39,7 +39,7 @@
 .topSectionItem h4 {
     width: 36vw;
     padding-top: 0vh;
-    margin: auto 0px 0 auto;
+    margin: auto 4vw 14px auto;
     color: white;
     font-size: 15px;
     line-height: 17px;
@@ -49,7 +49,7 @@
 }
 
 .topSectionItem h4 span {
-    margin-top: 10px;
+    margin: 8px;
     display: block;
     text-align: right;
     font-size: 17px;
@@ -61,35 +61,14 @@ h4 strong {
 }
 
 .platformsContainer {
-    padding: 0;
-}
-
-/* ne ba4ka */
-.platformsContainer > .fa-xbox {
-    fill: #107B10;
-    font-size: 20px;
-}
-
-.xbox,
-.playstation,
-.pc {
-    margin-right: 10px;
-    font-size: 22px;
-}
-
-.xbox {
-    color: #107B10;
-    background-color: #FFFFFF;
-    /* color: white; */
-    font-size: 22px;
-    border-radius: 50%;
-}
-
-.playstation {
-    font-size: 24px;
-    color: #0070d1;
-}
-
-.pc {
-    /* font-size: 22px; */
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .4),
+        rgba(68, 68, 68, .4) 1px 2px
+    );
+    /* background-color: darkred; */
 }

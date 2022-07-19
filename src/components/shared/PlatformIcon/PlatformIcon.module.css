@@ -1,0 +1,279 @@
+.iconContainer {
+    height: 24px;
+    padding: 0 .8vw;
+    display: flex;
+    align-items: center;
+}
+
+.p3do,
+.android,
+.appleii,
+.atari2600,
+.atari5200,
+.atari7800,
+.atari8bit,
+.atarilynx,
+.atarist,
+.atarixegs,
+.commodoreamiga,
+.dreamcast,
+.gameboyadvance,
+.gameboycolor,
+.gamegear,
+.gamecube,
+.genesis,
+.ios,
+.jaguar,
+.linux,
+.macintosh,
+.macos,
+.neogeo,
+.nes,
+.nintendo3ds,
+.nintendo64,
+.nintendods,
+.nintendodsi,
+.nintendoswitch,
+.pc,
+.playstation1,
+.playstation2,
+.playstation3,
+.playstation4,
+.playstation5,
+.psvita,
+.psp,
+.sega32x,
+.segacd,
+.segamastersystem,
+.segasaturn,
+.snes,
+.wii,
+.wiiu,
+.xboxold,
+.xboxone,
+.xboxseriesx,
+.xbox360 {
+    width: auto;
+    height: 22px;
+    user-select: none;
+    transition-duration: .2s;
+}
+
+.iconContainer > svg:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.nintendoswitch {
+    /* border: 1px solid green; */
+    height: 24px;
+}
+
+.playstation3 {
+    height: 18px;
+}
+
+.playstation4 {
+    height: 20px;
+}
+
+.wii {
+    height: 45px;
+    margin-bottom: 1px;
+    fill: #8b8b8b;
+}
+
+.wiiu {
+    /* height: 22px; */
+}
+
+/* .p3do {
+    
+}
+
+.android {
+    
+}
+
+.appleii {
+    
+}
+
+.atari2600 {
+    
+}
+
+.atari5200 {
+    
+}
+
+.atari7800 {
+    
+}
+
+.atari8bit {
+    
+}
+
+.atarilynx {
+    
+}
+
+.atarist {
+    
+}
+
+.atarixegs {
+    
+}
+
+.commodoreamiga {
+    
+}
+
+.dreamcast {
+    
+}
+
+.gameboyadvance {
+    
+}
+
+.gameboycolor {
+    
+}
+
+.gamegear {
+    
+}
+
+.gamecube {
+    
+}
+
+.genesis {
+    
+}
+
+.ios {
+    
+}
+
+.jaguar {
+    
+}
+
+.linux {
+    
+}
+
+.macintosh {
+    
+}
+
+.macos {
+    
+}
+
+.neogeo {
+    
+}
+
+.nes {
+    
+}
+
+.nintendo3ds {
+    
+}
+
+.nintendo64 {
+    
+}
+
+.nintendods {
+    
+}
+
+.nintendodsi {
+    
+}
+
+.nintendoswitch {
+    
+}
+
+.pc {
+    
+}
+
+.playstation1 {
+    
+}
+
+.playstation2 {
+    
+}
+
+.playstation3 {
+    
+}
+
+.playstation4 {
+    
+}
+
+.playstation5 {
+    
+}
+
+.psvita {
+    
+}
+
+.psp {
+    
+}
+
+.sega32x {
+    
+}
+
+.segacd {
+    
+}
+
+.segamastersystem {
+    
+}
+
+.segasaturn {
+    
+}
+
+.snes {
+    
+}
+
+.wii {
+    
+}
+
+.wiiu {
+    
+}
+
+.xboxold {
+    
+}
+
+.xboxone {
+    
+}
+
+.xboxseriesx {
+    
+}
+
+.xbox360 {
+    
+} */

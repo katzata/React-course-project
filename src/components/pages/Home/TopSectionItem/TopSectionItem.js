@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styles from "./TopSectionItem.module.css";
 
 import PlatformIcon from "../../../shared/PlatformIcon/PlatformIcon";
@@ -6,40 +7,55 @@ import PlatformIcon from "../../../shared/PlatformIcon/PlatformIcon";
 // import { faXbox, faPlaystation, faAppStoreIos, faAndroid } from "@fortawesome/free-brands-svg-icons";
 // import { faDesktop, faGamepad } from "@fortawesome/free-solid-svg-icons";
 
-function TopSectionItem({ data }) {
+function TopSectionItem({ data, offset, index }) {
     const { /* id, */ name, platforms, /* rating, rating_top, */ background_image/* , background_image_additional */ } = data;
-    const platformIcons = handlePlatformIcons(platforms);
+    const style = {
+        transitionDuration: /* offset !== 0 ?  */".2s"/*  : "0s" */,
+        transform: `translateX(${handleOffset()}vw)`,
+        zIndex: handleZindex()
+    };
 
-    // const icons = {
-    //     xbox: faXbox,
-    //     playstation: faPlaystation,
-    //     pc: faDesktop,
-    //     ios: faAppStoreIos,
-    //     android: faAndroid,
-    //     genesis: faGamepad,
-    //     nintendo: faGamepad,
-    //     gamecube: 1,
-    //     dreamcast: 1,
-    //     switch: 1,
-    // };
-
-    function handlePlatformIcons(currentPlatforms) {
-        const availablePlatforms = ["xbox", "playstation", "pc", "ios"];
-        const presentPlatforms = [];
-
-        for (const {platform} of currentPlatforms) {
-            for (const available of availablePlatforms) {
-                if (platform.slug.includes(available) && !presentPlatforms.includes(available)) {
-                    presentPlatforms.push(available);
-                };
+    function handleOffset() {
+        if (index === 0 || index === 4) {
+            if (index === 0 && offset > 1) {
+                if (offset < 5) {
+                    return 100;
+                } else {
+                    return 0;
+                }
             };
-        };
 
-        return presentPlatforms.sort().reverse();
+            if (index === 4 && offset === 0) {
+                return -500;
+            };
+
+            return -(offset * 100);
+        } else {
+            return -(offset * 100);
+        }
+    };
+    
+    function handleZindex() {
+        if (index === 0 || index === 4) {
+            if (index === 0 && offset > 2) return 3;
+            if (index === 0 && offset <= 2) return 0;
+        } else {
+            if (offset === 0) {
+                return -3;
+            } else {
+                return 0;
+            }
+        }
+
+        // if (index === 0 && offset > 2) {
+        //     return 0;
+        // } else {
+        //     return -1;
+        // };
     };
 
     return (
-        <div className={styles.topSectionItem}>
+        <div style={style} className={styles.topSectionItem}>
             <img src={background_image} alt={name + " cover"}/>
 
             <h3>{name}</h3>
@@ -51,8 +67,7 @@ function TopSectionItem({ data }) {
             </h4>
 
             <div className={styles.platformsContainer}>
-                {platformIcons.map(el => <PlatformIcon currentIcon={el} key={el}/>)}
-                {/* {platformIcons.map(el => <FontAwesomeIcon icon={icons[el]} className={styles[el]} key={el} />)} */}
+                {platforms.map(el => <PlatformIcon currentIcon={el.platform.slug} key={el.platform.id}/>)}
             </div>
         </div>
     );
