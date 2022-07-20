@@ -7,19 +7,19 @@ import TopSectionItem from "../TopSectionItem/TopSectionItem";
 
 function TopSection() {
     const [recommended, setRecommended] = useState([]);
-    const [offset, setOffset] = useState(0);
+    const [offset, setOffset] = useState(4);
     
     useEffect(() => {
         if (recommended.length !== 0) {
-            const interval = setInterval(() => {
-                if (offset + 1 === recommended.length) {
-                    setOffset(0);
-                } else {
-                    setOffset(prevOffset => prevOffset + 1);
-                };
-            }, 2000);
+            // const interval = setInterval(() => {
+            //     if (offset + 1 === recommended.length) {
+            //         setOffset(0);
+            //     } else {
+            //         setOffset(prevOffset => prevOffset + 1);
+            //     };
+            // }, 5000);
 
-            return () => clearInterval(interval);
+            // return () => clearInterval(interval);
         } else {
             getRecommended().then(res => setRecommended(res));
         };

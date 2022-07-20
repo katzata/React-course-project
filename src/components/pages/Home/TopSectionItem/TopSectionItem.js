@@ -1,16 +1,13 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import styles from "./TopSectionItem.module.css";
 
 import PlatformIcon from "../../../shared/PlatformIcon/PlatformIcon";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faXbox, faPlaystation, faAppStoreIos, faAndroid } from "@fortawesome/free-brands-svg-icons";
-// import { faDesktop, faGamepad } from "@fortawesome/free-solid-svg-icons";
-
 function TopSectionItem({ data, offset, index }) {
     const { /* id, */ name, platforms, /* rating, rating_top, */ background_image/* , background_image_additional */ } = data;
     const style = {
-        transitionDuration: /* offset !== 0 ?  */".2s"/*  : "0s" */,
+        transitionDuration: ".5s",
+        transitionTimingFunction: "ease-out",
         transform: `translateX(${handleOffset()}vw)`,
         zIndex: handleZindex()
     };
@@ -18,40 +15,30 @@ function TopSectionItem({ data, offset, index }) {
     function handleOffset() {
         if (index === 0 || index === 4) {
             if (index === 0 && offset > 1) {
-                if (offset < 5) {
-                    return 100;
-                } else {
-                    return 0;
-                }
+                return offset < 5 ? 100 : 0;
             };
 
-            if (index === 4 && offset === 0) {
-                return -500;
-            };
+            if (index === 4 && offset === 0) return -500;
 
             return -(offset * 100);
-        } else {
-            return -(offset * 100);
-        }
+        };
+
+        return -(offset * 100);
     };
     
     function handleZindex() {
-        if (index === 0 || index === 4) {
-            if (index === 0 && offset > 2) return 3;
-            if (index === 0 && offset <= 2) return 0;
-        } else {
-            if (offset === 0) {
-                return -3;
-            } else {
-                return 0;
-            }
-        }
+        if (index === 0 && offset > 2) return 3;
+        if (index === 0 && offset <= 2) return 0;
+        if (index === 4) {
+            return offset >= 0 && offset <= 2 ? -3 : 0;
+        };
 
-        // if (index === 0 && offset > 2) {
-        //     return 0;
-        // } else {
-        //     return -1;
-        // };
+        return offset === 0 ? -3 : 0;
+    };
+
+    function sortedPlatforms() {
+        return platforms.sort((a, b) => a.platform.slug.localeCompare(b.platform.slug));
+        return platforms;
     };
 
     return (
@@ -67,7 +54,7 @@ function TopSectionItem({ data, offset, index }) {
             </h4>
 
             <div className={styles.platformsContainer}>
-                {platforms.map(el => <PlatformIcon currentIcon={el.platform.slug} key={el.platform.id}/>)}
+                {sortedPlatforms().map(el => <PlatformIcon currentIcon={el.platform.slug} key={el.platform.id}/>)}
             </div>
         </div>
     );

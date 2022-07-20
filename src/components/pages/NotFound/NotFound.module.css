@@ -1,6 +1,7 @@
 .notFound {
     height: 100vh;
     display: flex;
+    background-color: darkred;
 }
 
 .notFound h1 {

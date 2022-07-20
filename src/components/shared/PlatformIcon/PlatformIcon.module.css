@@ -3,6 +3,11 @@
     padding: 0 .8vw;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.iconContainer a {
+    display: flex;
 }
 
 .p3do,
@@ -55,21 +60,24 @@
 .xbox360 {
     width: auto;
     height: 22px;
-    user-select: none;
     transition-duration: .2s;
+    cursor: pointer;
 }
 
-.iconContainer > svg:hover {
+.gamecube {
+    height: 24px;
+}
+
+.iconContainer a > svg:hover {
     transform: scale(1.25, 1.25);
 }
 
 .nintendoswitch {
-    /* border: 1px solid green; */
     height: 24px;
 }
 
 .playstation3 {
-    height: 18px;
+    height: 15px;
 }
 
 .playstation4 {
@@ -77,13 +85,13 @@
 }
 
 .wii {
-    height: 45px;
+    height: 40px;
     margin-bottom: 1px;
     fill: #8b8b8b;
 }
 
 .wiiu {
-    /* height: 22px; */
+    height: 18px;
 }
 
 /* .p3do {
