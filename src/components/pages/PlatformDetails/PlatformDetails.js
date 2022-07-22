@@ -21,14 +21,17 @@ function PlatformDetails() {
         );
     };
 
+    // function handleDescription() {
+        
+    // };
+
     useEffect(() => {
         getPlatforms(platform).then(res => {
-            res.description = res.description.slice(3, res.description.length - 4);
+            console.log(res);
+            // res.description = res.description.slice(3, res.description.length - 4);
             setDetails(res);
         });
-
-        // eslint-disable-next-line
-    }, [list]);
+    }, [platform]);
 
     return (
         <section className={styles.platformDetails}>

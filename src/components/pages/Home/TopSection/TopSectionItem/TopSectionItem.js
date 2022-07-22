@@ -1,11 +1,12 @@
 // import { useState, useEffect } from "react";
 import styles from "./TopSectionItem.module.css";
 
-import PlatformIcon from "../../../shared/PlatformIcon/PlatformIcon";
-import EsrbIcon from "../../../shared/EsrbIcon/EsrbIcon";
+import PlatformIcon from "../../../../shared/PlatformIcon/PlatformIcon";
+import EsrbIcon from "../../../../shared/EsrbIcon/EsrbIcon";
+import ColoredRating from "../../../../shared/ColoredRating/ColoredRating";
 
 function TopSectionItem({ data, offset, index }) {
-    const { /* id, */ name, alternative_names, description_raw, platforms, esrb_rating, rating, rating_top, background_image/* , background_image_additional */ } = data;
+    const { id, name, alternative_names, description_raw, platforms, esrb_rating, rating, rating_top, background_image/* , background_image_additional */ } = data;
     // const [duration, setDuration] = useState(0);
 
     const style = {
@@ -44,10 +45,6 @@ function TopSectionItem({ data, offset, index }) {
         return description_raw[end] ? description_raw.slice(0, end) + "..."  : description_raw;
     };
 
-    function ratingStyle() {
-        return { color: `rgb(${255 - rating * 51}, ${rating * 51}, 0)` };
-    };
-
     function sortedPlatforms() {
         return platforms.sort((a, b) => a.platform.slug.localeCompare(b.platform.slug));
     };
@@ -72,7 +69,7 @@ function TopSectionItem({ data, offset, index }) {
     // }, [offset, index])
 
     return (
-        <section style={style} className={styles.topSectionItem} /* onTransitionEnd={() => setDuration(0)} */>
+        <a href={`/games/${id}`} style={style} className={styles.topSectionItem} /* onTransitionEnd={() => setDuration(0)} */>
             <img src={background_image} alt={name + " cover"}/>
 
             <h3>{alternative_names.length === 0 ? name : `${name} / ` + alternative_names.join("/")}</h3>
@@ -84,8 +81,8 @@ function TopSectionItem({ data, offset, index }) {
                     
                     <span>
                         Rating
-                        <strong style={ratingStyle()}>
-                            {rating} / {rating_top}
+                        <strong>
+                            <ColoredRating rating={rating} maxRating={rating_top} />
                         </strong>
                     </span>
                 </p>
@@ -98,7 +95,7 @@ function TopSectionItem({ data, offset, index }) {
                     </a>
                 })}
             </div>
-        </section>
+        </a>
     );
 };
 

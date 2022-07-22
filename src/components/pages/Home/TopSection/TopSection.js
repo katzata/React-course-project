@@ -3,7 +3,7 @@ import styles from "./TopSection.module.css";
 
 import { getRecommended } from "../../../../services/catalogueService/catalogueService";
 
-import TopSectionItem from "../TopSectionItem/TopSectionItem";
+import TopSectionItem from "./TopSectionItem/TopSectionItem";
 
 function TopSection() {
     const [recommended, setRecommended] = useState([]);
@@ -17,7 +17,7 @@ function TopSection() {
                 } else {
                     setOffset(prevOffset => prevOffset + 1);
                 };
-            }, 3000);
+            }, 6000);
 
             return () => clearInterval(interval);
         } else {

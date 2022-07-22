@@ -2,7 +2,7 @@
 import styles from "./Home.module.css";
 
 import TopSection from "./TopSection/TopSection";
-// import HomeCard from "./HomeCard/HomeCard";
+import PlatformsSection from "./PlatformsSection/PlatformsSection";
 
 function Home() {
     // const [recommended, setRecommended] = useState([]);
@@ -11,7 +11,7 @@ function Home() {
     return (
         <section className={styles.home}>
             <TopSection />
-
+            <PlatformsSection />
             {/* {platforms.map(el => <HomeCard data={el} key={el.name}/>)} */}
         </section>
     );

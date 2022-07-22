@@ -6,6 +6,7 @@ import Deals from "../components/pages/Deals/Deals";
 import NotFound from "../components/pages/NotFound/NotFound";
 import Platforms from "../components/pages/Platforms/Platforms";
 import PlatformDetails from "../components/pages/PlatformDetails/PlatformDetails";
+import GameDetails from "../components/pages/GameDetails/GameDetails";
 
 const routes = (
     <Routes>
@@ -13,6 +14,7 @@ const routes = (
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/platforms/" element={<Platforms />} />
         <Route path="/platforms/:platform" element={<PlatformDetails />} />
+        <Route path="/games/:gameId" element={<GameDetails />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate replace to="/404" />} />
