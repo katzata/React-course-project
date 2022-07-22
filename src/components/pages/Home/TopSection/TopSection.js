@@ -11,15 +11,15 @@ function TopSection() {
     
     useEffect(() => {
         if (recommended.length !== 0) {
-            // const interval = setInterval(() => {
-            //     if (offset + 1 === recommended.length) {
-            //         setOffset(0);
-            //     } else {
-            //         setOffset(prevOffset => prevOffset + 1);
-            //     };
-            // }, 5000);
+            const interval = setInterval(() => {
+                if (offset + 1 === recommended.length) {
+                    setOffset(0);
+                } else {
+                    setOffset(prevOffset => prevOffset + 1);
+                };
+            }, 3000);
 
-            // return () => clearInterval(interval);
+            return () => clearInterval(interval);
         } else {
             getRecommended().then(res => setRecommended(res));
         };

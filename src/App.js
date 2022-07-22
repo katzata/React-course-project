@@ -6,9 +6,6 @@ import Header from './components/core/Header/Header';
 import ErrorModal from './components/core/ErrorModal/ErrorModal';
 import Footer from './components/core/Footer/Footer';
 
-// import Home from './pages/Home/Home';
-// import Catalogue from './pages/Catalogue/Catalogue';
-// import NotFound from './pages/NotFound/NotFound';
 
 function App() {
 	return (

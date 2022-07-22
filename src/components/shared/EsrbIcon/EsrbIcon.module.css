@@ -1,0 +1,8 @@
+.iconContainer {
+    position: relative;
+    margin: auto auto 10px 0;
+}
+
+.iconContainer svg {
+    height: 100%;
+}

@@ -1,5 +1,6 @@
 .iconContainer {
-    height: 24px;
+    height: 2.5vw;
+    min-height: 12px;
     padding: 0 .8vw;
     display: flex;
     align-items: center;
@@ -59,39 +60,39 @@
 .xboxseriesx,
 .xbox360 {
     width: auto;
-    height: 22px;
+    height: 100%;
     transition-duration: .2s;
     cursor: pointer;
 }
 
 .gamecube {
-    height: 24px;
+    height: 110%;
 }
 
-.iconContainer a > svg:hover {
+/* .iconContainer a > svg:hover {
     transform: scale(1.25, 1.25);
-}
+} */
 
 .nintendoswitch {
-    height: 24px;
+    height: 115%;
 }
 
 .playstation3 {
-    height: 15px;
+    height: 85%;
 }
 
 .playstation4 {
-    height: 20px;
+    height: 120%;
 }
 
 .wii {
-    height: 40px;
+    height: 220%;
     margin-bottom: 1px;
     fill: #8b8b8b;
 }
 
 .wiiu {
-    height: 18px;
+    
 }
 
 /* .p3do {

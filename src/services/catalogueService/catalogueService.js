@@ -1,40 +1,49 @@
+// const urlPrefix = "https://proxy.kashchiev.com";
+const urlPrefix = "http://192.168.0.185:80";
+
+export async function getList() {
+    return requestHttpData(`${urlPrefix}/list`);
+};
+
 export async function getRecommended() {
-    // return requestHttpData("https://proxy.kashchiev.com/recommended");
+    const testQ = "max payne 2";
+    // const testQ = "maxpayne 2";
+    requestHttpData(`${urlPrefix}/details`, testQ).then(res => {
+        
+        // console.log(new Date(res[1].first_release_date));
+        // console.log(res);
+    });
+
     return requestLocalData("./local/recommended.json");
 };
 
-export async function getIcon(icon) {
-    // return requestHttpData("https://proxy.kashchiev.com/recommended");
-    return requestIcon(`./icons/${icon}.svg`);
-};
+export async function getPlatforms(query) {
+    let url = `${urlPrefix}/platforms`;
 
-export async function getPlatforms() {
-    // return requestHttpData("https://proxy.kashchiev.com/platforms");
-    return requestHttpData("http://localhost/platforms");
+    if (query) url += `/${query}`;
+
+    return requestHttpData(url);
 };
 
 export async function getSingleGame(query) {
-    return requestHttpData(`http://localhost/games/${query}`);
+    return requestHttpData(`${urlPrefix}/games/${query}`);
 };
 
 export async function getGames(query) {
-    // return requestHttpData("https://proxy.kashchiev.com/platforms");
-    return requestHttpData(`http://localhost/games/${query}`);
+    return requestHttpData(`${urlPrefix}/games/${query}`);
 };
 
 export async function getFeatured() {
-    // return requestHttpData("https://proxy.kashchiev.com/featured");
-    return requestHttpData("http://localhost/featured");
+    return requestHttpData(`${urlPrefix}/featured`);
 };
 
 export async function getFeaturedCategories() {
     // return requestHttpData("https://proxy.kashchiev.com/featuredcategories");
-    return requestHttpData("http://localhost/featuredcategories");
+    return requestHttpData(`${urlPrefix}/featuredcategories`);
 };
 
 export async function getAppDetails(appId) {
-    // return requestHttpData(`https://proxy.kashchiev.com/appdetails?appids=${appId}`);
-    return requestHttpData(`http://localhost/appdetails?appids=${appId}`);
+    return requestHttpData(`${urlPrefix}/appdetails?appids=${appId}`);
 };
 
 async function requestHttpData(url, query) {
@@ -44,9 +53,10 @@ async function requestHttpData(url, query) {
             "Content-type": "application/x-www-form-urlencoded"
         }
     };
+
     try {
         const data = await fetch(url, options)
-            // .then(res => res.json())
+            .then(res => res.text())
             .then(res => res);
 
         return data;
@@ -56,9 +66,6 @@ async function requestHttpData(url, query) {
 };
 
 async function requestLocalData(localFile) {
-    // const urlPrefix = `https://proxy.kashchiev.com${sectionQuery}`;
-    // const urlPrefix = `http://localhost${sectionQuery}/`;
-
     try {
         const data = await fetch(localFile)
             .then(res => res.json())
@@ -68,14 +75,3 @@ async function requestLocalData(localFile) {
         console.log("XLocalX", err);
     };
 };
-
-async function requestIcon(icon) {
-    try {
-        const data = await fetch(icon)
-            .then(res => console.log(res))
-            // .then(res => res);
-        // return data;
-    } catch (err) {
-        console.log("XLocalX", err);
-    };
-}
