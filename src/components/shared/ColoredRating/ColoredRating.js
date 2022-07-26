@@ -2,11 +2,9 @@ import styles from "./ColoredRating.module.css";
 
 function ColoredRating({ rating, maxRating, style }) {
     function ratingStyle() {
-        return { color: `rgb(${255 - rating * 51}, ${rating * 51}, 0)` };
-    };
+        const colorOffet = rating * (255 / Number(maxRating));
 
-    function ratingStyle() {
-        return { color: `rgb(${255 - rating * 51}, ${rating * 51}, 0)` };
+        return { color: `rgb(${255 - colorOffet}, ${colorOffet}, 0)` };
     };
 
     return (

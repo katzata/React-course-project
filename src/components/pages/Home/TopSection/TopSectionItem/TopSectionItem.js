@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import styles from "./TopSectionItem.module.css";
 
 import PlatformIcon from "../../../../shared/PlatformIcon/PlatformIcon";
@@ -6,8 +5,7 @@ import EsrbIcon from "../../../../shared/EsrbIcon/EsrbIcon";
 import ColoredRating from "../../../../shared/ColoredRating/ColoredRating";
 
 function TopSectionItem({ data, offset, index }) {
-    const { id, name, alternative_names, description_raw, platforms, esrb_rating, rating, rating_top, background_image/* , background_image_additional */ } = data;
-    // const [duration, setDuration] = useState(0);
+    const { name, slug, alternative_names, description_raw, platforms, esrb_rating, rating, rating_top, background_image/* , background_image_additional */ } = data;
 
     const style = {
         transitionDuration: `${handleDuration()}s`,
@@ -57,19 +55,8 @@ function TopSectionItem({ data, offset, index }) {
         };
     };
 
-    // useEffect(() => {
-    //     if (offset === index || (offset - 1) === index || offset === 0) {
-    //         // setDuration(.2);
-    //     } else {
-    //         console.log("x", index);
-    //         // setDuration(0);
-    //     };
-
-    //     // return () => setDuration(0);
-    // }, [offset, index])
-
     return (
-        <a href={`/games/${id}`} style={style} className={styles.topSectionItem} /* onTransitionEnd={() => setDuration(0)} */>
+        <a href={`/games/${slug}`} style={style} className={styles.topSectionItem}>
             <img src={background_image} alt={name + " cover"}/>
 
             <h3>{alternative_names.length === 0 ? name : `${name} / ` + alternative_names.join("/")}</h3>
@@ -90,9 +77,7 @@ function TopSectionItem({ data, offset, index }) {
 
             <div className={styles.platformsContainer}>
                 {sortedPlatforms().map(el => {
-                    return <a href={"/platforms/" + el.platform.slug} key={el.platform.id}>
-                        <PlatformIcon icon={el.platform.slug} />
-                    </a>
+                    return <PlatformIcon icon={el.platform.slug} key={el.platform.slug}/>;
                 })}
             </div>
         </a>

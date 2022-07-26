@@ -14,7 +14,7 @@ const routes = (
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/platforms/" element={<Platforms />} />
         <Route path="/platforms/:platform" element={<PlatformDetails />} />
-        <Route path="/games/:gameId" element={<GameDetails />} />
+        <Route path="/games/:slug" element={<GameDetails />} />
         <Route path="/deals" element={<Deals />} />
         <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<Navigate replace to="/404" />} />

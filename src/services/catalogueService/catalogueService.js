@@ -18,13 +18,10 @@ export async function getRecommended() {
     return requestLocalData("./local/recommended.json");
 };
 
-export function getDetails(itemType, id) {
-    const url = `${urlPrefix}/${itemType}/${id}`;
+export function getDetails(itemType, slug) {
+    const url = `${urlPrefix}/${itemType}/details?slug=${slug}`;
     console.log(url);
-    return requestHttpData(url).then(res => {
-        console.log(res);
-        return res;
-    });
+    return requestHttpData(url);
 };
 
 export async function getPlatforms(query) {
