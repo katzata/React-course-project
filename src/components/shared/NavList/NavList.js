@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./NavList.module.css";
 
-function NavItem({ items, currentRoute }) {
+function NavItem({ items, currentRoute, children }) {
     function handleClassName( path, classNames ) {
         let classes = styles.navAnchor;
         if (currentRoute === path) classes += ` ${styles.selected}`;
@@ -25,6 +25,7 @@ function NavItem({ items, currentRoute }) {
                             onClick={(e) => handleClick(e, prevent, fn )}
                         >
                             {title}
+                            {children}
                         </Link>
                     </li>
                 );

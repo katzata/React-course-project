@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
 import styles from "./GameDetails.module.css";
 
 import { getDetails } from "../../../services/catalogueService/catalogueService";
+import CoverImage from "../../shared/CoverImage/CoverImage";
 import ColoredRating from "../../shared/ColoredRating/ColoredRating";
 import PlatformIcon from "../../shared/PlatformIcon/PlatformIcon";
+import EsrbIcon from "../../shared/EsrbIcon/EsrbIcon";
+import BuyForm from "./BuyForm/BuyForm";
 
 function GameDetails() {
     const [details, setDetails] = useState(null);
-    const baseUrl = `https://images.igdb.com/igdb/image/upload`;
-    /* ${size}/${id}.jpg */
 
     function sortedPlatforms() {
         return details.platforms.sort((a, b) => a.slug.localeCompare(b.slug));
@@ -17,7 +17,7 @@ function GameDetails() {
 
     useEffect(() => {
         const slug = window.location.href.split("/").reverse()[0];
-        console.log(slug);
+
         getDetails("games", slug).then(res => {
             console.log(res[0]);
             setDetails(res[0]);
@@ -30,32 +30,35 @@ function GameDetails() {
                 details !== null
                 ? 
                     <article className={styles.description}>
-                        <div className={styles.coverContainer}>
-                            {/* <img src={`${baseUrl}/t_cover_big/${details.cover.image_id}.jpg`} alt={details.name + " image"} /> */}
-                            <img src={`${baseUrl}/t_720p/${details.cover.image_id}.jpg`} alt={details.name + " image"} />
-                        </div>
+                        <CoverImage 
+                            data={{
+                                baseSize: "720p",
+                                width: "46%",
+                                name: details.name,
+                                imgeId: details.cover.image_id
+                            }}
+                        />
 
                         <div className={styles.infoContainer}>
                             <h2>{details.name}</h2>
 
                             <div className={styles.ratingsContainer}>
-                                <p className={styles.gameRating}>
-                                    User rating
-                                    <ColoredRating rating={details.rating} maxRating={details.rating_top} />
-                                </p>
+                                {details.age_ratings.map(el => <EsrbIcon icon={el.rating} width={"11%"} key={el.rating}/>)}
 
                                 <p className={styles.gameRating}>
-                                    Metascore
-                                    <ColoredRating rating={details.metacritic} maxRating={"100"} />
+                                    User rating
+                                    <ColoredRating rating={details.rating} maxRating={100} />
                                 </p>
                             </div>
 
-                            <h3 className={styles.price}>$5.00</h3>
+                            <div className={styles.buyContainer}>
+                                <h3 className={styles.price}>5.00 $</h3>
+                                <BuyForm game={details.slug} platforms={sortedPlatforms()}/>
+                            </div>
 
                             <p>{details.storyline || details.summary}</p>
 
                             <div className={styles.details}>
-                                <div></div>
                                 <div className={styles.platformsSection}>
                                     <p>Available on:</p>
                                     {sortedPlatforms().map(el => <PlatformIcon icon={el.slug} key={el.slug}/>)}

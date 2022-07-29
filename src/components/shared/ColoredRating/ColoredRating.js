@@ -1,6 +1,6 @@
-import styles from "./ColoredRating.module.css";
+function ColoredRating({ rating, maxRating }) {
+    rating = Math.floor(Number(rating));
 
-function ColoredRating({ rating, maxRating, style }) {
     function ratingStyle() {
         const colorOffet = rating * (255 / Number(maxRating));
 
@@ -8,7 +8,7 @@ function ColoredRating({ rating, maxRating, style }) {
     };
 
     return (
-        <span className={styles.rating} style={ratingStyle()}>
+        <span style={ratingStyle()}>
             {rating} / {maxRating}
         </span>
     );

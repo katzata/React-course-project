@@ -32,28 +32,33 @@ export async function logoutUser() {
     };
 };
 
-export async function getCurrentUser() {
+export default function getPoint(params) {
+    
+}
+
+export async function getCurrentUser(rawResponse) {
     const user = await Parse.User.current()/* .then(res => formatResponse(res)) */;
     const formated = user && formatResponse(user);
 
     function formatResponse(res) {
         const { className, id, attributes } = res;
-        const { username, email } = attributes;
+        const { username, email, cart, collection } = attributes;
 
         return {
             className,
             id,
             username,
-            email
+            email,
+            cart,
+            collection
         };
     };
 
-    console.log(formated);
-    return formated;
+    return !rawResponse ? formated : user;
 };
 
 export function isLoged() {
-    const test = Object.keys(window.localStorage);
-    const userCheck = test.some(el => el.includes("currentUser"));
+    const lst = Object.keys(window.localStorage);
+    const userCheck = lst.some(el => el.includes("currentUser"));
     return userCheck;
 };

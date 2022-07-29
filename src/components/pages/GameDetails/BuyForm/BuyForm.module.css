@@ -1,0 +1,69 @@
+.buyForm {
+    /* min-height: 32px; */
+    /* max-width: 180px; */
+    padding-left: 3px;
+    display: flex;
+    border-radius: 3px;
+    transition-duration: .22s;
+    box-shadow: 0 1px 5px 1px rgba(255, 255, 255, .3);
+}
+
+.buyForm * {
+    transition-duration: .22s;
+    color: white;
+}
+
+.buyForm div {
+    height: 100%;
+    max-width: 160px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buyForm select {
+    margin-right: 3px;
+}
+
+.option {
+    border: none;
+    background-color: black;
+}
+
+.option:hover {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.quantity {
+    height: 0;
+    padding-left: 3px;
+    margin-right: auto;
+    font-size: 15px;
+    transform: scaleY(0);
+}
+
+.quantity input {
+    width: 63px;
+    padding: 2px 3px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 3px 1px rgba(255, 255, 255, .25);
+}
+
+.quantity input:focus {
+    box-shadow: inset 0 0 3px 1px rgba(255, 255, 255, .3);
+}
+
+.buyForm button {
+    height: 100%;
+    padding: 4px 8px;
+    border-radius: 0 3px 3px 0;
+    box-shadow: inset 0 0 20px 0px rgba(255, 255, 255, .3);
+    transition-duration: .22s;
+}
+
+.buyForm button:hover {
+    box-shadow: inset 0 0 20px 0px rgba(255, 255, 255, .35);
+}

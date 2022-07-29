@@ -1,12 +1,12 @@
-form {
+.authForm {
     width: 100%;
 }
 
-form > * {
+.authForm > * {
     display: block;
 }
 
-label {
+.authForm label {
     margin-top: 10px;
     margin-bottom: 15px;
     color: rgba(255, 255, 255, .8);;
@@ -14,13 +14,13 @@ label {
     font-weight: 400;
 }
 
-form input,
+.authForm input,
 .forgotPass,
 .submit {
     font-size: 14px;
 }
 
-form input {
+.authForm input {
     width: 100%;
     height: 40px;
     padding: 0 10px;
@@ -32,7 +32,7 @@ form input {
     transition-duration: .2s;
 }
 
-form input:focus {
+.authForm input:focus {
     border-color: rgba(255, 255, 255, .16);
 }
 
