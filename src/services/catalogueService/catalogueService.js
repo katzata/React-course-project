@@ -20,7 +20,6 @@ export async function getRecommended() {
 
 export function getDetails(itemType, slug) {
     const url = `${urlPrefix}/${itemType}/details?slug=${slug}`;
-    console.log(url);
     return requestHttpData(url);
 };
 

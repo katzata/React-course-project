@@ -1,0 +1,43 @@
+.dlcsContainer {
+    padding: .4vw;
+    display: inline;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, .05));
+    font-size: 12px;
+}
+
+.dlcsContainer h4 {
+    width: 100%;
+    padding: 4px 6px;
+    margin-bottom: 6px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.dlcs {
+    padding: 0 .4vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.dlcs a,
+.similarGames h3,
+.similarGame {
+    position: relative;
+}
+
+.dlcs a {
+    color: white;
+    font-size: 13px;
+}
+
+.dlcs a h5 {
+    width: 100%;
+    padding: 1px 2px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.dlcs a img {
+    min-width: 120px;
+    /* max-width: 250px; */
+}

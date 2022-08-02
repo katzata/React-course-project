@@ -5,7 +5,6 @@ header,
 
 .authBtn {
     color: white;
-    /* text-shadow: 0 1px 2px black; */
 }
 
 header {
@@ -17,7 +16,7 @@ header {
     font-family: 'Lato', sans-serif;
     transition-timing-function: ease-in-out;
     color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 header nav {

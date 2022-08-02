@@ -4,7 +4,7 @@ function CoverImage({ data, fit = true }) {
     const baseUrl = `https://images.igdb.com/igdb/image/upload`;
     const styles = {
         width: (data.width ? `${data.width}` : "100%"),
-        height: (data.width ? "auto" : "100%"),
+        height: (data.width ? "100%" : "auto"),
         objectFit: !fit ? "initial" : "cover"
     };
 

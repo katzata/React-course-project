@@ -1,0 +1,25 @@
+.cartControls {
+    width: 260px;
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, .15);
+    border: 1px solid white;
+    /* width: 20vw; */
+}
+
+.cartControls h4 {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.priceTotal {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.clearCart {
+    width: 10vw;
+    height: 7vw;
+    background-color: aliceblue;
+}

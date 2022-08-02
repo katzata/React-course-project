@@ -29,7 +29,7 @@ function Header() {
         guest: [],
         user: [
             { path: "/profile", title: <FontAwesomeIcon icon={faUser}/> },
-            { path: "/cart", title: <FontAwesomeIcon icon={faCartShopping}/> },
+            { path: "/cart", title: <FontAwesomeIcon icon={faCartShopping}/>, badge: true },
             { path: "#", title: "LOGOUT", fn: handleLogout }
         ],
     };

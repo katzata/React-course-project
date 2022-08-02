@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { isLoged } from '../../../services/authService/authService';
+import { isLoged } from '../../../services/userService/userService';
 
 export const logedInSlice = createSlice({
     name: "isLoged",
@@ -14,4 +14,4 @@ export const logedInSlice = createSlice({
 });
 
 export const { setLoggedState } = logedInSlice.actions;
-export default logedInSlice.reducer
+export default logedInSlice.reducer;

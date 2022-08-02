@@ -1,54 +1,66 @@
-import Parse from "../shared/parseApi";
-import { getCurrentUser } from "../authService/authService";
+import { getCurrentUser } from "../userService/userService";
 
-export async function addToCart(game, platform, quantity) {
+export async function addToCart({ name, slug, price, image_id }, platform, quantity) {
     const user = await getCurrentUser("raw");
-    const userCart = [...user.attributes.cart];
-    // const cart = [...user.attributes.cart, { game, platform, quantity }] : [{ game, platform, quantity }];
+    const userCart = Array.isArray(user.attributes.cart) ? [...user.attributes.cart] : [];
     const newCart = [];
 
-    if (Array.isArray(userCart)) {
-        console.log(userCart);
+    if (userCart.length === 0) {
+        newCart.push({ name, slug, platform, quantity, price, image_id });
+    } else {
+        let updated = false;
 
         for (const item of userCart) {
-            if (item.game === game && item.platform === platform) {
-                item.quantity = Number(item.quantity) + 1;
+            if (item.slug === slug && item.platform === platform) {
+                item.quantity += 1;
                 newCart.push(...userCart);
+                updated = true;
                 break;
             };
         };
 
-        if (newCart.length > 0) newCart.push(...userCart, { game, platform, quantity });
-    } else {
-        newCart.push({ game, platform, quantity });
+        if (!updated) newCart.push(...userCart, { name, slug, platform, quantity, price, image_id });
     };
 
-    console.log(newCart);
-    // user.set("cart", newCart);
+    user.set("cart", newCart);
 
-    // user.save()
-    //     .then((res) => {
-    //         console.log("yay");
-    //     }, (error) => {
-    //         // !!!ERROR!!!
-    //         alert('Failed to create new object, with error code: ' + error.message);
-    //     });
+    return user.save()
+        .then((res) => res.attributes.cart)
+        .catch(err => {
+            // !!!ERROR!!!
+            alert('Failed to create new object, with error code: ' + err.message);
+        });
 };
 
-export function clearCartItem() {
-    
+export async function clearCart() {
+    const user = await getCurrentUser("raw");
+    user.set("cart", []);
+
+    return user.save()
+        .then((res) => res.attributes.cart)
+        .catch(err => {
+            // !!!ERROR!!!
+            alert('Failed to create new object, with error code: ' + err.message);
+        });
 };
 
-export async function getCartContents() {
-    const user = await getCurrentUser();
-    return user.cart;
+export async function clearCartItem({ game, platform, quantity }) {
+    const user = await getCurrentUser("raw");
+    const userCart = getCart(user);
+
+    for (const item of userCart) {
+        if (item.game === game && item.platform === platform) {
+            if (item.quantity - 1 <= 0) {
+                userCart.splice(item, 1);
+            } else {
+                item.quantity -= 1;
+            }
+        }
+    }
+
+    user.set("cart", userCart);
 };
 
-export async function getCartContentsCount() {
-    const user = await getCurrentUser();
-    return user.cart.length;
-};
-
-function handleCart() {
-    
+function getCart(user) {
+    return user.attributes.cart !== undefined ? [...user.attributes.cart] : [];
 }

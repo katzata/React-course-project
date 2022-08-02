@@ -31,34 +31,3 @@ export async function logoutUser() {
         return err;
     };
 };
-
-export default function getPoint(params) {
-    
-}
-
-export async function getCurrentUser(rawResponse) {
-    const user = await Parse.User.current()/* .then(res => formatResponse(res)) */;
-    const formated = user && formatResponse(user);
-
-    function formatResponse(res) {
-        const { className, id, attributes } = res;
-        const { username, email, cart, collection } = attributes;
-
-        return {
-            className,
-            id,
-            username,
-            email,
-            cart,
-            collection
-        };
-    };
-
-    return !rawResponse ? formated : user;
-};
-
-export function isLoged() {
-    const lst = Object.keys(window.localStorage);
-    const userCheck = lst.some(el => el.includes("currentUser"));
-    return userCheck;
-};

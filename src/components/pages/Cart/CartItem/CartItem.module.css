@@ -1,0 +1,130 @@
+.cartItem {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    padding: 6px 6px 6px 55px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, .3);
+    color: #ffffff;
+    border-radius: 3px 9px 3px 9px;
+}
+
+.imageWrapper {
+    position: absolute;
+    left: 6px;
+    height: calc(100% - 12px);
+}
+
+.cartItem img {
+    border-radius: 3px 9px 3px 9px;
+    border: 2px solid rgb(46, 46, 46);
+}
+
+.infoContainer {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoContainer h5 {
+    padding: 0 0 1px 14px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(46, 46, 46), rgb(46, 46, 46), rgba(46, 46, 46, 0));
+    /* background-color: rgb(46, 46, 46); */
+}
+
+.productDetails {
+    height: calc(100% - 23px);
+    padding: 2px 10px 0 16px;
+    flex-grow: 2;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: 1fr 80px 60px 90px;
+    overflow: hidden;
+}
+
+.productDetails p {
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #b6b6b6;
+    /* border: 1px solid red; */
+}
+
+.productDetails div {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.productDetails span {
+    padding-bottom: 17px;
+    margin: auto;
+}
+
+.productPrice,
+.productQuantity {
+    text-align: center;
+}
+
+.removeItem {
+    padding: 6px 8px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 3px;
+}
+
+.removeItem svg {
+    margin-right: 6px;
+    color: rgb(145, 0, 0);
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.removeItem span {
+    padding-bottom: 0;
+    color: black;
+    font-size: 13px;
+    line-height: 11px;
+}
+
+@media screen and (max-width: 480px) {
+    .infoContainer h5 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .productDetails {
+        text-align: center;
+        gap: 1vw;
+        grid-template-columns: 1fr 60px 46px 18px;
+    }
+
+    .productDetails p {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .productDetails p span {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .removeItem {
+        padding: 0;
+    }
+
+    .removeItem svg {
+        margin-right: 0px;
+    }
+
+    .removeItem span {
+        display: none;
+    }
+}
