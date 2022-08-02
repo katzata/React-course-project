@@ -4,14 +4,9 @@ import CoverImage from "../../../shared/CoverImage/CoverImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-function CartItem({ data }) {
+function CartItem({ data, handleRemove }) {
     const { name, slug, platform, quantity, price, image_id } = data;
-    console.log(data);
-
-    function handleRemove(e, item) {
-        e.preventDefault();
-        console.log(item);
-    };
+    // console.log(data);
 
     return (
         <div className={styles.cartItem} key={name + platform}>

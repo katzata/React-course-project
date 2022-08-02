@@ -1,9 +1,12 @@
 .cartControls {
-    width: 260px;
-    padding: 4px 8px;
+    width: 300px;
+    padding: 16px;
     background-color: rgba(255, 255, 255, .15);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
-    /* width: 20vw; */
+    border-radius: 8px 3px 8px 3px;
 }
 
 .cartControls h4 {
@@ -13,13 +16,61 @@
     font-weight: 400;
 }
 
-.priceTotal {
+.checkoutForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background-color: rgb(23, 23, 23);
+    border-radius: 3px;
+}
+
+.checkoutForm select option {
+    line-height: 13px;
+    font-size: 13px;
+    background-color: rgb(23, 23, 23);
+}
+
+.subTotalContainer,
+.totalContainer {
+    padding: 2px;
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, .15);
     border-bottom: 1px solid rgba(255, 255, 255, .15);
 }
 
+.subTotalContainer {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.totalContainer {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.checkoutButtonWrapper {
+    padding-left: 60px;
+}
+
+.checkoutButton {
+    margin: auto;
+    width: 100%;
+    padding: 10px 0;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(23, 23, 23);
+}
+
 .clearCart {
-    width: 10vw;
-    height: 7vw;
-    background-color: aliceblue;
+    position: absolute;
+    bottom: 17px;
+    width: 50px;
+    height: 35px;
+    color: #ffffff;
+    background-color: rgb(145, 0, 0);
+    border: none;
 }

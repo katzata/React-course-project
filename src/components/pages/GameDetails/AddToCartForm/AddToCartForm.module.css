@@ -1,6 +1,4 @@
 .addToCartForm {
-    /* min-height: 32px; */
-    /* max-width: 180px; */
     position: relative;
     padding-left: 3px;
     display: flex;
@@ -25,6 +23,7 @@
 }
 
 .addToCartForm select {
+    height: 100%;
     margin-right: 3px;
 }
 

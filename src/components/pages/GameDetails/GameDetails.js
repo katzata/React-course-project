@@ -31,8 +31,13 @@ function GameDetails() {
         const slug = window.location.href.split("/").reverse()[0];
 
         getDetails("games", slug).then(res => {
-            res[0].price = (parseFloat(res[0].rating) / 3).toFixed(2);
-            console.log(res[0]);
+            if (res[0].rating === undefined) {
+                res[0].rating = Math.ceil(Math.random() * 100);
+            }
+
+            res[0].price = Number((parseFloat(res[0].rating) / 3).toFixed(2));
+            
+            console.log(res[0].price);
             setDetails(res[0]);
         });
     }, [isLoged]);

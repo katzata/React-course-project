@@ -44,21 +44,28 @@ export async function clearCart() {
         });
 };
 
-export async function clearCartItem({ game, platform, quantity }) {
+export async function removeItem(game) {
+    const { name, slug, platform } = game;
     const user = await getCurrentUser("raw");
     const userCart = getCart(user);
 
-    for (const item of userCart) {
-        if (item.game === game && item.platform === platform) {
-            if (item.quantity - 1 <= 0) {
-                userCart.splice(item, 1);
-            } else {
-                item.quantity -= 1;
-            }
-        }
-    }
+    for (let i = 0; i < userCart.length; i++) {
+        const item = userCart[i];
+
+        if (item.name === name && item.slug === slug && item.platform === platform) {
+            userCart.splice(i, 1);
+            break;
+        };
+    };
 
     user.set("cart", userCart);
+
+    return user.save()
+        .then((res) => res.attributes.cart)
+        .catch(err => {
+            // !!!ERROR!!!
+            alert('Failed to create new object, with error code: ' + err.message);
+        });
 };
 
 function getCart(user) {
