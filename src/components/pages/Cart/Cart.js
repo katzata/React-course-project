@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Cart.module.css";
+import { Navigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setCartState } from "../../../store/reducers/cartSlice/cartSlice";
@@ -10,15 +11,14 @@ import CartItem from "./CartItem/CartItem";
 import CartControls from "./CartControls/CartControls";
 
 function Cart() {
-    const [cart, setCart] = useState([]); 
+    const [data, setData] = useState(null);
     const isLoged = useSelector((state) => state.isLoged.value);
     const dispatchCartState = useDispatch();
-    // const shoppingCart = useSelector((state) => state.isLoged.value);
     
     function handleRemove(e, item) {
         e.preventDefault();
         removeItem(item).then(res => {
-            setCart(res);
+            setData(res);
             dispatchCartState(setCartState(res.length));
         });
     };
@@ -30,7 +30,7 @@ function Cart() {
             return clearCart().then(res => {
                 if (Array.isArray(res)) {
                     dispatchCartState(setCartState(0));
-                    setCart([]);
+                    setData(null);
 
                     return true;
                 } else {
@@ -41,20 +41,22 @@ function Cart() {
     };
 
     useEffect(() => {
-        getCurrentUser().then(res => setCart(res.cart))
+        getCurrentUser().then(res => setData({ id: res.id, cart: res.cart, address: res.address, }));
     }, []);
 
-    return (
+    const cartPage = (
         <>
             <div className={styles.controls}>
-                <CartControls cart={cart} handleClear={handleClear} />
+                <CartControls cart={data && data.cart} address={data && data.address} handleClear={handleClear} />
             </div>
 
             <section className={styles.cartSection}>
-                {cart.map(el => <CartItem data={el} handleRemove={handleRemove} key={el.slug}/>)}
+                {data && data.cart.map(el => <CartItem data={el} handleRemove={handleRemove} key={el.slug}/>)}
             </section>
         </>
     );
+
+    return isLoged ? cartPage : <Navigate to="/404" replace={true} />;
 };
 
 export default Cart;

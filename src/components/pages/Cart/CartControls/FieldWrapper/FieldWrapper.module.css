@@ -1,0 +1,17 @@
+.fieldContainer {
+    position: relative;
+}
+
+.fieldContainer p {
+    position: absolute;
+    left: 0px;
+    top: -6px;
+    padding: 0px 2px 1px;
+    background-color: rgb(23, 23, 23);
+    line-height: 12px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+}

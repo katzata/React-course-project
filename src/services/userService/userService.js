@@ -6,23 +6,46 @@ export function isLoged() {
     return userCheck;
 };
 
-export async function getCurrentUser(rawResponse) {
-    const user = await Parse.User.current()/* .then(res => formatResponse(res)) */;
+export async function getCurrentUser(raw) {
+    const user = await Parse.User.current();
     const formated = user && formatResponse(user);
 
     function formatResponse(res) {
         const { className, id, attributes } = res;
-        const { username, email, cart, collection } = attributes;
+        const { username, email, address, cart, collection } = attributes;
 
         return {
             className,
             id,
             username,
             email,
+            address,
             cart,
             collection
         };
     };
 
-    return !rawResponse ? formated : user;
+    return raw ? user : formated;
+};
+
+export async function editUser({ username, email, address }) {
+    const checkUsername = username.match(/^[a-zA-Z0-9.]+/);
+    const checkEmail = address.match(/[a-zA-Z0-9]*@[a-zA-Z0-9]*.[a-zA-Z0-9]*/);
+    const checkAddress = address.match(/[a-zа-яA-ZА-Я\s\-\d\.\,]+/);
+
+    if (!checkUsername || !checkEmail || !checkAddress) return false;
+
+    const user = await Parse.User.current();
+    console.log(user.attributes.username);
+
+    if (username !== user.attributes.username) user.set("username", username);
+    if (email !== user.attributes.email) user.set("email", email);
+    if (address !== user.attributes.address) user.set("address", address);
+
+    return user.save()
+        .then((res) => res)
+        .catch(err => {
+            // !!!ERROR!!!
+            alert('Failed to create new object, with error code: ' + err.message);
+        });
 };

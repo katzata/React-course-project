@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+// import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import styles from "./NavList.module.css";
 
-import { getCurrentUser } from "../../../services/authService/authService";
+// import { getCurrentUser } from "../../../services/authService/authService";
 
 function NavItem({ items, currentRoute}) {
     const cartTotal = useSelector((state) => state.cart.value);
-    // const [cartTotal, setCartTotal] = useState(null);
+
     function handleClassName( path, classNames ) {
         let classes = styles.navAnchor;
         if (currentRoute === path) classes += ` ${styles.selected}`;
@@ -25,7 +25,6 @@ function NavItem({ items, currentRoute}) {
             <defs>
                 <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
                     <feGaussianBlur stdDeviation="2 2" result="shadow" />
-                    
                 </filter>
             </defs>
             <circle cx="50" cy="50" r="50" />
@@ -33,12 +32,12 @@ function NavItem({ items, currentRoute}) {
         </svg>
     );
 
-    useEffect(() => {
-        // getCurrentUser().then(res => {
-        //     setCartTotal();
-        // });
-        // console.log("cartTotal", cartTotal);
-    }, [cartTotal])
+    // useEffect(() => {
+    //     // getCurrentUser().then(res => {
+    //     //     setCartTotal();
+    //     // });
+    //     // console.log("cartTotal", cartTotal);
+    // }, [cartTotal])
 
     return (
         <ul className={styles.navUl}>

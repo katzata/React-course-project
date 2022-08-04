@@ -16,14 +16,35 @@
     font-weight: 400;
 }
 
-.checkoutForm select {
+.subTotalContainer,
+.totalContainer {
+    padding: 2px;
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.subTotalContainer {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.checkoutForm select,
+.recipientField {
     width: 100%;
+    height: 36px;
     padding: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, .15);
     background-color: rgb(23, 23, 23);
-    border-radius: 3px;
+    border-radius: 0 3px 3px 3px;
+}
+
+.checkoutAcquisition {
+    margin-bottom: 40px;
 }
 
 .checkoutForm select option {
@@ -32,23 +53,16 @@
     background-color: rgb(23, 23, 23);
 }
 
-.subTotalContainer,
-.totalContainer {
-    padding: 2px;
-    margin: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, .15);
-    border-bottom: 1px solid rgba(255, 255, 255, .15);
-}
-
-.subTotalContainer {
-    font-size: 16px;
-    font-weight: 300;
+.checkoutForm div svg {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    color: rgba(255, 255, 255, .50);
+    font-size: 20px;
 }
 
 .totalContainer {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 }
 
@@ -59,18 +73,25 @@
 .checkoutButton {
     margin: auto;
     width: 100%;
-    padding: 10px 0;
+    height: 37px;
+    padding-bottom: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     text-align: center;
     background-color: rgb(23, 23, 23);
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 3px;
 }
 
 .clearCart {
     position: absolute;
     bottom: 17px;
     width: 50px;
-    height: 35px;
+    height: 37px;
     color: #ffffff;
     background-color: rgb(145, 0, 0);
-    border: none;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 3px;
 }
