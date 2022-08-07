@@ -7,15 +7,12 @@ export async function getList() {
 };
 
 export async function getRecommended() {
-    // const url = `${urlPrefix}/details`;
-    
-    // requestHttpData(url).then(res => {
-        
-        // console.log(new Date(res[1].first_release_date));
-        // console.log(res);
-    // });
-
     return requestLocalData("./local/recommended.json");
+};
+
+export function search(itemType, name) {
+    const url = `${urlPrefix}/${itemType}/search?name=${name}`;
+    return requestHttpData(url);
 };
 
 export function getDetails(itemType, slug) {
@@ -41,8 +38,7 @@ export async function getGames(query) {
 };
 
 export async function getFeatured() {
-    const url = `${urlPrefix}/featured`;
-    return requestHttpData(url);
+    return requestLocalData("./local/featured.json");
 };
 
 export async function getFeaturedCategories() {

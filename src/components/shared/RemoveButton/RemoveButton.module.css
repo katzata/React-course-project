@@ -1,0 +1,37 @@
+.removeItem {
+    padding: 6px 8px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    border-radius: 3px;
+}
+
+.removeItem svg {
+    margin-right: 6px;
+    color: rgb(145, 0, 0);
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.removeItem span {
+    padding-bottom: 0;
+    margin: auto;
+    color: black;
+    font-size: 13px;
+    line-height: 11px;
+}
+
+@media screen and (max-width: 480px) {
+    .removeItem {
+        padding: 0;
+    }
+
+    .removeItem svg {
+        margin-right: 0px;
+    }
+
+    .removeItem span {
+        display: none;
+    }
+}

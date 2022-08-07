@@ -1,0 +1,71 @@
+import styles from "./TabItem.module.css";
+import CoverImage from "../../../../shared/CoverImage/CoverImage";
+import RemoveButton from "../../../../shared/RemoveButton/RemoveButton";
+
+function TabItem({ data, listName, handleRemove }) {
+    if (listName === "purchases") data = data.attributes;
+    const priceTotal = data && data.items ? data.items.map(el => el.price).reduce((a, b) => a + b) : null;
+    const itemCount = data && data.items ? data.items.length : 0;
+
+    return (
+        <div className={styles.tabItem}>            
+            {
+                data && data.items
+                ?
+                    <>
+                        <p className={styles.itemCount}>
+                            Items:<br />
+                            {itemCount}
+                        </p>
+
+                        <div className={styles.multiCoverContainer}>
+                            {data.items.map((el, idx) => {
+                                const coverStyle = {
+                                    left: `${idx * 18}px`
+                                };
+
+                                return (
+                                    <a href={`/games/${el.slug}`} style={coverStyle} key={el.slug + listName}>
+                                        <CoverImage data={{
+                                            baseSize: "cover_big",
+                                            width: "auto",
+                                            name: el.name,
+                                            imgeId: el.image_id
+                                        }} />
+                                    </a>
+                                );
+                            })}
+                        </div>
+
+                        <div className={styles.purchaseDetails}>
+                            <p>
+                                Purchase date: {data.date.day}
+                                <span className={styles.dateDivider}>/</span>
+                                {data.date.month}
+                                <span className={styles.dateDivider}>/</span>
+                                {data.date.year}
+                            </p>
+
+                            <p className={styles.total}>Total: {priceTotal} $</p>
+                        </div>
+                    </>
+                :
+                    <a href={`/games/${data.slug}`}>
+                        <CoverImage data={{
+                            baseSize: "cover_big",
+                            width: "auto",
+                            name: data.name,
+                            imgeId: data.cover
+                        }} />
+
+                        <p>{data.name}</p>
+                        <p>{data.platform}</p>
+                    </a>
+            }
+
+            {listName === "wishlist" && <RemoveButton data={data} handleRemove={() => handleRemove(data, listName)} />}
+        </div>
+    );
+};
+
+export default TabItem;

@@ -37,7 +37,7 @@ export async function clearCart() {
     user.set("cart", []);
 
     return user.save()
-        .then((res) => res.attributes.cart)
+        .then((res) => res)
         .catch(err => {
             // !!!ERROR!!!
             alert('Failed to create new object, with error code: ' + err.message);

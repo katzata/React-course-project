@@ -1,0 +1,23 @@
+.featuredSection {
+    width: 84%;
+    height: 34vw;
+    min-height: 320px;
+    margin: auto;
+    display: flex;
+    border: 1px solid red;
+}
+
+.featuredItemsContainer {
+    flex-grow: 2;
+}
+
+.buttonContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.buttonContainer button {
+    margin-bottom: 4px;
+}

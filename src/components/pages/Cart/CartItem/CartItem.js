@@ -1,8 +1,7 @@
 import styles from "./CartItem.module.css";
 
 import CoverImage from "../../../shared/CoverImage/CoverImage";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import RemoveButton from "../../../shared/RemoveButton/RemoveButton";
 
 function CartItem({ data, handleRemove }) {
     const { name, slug, platform, quantity, price, image_id } = data;
@@ -38,10 +37,7 @@ function CartItem({ data, handleRemove }) {
                         <span>{quantity}</span>
                     </div>
 
-                    <button className={styles.removeItem} onClick={(e) => handleRemove(e, data)}>
-                        <FontAwesomeIcon icon={faCircleXmark} />
-                        <span>Remove</span>
-                    </button>
+                    <RemoveButton data={data} handleRemove={handleRemove} />
                 </div>
             </div>
         </div>

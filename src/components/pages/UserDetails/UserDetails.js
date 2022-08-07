@@ -5,18 +5,19 @@ import { useSelector } from "react-redux";
 import { getCurrentUser, editUser } from "../../../services/userService/userService";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faImagePortrait } from "@fortawesome/free-solid-svg-icons";
+import { faImagePortrait, faFileArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 import TabbedSection from "./TabbedSection/TabbedSection";
 
 function UserDetails() {
     const [editing, setEditing] = useState(false);
     const [blocked, setBlocked] = useState(false);
-    const [username, setUsername] = useState("");
-    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState(null);
+    const [email, setEmail] = useState(null);
     const [address, setAddress] = useState("N/A");
-    const [wishlist, setWishlist] = useState(null);
-    const [collection, setCollection] = useState(null);
+    const [wishlist, setWishlist] = useState([]);
+    const [collection, setCollection] = useState([]);
+    const [purchaseHistory, setPurchaseHistory] = useState([]);
     const isLoged = useSelector((state) => state.isLoged.value);
     const navigate = useNavigate();
 
@@ -52,9 +53,7 @@ function UserDetails() {
                 setEditing(false);
                 setUsername(res.attributes.username);
                 setEmail(res.attributes.email);
-                setAddress(res.attributes.address);
-                setWishlist(res.attributes.wishlist);
-                setCollection(res.attributes.collection);
+                if (res.attributes.address) setAddress(res.attributes.address);
             } else {
                 // !!!ERROR!!!
                 console.log("identical data");
@@ -65,49 +64,61 @@ function UserDetails() {
     useEffect(() => {
         if (!isLoged) navigate("./404", { replace: true });
 
-        getCurrentUser("raw").then(res => {
-            console.log(res);
-            setUsername(res.attributes.username);
-            setEmail(res.attributes.email);
-            setAddress(res.attributes.address);
-            setWishlist(res.attributes.wishlist);
-            setCollection(res.attributes.collection);
+        getCurrentUser().then(userRes => {
+            if (userRes) {
+                setUsername(userRes.username);
+                setEmail(userRes.email);
+                setWishlist(userRes.wishlist);
+                setCollection(userRes.collection);
+                setPurchaseHistory(userRes.purchases);
+                
+                if (userRes.address) setAddress(userRes.address);
+            };
         });
     }, [isLoged, navigate, blocked]);
 
     return (
         <section className={styles.userDetailsSection}>
-            <div className={styles.userDetailsInternal}>
-                <div className={styles.userDetailsTop}>
-                    <form className={styles.userDetailsForm} onSubmit={handleSubmit}>
-                        <fieldset>
-                            <label>
-                                <p>Username</p>
-                                <input type="text" style={inputStyles} className={styles.formInput} onChange={(e) => setUsername(e.target.value)} value={username} disabled={!editing} />
-                            </label>
+        {
+            username && email
+            ?
+                (
+                    <div className={styles.userDetailsInternal}>
+                        <div className={styles.userDetailsTop}>
+                            <form className={styles.userDetailsForm} onSubmit={handleSubmit}>
+                                <fieldset>
+                                    <label>
+                                        <p>Username</p>
+                                        <input type="text" style={inputStyles} className={styles.formInput} onChange={(e) => setUsername(e.target.value)} value={username} disabled={!editing} />
+                                    </label>
 
-                            <label>
-                                <p>Email</p>
-                                <input type="text" style={inputStyles} className={styles.formInput} onChange={(e) => setEmail(e.target.value)} value={email} disabled={!editing} />
-                            </label>
+                                    <label>
+                                        <p>Email</p>
+                                        <input type="text" style={inputStyles} className={styles.formInput} onChange={(e) => setEmail(e.target.value)} value={email} disabled={!editing} />
+                                    </label>
 
-                            <label>
-                                <p>Delivery address</p>
-                                <input type="text" style={{ ...inputStyles, ...addressStyles }} className={styles.formInput} onChange={(e) => setAddress(e.target.value)} value={address} disabled={!editing} />
-                            </label>
-                        </fieldset>
+                                    <label>
+                                        <p>Delivery address</p>
+                                        <input type="text" style={{ ...inputStyles, ...addressStyles }} className={styles.formInput} onChange={(e) => setAddress(e.target.value)} value={address} disabled={!editing} />
+                                    </label>
+                                </fieldset>
 
-                        <button style={saveButtonStyles} className={styles.saveButton}>Save</button>
-                        <button className={styles.editButton} type="button" onClick={toggleEditing}>{!editing ? "Edit info" : "Cancel edit"}</button>
-                    </form>
+                                <button style={saveButtonStyles} className={styles.saveButton}>Save</button>
+                                <button className={styles.editButton} type="button" onClick={toggleEditing}>{!editing ? "Edit info" : "Cancel edit"}</button>
+                            </form>
 
-                    <div className={styles.userDetailsImgWrapper}>
-                        <FontAwesomeIcon icon={faImagePortrait}/>{/* <img src="" alt="alt" /> */}
+                            <div className={styles.userDetailsImgWrapper}>
+                                {editing && <FontAwesomeIcon className={styles.uploadImageIcon} icon={faFileArrowUp} />}
+                                <FontAwesomeIcon className={styles.defaultImage} icon={faImagePortrait} />
+                            </div>
+                        </div>
+
+                        <TabbedSection data={{ collection, wishlist, purchases: purchaseHistory }} />
                     </div>
-                </div>
-
-                <TabbedSection data={{ collection, wishlist }} />
-            </div>
+                )
+                :
+                <p>Loading...</p>
+            }
         </section>
     );
 };

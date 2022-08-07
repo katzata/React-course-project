@@ -15,7 +15,9 @@
 
 .dlcs {
     padding: 0 .4vw;
+    margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
     gap: 1vw;
 }
 
@@ -26,6 +28,7 @@
 }
 
 .dlcs a {
+    width: 48%;
     color: white;
     font-size: 13px;
 }

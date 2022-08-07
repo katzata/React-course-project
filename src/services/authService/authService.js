@@ -1,17 +1,23 @@
 import Parse from "../shared/parseApi";
 
-export function registerUser(username, email, password) {
+export async function registerUser(username, email, password) {
     let user = new Parse.User();
 
     user.set("username", username);
     user.set("email", email);
     user.set("password", password);
 
-    user.save()
-        .then((res) => {
-            console.log(res);
+    const collection = await initCollection();
+    user.set("collection", collection.id);
+
+    return user.save()
+        .then(res => {
+            return res ? loginUser(username, password) : null;
         })
-        .catch(err => console.log(err));
+        .catch(err => {
+            // !!!ERROR!!!
+            console.log(err);
+        });
 };
 
 export async function loginUser(username, password) {
@@ -30,4 +36,16 @@ export async function logoutUser() {
         console.log(err);
         return err;
     };
+};
+
+async function initCollection() {
+    const Collections = Parse.Object.extend("Collections");
+    const collection = new Collections();
+
+    return collection.save()
+        .then(res => res)
+        .catch(err => {
+            // !!!ERROR!!!
+            console.log(err);
+        });
 };

@@ -20,7 +20,7 @@ function DlcSection({ name, dlc }) {
 
                             <CoverImage data={{
                                 baseSize: "screenshot_med",
-                                width: "14vw",
+                                width: "100%",
                                 name: el.name,
                                 imgeId: el.cover && el.cover.image_id
                             }} />

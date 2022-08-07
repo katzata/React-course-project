@@ -22,11 +22,7 @@ function NavItem({ items, currentRoute}) {
 
     const cartBadge = (
         <svg className={styles.cartBadge} viewBox="0 0 100 100" fill="red" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feGaussianBlur stdDeviation="2 2" result="shadow" />
-                </filter>
-            </defs>
+            <defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2 2" result="shadow" /></filter></defs>
             <circle cx="50" cy="50" r="50" />
             <text x="47%" y="75%" textAnchor="middle" fontSize="70px" fill="white" filter="url(#shadow)">{cartTotal}</text>
         </svg>
@@ -50,7 +46,7 @@ function NavItem({ items, currentRoute}) {
                             onClick={(e) => handleClick(e, prevent, fn )}
                         >
                             {title}
-                            {badge ? cartBadge : null}
+                            {badge && cartTotal > 0 ? cartBadge : null}
                         </Link>
                     </li>
                 );

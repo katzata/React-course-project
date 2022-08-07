@@ -1,34 +1,40 @@
-import { useSearchParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+// import { useSearchParams } from "react-router-dom";
 import styles from "./Catalogue.module.css";
-// import { getGames } from "../../../services/catalogueService/catalogueService";
-import { useEffect } from "react";
+import { getFeatured } from "../../../services/catalogueService/catalogueService";
 
-// import FeaturedItem from "../../shared/FeaturedItem/FeaturedItem";
-import CatalogueMainSection from "./CatalogueMainSection/CatalogueMainSection"; 
+import FeaturedSection from "./FeaturedSection/FeaturedSection";
+import SearchSection from "./SearchSection/SearchSection";
+// import CatalogueMainSection from "./CatalogueMainSection/CatalogueMainSection"; 
 
 function Catalogue() {
-    let [searchParams] = useSearchParams();
+    const [featured, setFeatured] = useState(null);
+    // let [searchParams] = useSearchParams();
 
-    async function checkQuery() {
-        const platform = await searchParams.get("platform");
-
-        console.log(platform);
-        // const list = await getGames();
-    };
+    // async function checkQuery() {
+    //     const platform = await searchParams.get("platform");
+    //     console.log(platform);
+    //     // const list = await getGames();
+    // };
 
     useEffect(() => {
-        checkQuery();
-    })
+        getFeatured().then(res => {
+            setFeatured(res)
+        });
+    }, [])
 
     return (
         <section className={styles.catalogue}>
-            <div className={styles.catalogueTopSection}></div>
-            <CatalogueMainSection content={""} />
-            {/* {mockup.map(el => {
-                return (
-                    <FeaturedItem data={el} key={el.id} />
-                );
-            })} */}
+            {
+                featured
+                ?
+                    <>
+                        <FeaturedSection data={featured} />
+                        <SearchSection />
+                    </>
+                :
+                    <p>Loading...</p>
+            }
         </section>
     );
 };

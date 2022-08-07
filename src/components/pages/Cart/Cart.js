@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Cart.module.css";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setCartState } from "../../../store/reducers/cartSlice/cartSlice";
@@ -13,24 +13,24 @@ import CartControls from "./CartControls/CartControls";
 function Cart() {
     const [data, setData] = useState(null);
     const isLoged = useSelector((state) => state.isLoged.value);
+    const navigate = useNavigate();
     const dispatchCartState = useDispatch();
     
-    function handleRemove(e, item) {
-        e.preventDefault();
+    function handleRemove(item) {
         removeItem(item).then(res => {
             setData(res);
             dispatchCartState(setCartState(res.length));
         });
     };
 
-    function handleClear() {
-        let confirmed = window.confirm("Are you sure about this?");
+    function handleClear(status) {
+        let confirmed = status ? status : window.confirm("Are you sure about this?");
 
         if (confirmed) {
             return clearCart().then(res => {
-                if (Array.isArray(res)) {
+                if (res || Array.isArray(res)) {
                     dispatchCartState(setCartState(0));
-                    setData(null);
+                    setData({ id: res.id, cart: res.attributes.cart, address: res.attributes.address || "" });
 
                     return true;
                 } else {
@@ -41,22 +41,32 @@ function Cart() {
     };
 
     useEffect(() => {
-        getCurrentUser().then(res => setData({ id: res.id, cart: res.cart, address: res.address, }));
-    }, []);
+        if (!isLoged) navigate("/404", { replace: true });
 
-    const cartPage = (
+        getCurrentUser().then(res => {
+            if (res) setData({ id: res.id, cart: res.cart, address: res.address || "" });
+        });
+    }, [isLoged, navigate]);
+
+    return (
         <>
-            <div className={styles.controls}>
-                <CartControls cart={data && data.cart} address={data && data.address} handleClear={handleClear} />
-            </div>
+            {
+                data
+                ?    
+                    <>
+                        <div className={styles.controls}>
+                            <CartControls cart={data && data.cart} address={data.address} handleClear={handleClear} />
+                        </div>
 
-            <section className={styles.cartSection}>
-                {data && data.cart.map(el => <CartItem data={el} handleRemove={handleRemove} key={el.slug}/>)}
-            </section>
+                        <section className={styles.cartSection}>
+                            {data && data.cart && data.cart.map(el => <CartItem data={el} handleRemove={handleRemove} key={el.slug}/>)}
+                        </section>
+                    </>
+                :
+                    <p>Loading...</p>
+            }
         </>
     );
-
-    return isLoged ? cartPage : <Navigate to="/404" replace={true} />;
 };
 
 export default Cart;

@@ -1,0 +1,2546 @@
+{
+    "classics": {
+        "title": "Classic picks",
+        "list": [
+            {
+                "id": 8072,
+                "age_ratings": [
+                    {
+                        "id": 77689,
+                        "category": 1,
+                        "content_descriptions": [
+                            79843,
+                            79844,
+                            79845,
+                            79847
+                        ],
+                        "rating": 10,
+                        "checksum": "67faa30c-eb41-6309-99e9-a013b1223768"
+                    }
+                ],
+                "artworks": [
+                    {
+                        "id": 9011,
+                        "image_id": "ar6yb",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar6yb.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 104004,
+                    "animated": false,
+                    "image_id": "co2890"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 2,
+                        "name": "Point-and-click",
+                        "slug": "point-and-click"
+                    },
+                    {
+                        "id": 9,
+                        "name": "Puzzle",
+                        "slug": "puzzle"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    }
+                ],
+                "involved_companies": [
+                    {
+                        "id": 19099,
+                        "company": {
+                            "id": 606,
+                            "logo": 705,
+                            "name": "DreamForge Intertainment",
+                            "slug": "dreamforge-intertainment"
+                        },
+                        "developer": true,
+                        "publisher": false,
+                        "supporting": false
+                    },
+                    {
+                        "id": 19100,
+                        "company": {
+                            "id": 704,
+                            "name": "ASC Games",
+                            "slug": "asc-games"
+                        },
+                        "developer": false,
+                        "publisher": true,
+                        "supporting": false
+                    },
+                    {
+                        "id": 83298,
+                        "company": {
+                            "id": 4501,
+                            "logo": 3832,
+                            "name": "DotEmu",
+                            "slug": "dotemu",
+                            "websites": [
+                                {
+                                    "id": 1898,
+                                    "url": "http://www.dotemu.com/"
+                                }
+                            ]
+                        },
+                        "developer": false,
+                        "publisher": true,
+                        "supporting": false
+                    }
+                ],
+                "name": "Sanitarium",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 34,
+                        "name": "Android",
+                        "slug": "android",
+                        "websites": [
+                            {
+                                "id": 7,
+                                "url": "http://www.android.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 39,
+                        "name": "iOS",
+                        "slug": "ios"
+                    }
+                ],
+                "rating": 85.26053250592989,
+                "screenshots": [
+                    {
+                        "id": 97077,
+                        "height": 480,
+                        "image_id": "bwvvp31iuzoy4gka6lgp"
+                    },
+                    {
+                        "id": 97078,
+                        "height": 480,
+                        "image_id": "hk6hn3g1uwkxmhv4goxl"
+                    },
+                    {
+                        "id": 97079,
+                        "height": 480,
+                        "image_id": "yggczquychdybldhvsyl"
+                    },
+                    {
+                        "id": 97080,
+                        "height": 720,
+                        "image_id": "sq5wdarmyfonyat0bxii"
+                    },
+                    {
+                        "id": 97081,
+                        "height": 720,
+                        "image_id": "lgfrbhfaxqluf8rhxxma"
+                    },
+                    {
+                        "id": 258222,
+                        "height": 768,
+                        "image_id": "sc5j8u"
+                    },
+                    {
+                        "id": 258223,
+                        "height": 720,
+                        "image_id": "sc5j8v"
+                    },
+                    {
+                        "id": 258224,
+                        "height": 480,
+                        "image_id": "sc5j8w"
+                    },
+                    {
+                        "id": 258225,
+                        "height": 480,
+                        "image_id": "sc5j8x"
+                    },
+                    {
+                        "id": 258226,
+                        "height": 720,
+                        "image_id": "sc5j8y"
+                    }
+                ],
+                "slug": "sanitarium",
+                "summary": "A psychological horror point-and-click adventure game in which a man wakes up in a near-deserted sanitarium after a car crash without any recollection of who he is or how he got there.",
+                "total_rating": 88.63026625296494,
+                "total_rating_count": 58
+            },
+            {
+                "id": 16605,
+                "age_ratings": [
+                    {
+                        "id": 13108,
+                        "category": 1,
+                        "content_descriptions": [
+                            17179,
+                            17180,
+                            17181
+                        ],
+                        "rating": 11,
+                        "synopsis": "This is a third-person shooter in which players assume the role of Marcus Feniz, a human soldier involved in a war against an alien invasion. Players use machine guns, shotguns, sniper rifles, turrets, and grenades to kill aliens and soldiers in frenetic combat. Battles are highlighted by realistic gunfire, screams of pain, and large splashes of blood. Some weapons/attacks result in decapitation or dismemberment that leaves bloodstains and body parts on the ground. Some finishing moves depict intense acts of violence: players can use a chainsaw-like weapon to slice enemies' necks or bodies; players can stomp on enemies' heads until they break apart. The words “sh*t” and “a*shole” can be heard in the dialogue.",
+                        "checksum": "2595d424-9937-7fb2-1ec6-905085f02ec7"
+                    },
+                    {
+                        "id": 33825,
+                        "category": 2,
+                        "content_descriptions": [
+                            34567,
+                            34568
+                        ],
+                        "rating": 5,
+                        "synopsis": "The content of this game is suitable for persons aged 18 years and over only. It contains: Extreme violence - Realistic looking violence - This game allows the player to interact with other players ONLINE",
+                        "checksum": "16c936e5-b03b-77a0-11f1-0f9090df8ed0"
+                    }
+                ],
+                "aggregated_rating": 77.7222222222222,
+                "artworks": [
+                    {
+                        "id": 10521,
+                        "image_id": "ar849",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar849.jpg"
+                    }
+                ],
+                "category": 9,
+                "cover": {
+                    "id": 98730,
+                    "animated": false,
+                    "image_id": "co246i"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Co-operative",
+                        "slug": "co-operative"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Split screen",
+                        "slug": "split-screen"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    }
+                ],
+                "name": "Gears of War: Ultimate Edition",
+                "parent_game": 547,
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "name": "Xbox One",
+                        "slug": "xboxone",
+                        "websites": [
+                            {
+                                "id": 12,
+                                "url": "http://www.xbox.com/en-US/xbox-one"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 80.83596533411381,
+                "screenshots": [
+                    {
+                        "id": 19816,
+                        "height": 1080,
+                        "image_id": "nvxwf9t6bt5fm2mdelpk"
+                    },
+                    {
+                        "id": 19817,
+                        "height": 1080,
+                        "image_id": "ipzzs6rg6oztr5lkokvu"
+                    },
+                    {
+                        "id": 19818,
+                        "height": 1080,
+                        "image_id": "vgsbnlbtyzyvczeswlzp"
+                    },
+                    {
+                        "id": 19819,
+                        "height": 1080,
+                        "image_id": "ajwwtom7qevio2yi27jf"
+                    },
+                    {
+                        "id": 19820,
+                        "height": 1080,
+                        "image_id": "xuair2eekfefvft8fvhc"
+                    }
+                ],
+                "slug": "gears-of-war-ultimate-edition--1",
+                "storyline": "The story of “Gears of War” thrusts gamers into a deep and harrowing battle for survival against the Locust Horde, a nightmarish race of creatures that surfaced from the bowels of the planet.",
+                "summary": "Gears of War: Ultimate Edition is a remaster of the original Gears of War game developed by The Coalition and Splash Damage and published by Microsoft Studios for Microsoft's Xbox One console and Windows 10 operating system.\n\nThe game features remastered graphics, textures and sound, while running at native 1080p 30 frames per second in the campaign and 1080p 60 frames per second in multiplayer, and includes the missions and maps from the PC version of the original Gears of War that were absent from the Xbox 360 version of the game.\n\nMore features have been added that include mechanics from newer Gears of War games, such as spotting and switching weapons while roadie running, among others.\nGears of War: Ultimate Edition also supports dedicated servers for both online matchmaking and private matches.",
+                "themes": [
+                    {
+                        "id": 1,
+                        "created_at": 1322524800,
+                        "name": "Action",
+                        "slug": "action",
+                        "updated_at": 1323216000,
+                        "url": "https://www.igdb.com/themes/action",
+                        "checksum": "c177e0ff-f29a-2a2e-fce5-f945258ceb59"
+                    },
+                    {
+                        "id": 18,
+                        "created_at": 1322524800,
+                        "name": "Science fiction",
+                        "slug": "science-fiction",
+                        "updated_at": 1323216000,
+                        "url": "https://www.igdb.com/themes/science-fiction",
+                        "checksum": "fffad274-fee4-e195-eb78-72b2a35d643e"
+                    },
+                    {
+                        "id": 19,
+                        "created_at": 1322524800,
+                        "name": "Horror",
+                        "slug": "horror",
+                        "updated_at": 1323216000,
+                        "url": "https://www.igdb.com/themes/horror",
+                        "checksum": "28762ccf-724f-56cf-3784-dbf16dfcf174"
+                    }
+                ],
+                "total_rating": 79.279093778168
+            },
+            {
+                "id": 2950,
+                "age_ratings": [
+                    {
+                        "id": 34490,
+                        "category": 1,
+                        "content_descriptions": [
+                            35312,
+                            35313
+                        ],
+                        "rating": 10,
+                        "checksum": "be81122e-644a-e815-e1ac-b05469466054"
+                    }
+                ],
+                "aggregated_rating": 50.0,
+                "artworks": [
+                    {
+                        "id": 10036,
+                        "image_id": "ar7qs",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar7qs.jpg"
+                    }
+                ],
+                "category": 9,
+                "cover": {
+                    "id": 90645,
+                    "animated": false,
+                    "image_id": "co1xxx"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Co-operative",
+                        "slug": "co-operative"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 11,
+                        "name": "Real Time Strategy (RTS)",
+                        "slug": "real-time-strategy-rts"
+                    },
+                    {
+                        "id": 15,
+                        "name": "Strategy",
+                        "slug": "strategy"
+                    }
+                ],
+                "name": "Age of Empires II: HD Edition",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 84.98347440309911,
+                "screenshots": [
+                    {
+                        "id": 15400,
+                        "height": 1080,
+                        "image_id": "zbmmqdnr9d2f3jqbieob"
+                    },
+                    {
+                        "id": 15401,
+                        "height": 1080,
+                        "image_id": "dufdoaxiqalg7tx1mniy"
+                    },
+                    {
+                        "id": 15402,
+                        "height": 1080,
+                        "image_id": "c7fo88nnzgnnipwy2r0g"
+                    },
+                    {
+                        "id": 15403,
+                        "height": 1080,
+                        "image_id": "qwbjsng0updu0xkeqtm9"
+                    },
+                    {
+                        "id": 15404,
+                        "height": 1080,
+                        "image_id": "w4opnyjblvxcr2mm8tsf"
+                    }
+                ],
+                "slug": "age-of-empires-ii-hd-edition",
+                "storyline": "The player has control over a society and guides them through four different time periods or \"ages\". The game begins in the Dark Age, where very few buildings and units are available. After a short time when requirements are met, the user gains the ability to advance their civilization beginning with the Feudal Age, where more upgrades, buildings, and units become available. The next age is the Castle Age, in which the powerful Castle may be built, and used to produce powerful units including the unique unit of each civilization. Finally, the user can reach the Imperial Age, which is reminiscent of the early years of the Renaissance. Once the user has reached the Imperial Age, they gain access to all the upgrades, units, and buildings that may be built and researched for their specific civilization. \n \nThe player directly controls Villagers, which are the most important economic unit in the game. The player has the power to order them to move or attack (all units except for Trade Carts, Transport Ships and Trade Cogs), construct new buildings, gather necessary resources (Villager units), and perform a range of other tasks, such as repair damaged buildings or garrison inside Castle or Town Center for safety.",
+                "summary": "In Age of Empires II: HD Edition, fans of the original game and new players alike will fall in love with the classic Age of Empires II experience. Explore all the original single player campaigns from both Age of Kings and The Conquerors expansion, choose from 18 civilizations spanning over a thousand years of history, and head online to challenge other Steam players in your quest for world domination throughout the ages. Originally developed by Ensemble Studios and reimagined in high definition by Hidden Path Entertainment, Microsoft Studios is proud to bring Age of Empires II: HD Edition.",
+                "total_rating": 67.49173720154955
+            },
+            {
+                "id": 378,
+                "age_ratings": [
+                    {
+                        "id": 47730,
+                        "category": 2,
+                        "content_descriptions": [
+                            52498,
+                            52499
+                        ],
+                        "rating": 5,
+                        "checksum": "ede7db63-7aca-df90-49ec-301880e6b5c3"
+                    },
+                    {
+                        "id": 48434,
+                        "category": 1,
+                        "content_descriptions": [
+                            53887,
+                            53888,
+                            53889
+                        ],
+                        "rating": 11,
+                        "checksum": "9975b217-a975-8b40-c84b-9687bb76c30c"
+                    },
+                    {
+                        "id": 69011,
+                        "category": 3,
+                        "content_descriptions": [
+                            70678
+                        ],
+                        "rating": 16,
+                        "checksum": "368cb72c-74e5-452c-14ec-e953db8b36c9"
+                    }
+                ],
+                "aggregated_rating": 84.7647058823529,
+                "artworks": [
+                    {
+                        "id": 4566,
+                        "image_id": "adhwgdqtsvm5xvoqmnps",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/adhwgdqtsvm5xvoqmnps.jpg"
+                    },
+                    {
+                        "id": 4567,
+                        "image_id": "digs56akzygc3f0zu8gl",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/digs56akzygc3f0zu8gl.jpg"
+                    },
+                    {
+                        "id": 4568,
+                        "image_id": "fc5yhw5tcflhg8kxkq7n",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/fc5yhw5tcflhg8kxkq7n.jpg"
+                    },
+                    {
+                        "id": 4569,
+                        "image_id": "ui6wbpvzkltkvgrze6hh",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ui6wbpvzkltkvgrze6hh.jpg"
+                    },
+                    {
+                        "id": 4570,
+                        "image_id": "ib0yjtngnamqtueel9af",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ib0yjtngnamqtueel9af.jpg"
+                    },
+                    {
+                        "id": 4571,
+                        "image_id": "p8jx0bfadijgzuxfkhij",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/p8jx0bfadijgzuxfkhij.jpg"
+                    },
+                    {
+                        "id": 80795,
+                        "image_id": "ar1qcb",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar1qcb.jpg"
+                    },
+                    {
+                        "id": 80796,
+                        "image_id": "ar1qcc",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar1qcc.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 120593,
+                    "animated": false,
+                    "image_id": "co2l1t"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    },
+                    {
+                        "id": 15,
+                        "name": "Strategy",
+                        "slug": "strategy"
+                    },
+                    {
+                        "id": 25,
+                        "name": "Hack and slash/Beat 'em up",
+                        "slug": "hack-and-slash-beat-em-up"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    }
+                ],
+                "name": "Metal Gear Rising: Revengeance",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "name": "PlayStation 3",
+                        "slug": "ps3",
+                        "websites": [
+                            {
+                                "id": 3,
+                                "url": "http://us.playstation.com/ps3/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 12,
+                        "name": "Xbox 360",
+                        "slug": "xbox360",
+                        "websites": [
+                            {
+                                "id": 4,
+                                "url": "http://www.xbox.com/en-US/xbox-360"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "name": "Mac",
+                        "slug": "mac",
+                        "websites": [
+                            {
+                                "id": 5,
+                                "url": "https://www.apple.com/osx/"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 79.04250884129121,
+                "release_dates": [
+                    {
+                        "id": 14446,
+                        "human": "Feb 19, 2013",
+                        "platform": {
+                            "id": 9,
+                            "name": "PlayStation 3",
+                            "slug": "ps3",
+                            "websites": [
+                                {
+                                    "id": 3,
+                                    "url": "http://us.playstation.com/ps3/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 14447,
+                        "human": "Jan 09, 2014",
+                        "platform": {
+                            "id": 6,
+                            "name": "PC (Microsoft Windows)",
+                            "slug": "win",
+                            "websites": [
+                                {
+                                    "id": 2,
+                                    "url": "http://windows.microsoft.com/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 14448,
+                        "human": "Feb 19, 2013",
+                        "platform": {
+                            "id": 12,
+                            "name": "Xbox 360",
+                            "slug": "xbox360",
+                            "websites": [
+                                {
+                                    "id": 4,
+                                    "url": "http://www.xbox.com/en-US/xbox-360"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 108019,
+                        "human": "Feb 21, 2013",
+                        "platform": {
+                            "id": 9,
+                            "name": "PlayStation 3",
+                            "slug": "ps3",
+                            "websites": [
+                                {
+                                    "id": 3,
+                                    "url": "http://us.playstation.com/ps3/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 108020,
+                        "human": "Feb 19, 2013",
+                        "platform": {
+                            "id": 9,
+                            "name": "PlayStation 3",
+                            "slug": "ps3",
+                            "websites": [
+                                {
+                                    "id": 3,
+                                    "url": "http://us.playstation.com/ps3/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 108021,
+                        "human": "Feb 19, 2013",
+                        "platform": {
+                            "id": 9,
+                            "name": "PlayStation 3",
+                            "slug": "ps3",
+                            "websites": [
+                                {
+                                    "id": 3,
+                                    "url": "http://us.playstation.com/ps3/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 257136,
+                        "human": "Jan 09, 2014",
+                        "platform": {
+                            "id": 6,
+                            "name": "PC (Microsoft Windows)",
+                            "slug": "win",
+                            "websites": [
+                                {
+                                    "id": 2,
+                                    "url": "http://windows.microsoft.com/"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": 374000,
+                        "human": "Sep 26, 2014",
+                        "platform": {
+                            "id": 14,
+                            "name": "Mac",
+                            "slug": "mac",
+                            "websites": [
+                                {
+                                    "id": 5,
+                                    "url": "https://www.apple.com/osx/"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "screenshots": [
+                    {
+                        "id": 1889,
+                        "height": 675,
+                        "image_id": "nyzak3efjolrqz4twy0p"
+                    },
+                    {
+                        "id": 1890,
+                        "height": 675,
+                        "image_id": "dhjxwdqqkcrodmogdzuw"
+                    },
+                    {
+                        "id": 1891,
+                        "height": 675,
+                        "image_id": "rt4xktzs1l6aieikfa2h"
+                    },
+                    {
+                        "id": 1892,
+                        "height": 675,
+                        "image_id": "wggh9gnigj6x0bzvpgvq"
+                    },
+                    {
+                        "id": 1893,
+                        "height": 675,
+                        "image_id": "nknh9nxp4rotopyjan5r"
+                    }
+                ],
+                "slug": "metal-gear-rising-revengeance",
+                "storyline": "Raiden is a cyborg armed with a high-frequency blade, powerful enough to cut giant unmanned combat gears in two with a single slice. He is contracted for VIP protection, military training and other duties by PMSCs (Private Military and Security Companies) in a developing country, until he finds himself face to face with a mysterious force commanding a multitude of cyborgs like him…",
+                "summary": "Developed by Kojima Productions and PlatinumGames, Metal Gear Rising: Revengeance takes the renowned Metal Gear franchise into exciting new territory with an all-new action experience. The game seamlessly melds pure action and epic story-telling that surrounds Raiden – a child soldier transformed into a half-human, half-cyborg ninja who uses his High Frequency katana blade to cut through any thing that stands in his vengeful path!\n\nA huge success on both Xbox 360 and PlayStation3, Metal Gear Rising: Revengeance comes to PC with all the famed moves and action running within a beautifully-realized HD environment.\n\nThis new PC version includes all three DLC missions: Blade Wolf, Jetstream, and VR Missions, in addition to all customized body upgrades for Raiden, including: White Armor, Inferno Armor, Commando Armor, Raiden’s MGS4 body, and the ever-popular Cyborg Ninja.\n\n\"CUTSCENES\" option added to the Main Menu. Play any and all cutscenes.\n\n\"CODECS\" option added to the Main Menu. Play all and any codec conversation scenes.\n\nMenu option added to the CHAPTER Menu enabling user to play only the Boss battles.\n\n\"GRAPHIC OPTIONS\" added to the OPTIONS Menu. Modify resolution, anti-aliasing, etc.\nThere is an option reading \"ZANGEKI\" that will modify the amount of cuts you can make.",
+                "total_rating": 81.90360736182205,
+                "total_rating_count": 385
+            },
+            {
+                "id": 22,
+                "age_ratings": [
+                    {
+                        "id": 68366,
+                        "category": 1,
+                        "content_descriptions": [
+                            70069,
+                            70070
+                        ],
+                        "rating": 11,
+                        "checksum": "0393364e-30fc-fe61-9aa7-1c2d8c48487f"
+                    }
+                ],
+                "artworks": [
+                    {
+                        "id": 9039,
+                        "image_id": "ar6z3",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar6z3.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 201260,
+                    "animated": false,
+                    "image_id": "co4bak"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Co-operative",
+                        "slug": "co-operative"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Role-playing (RPG)",
+                        "slug": "role-playing-rpg"
+                    }
+                ],
+                "name": "System Shock 2",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "name": "Mac",
+                        "slug": "mac",
+                        "websites": [
+                            {
+                                "id": 5,
+                                "url": "https://www.apple.com/osx/"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 89.91810463449269,
+                "screenshots": [
+                    {
+                        "id": 6776,
+                        "height": 1440,
+                        "image_id": "svqo3ngaapyvcvjza7yx"
+                    },
+                    {
+                        "id": 6777,
+                        "height": 1440,
+                        "image_id": "g11vipidv1pmwqdqthvn"
+                    },
+                    {
+                        "id": 6778,
+                        "height": 1440,
+                        "image_id": "tn5gpywrvya92wq1ang8"
+                    },
+                    {
+                        "id": 6779,
+                        "height": 1440,
+                        "image_id": "gdanfmlxy57gzla4smbb"
+                    },
+                    {
+                        "id": 6780,
+                        "height": 1440,
+                        "image_id": "kg9eb5wd5u5j9wtvafrw"
+                    },
+                    {
+                        "id": 258217,
+                        "height": 768,
+                        "image_id": "sc5j8p"
+                    },
+                    {
+                        "id": 258218,
+                        "height": 768,
+                        "image_id": "sc5j8q"
+                    },
+                    {
+                        "id": 258219,
+                        "height": 768,
+                        "image_id": "sc5j8r"
+                    },
+                    {
+                        "id": 258220,
+                        "height": 768,
+                        "image_id": "sc5j8s"
+                    },
+                    {
+                        "id": 258221,
+                        "height": 768,
+                        "image_id": "sc5j8t"
+                    }
+                ],
+                "slug": "system-shock-2",
+                "storyline": "The game takes place on board a starship in a cyberpunk depiction of 2114. The player assumes the role of a lone soldier trying to stem the outbreak of a genetic infection that has devastated the ship. Like System Shock, gameplay consists of first-person shooting and exploration. It also incorporates role-playing system elements, in which the player can develop unique skills and traits, such as hacking and psionic abilities.",
+                "summary": "A first-person cyberpunk exploratory horror RPG and sequel to System Shock (1994) in which a soldier wakes up in the starship Van Braun in the aftermath of a disaster and finds himself in the midst of a conflict between SHODAN, the artificial intelligence antagonist of System Shock seeking mastery over humanity, and The Many, a flesh-based psychic hive mind led by the ship's corrupted AI.",
+                "total_rating": 89.91810463449269,
+                "total_rating_count": 241
+            },
+            {
+                "id": 37,
+                "age_ratings": [
+                    {
+                        "id": 13307,
+                        "category": 2,
+                        "content_descriptions": [
+                            17437,
+                            17438
+                        ],
+                        "rating": 5,
+                        "checksum": "384c81c0-c62f-d2c6-47e4-2831bbd1c00b"
+                    },
+                    {
+                        "id": 24086,
+                        "category": 1,
+                        "content_descriptions": [
+                            23237,
+                            23238,
+                            23239
+                        ],
+                        "rating": 11,
+                        "synopsis": "Dead Space is a third-person action game that takes place in a mysterious space station. The protagonist searches for clues found in the form of audio/video clips and various other items while avoiding hazards and fighting alien monsters. He uses several types of guns, lasers and flame throwers to defeat enemies. Characters lose limbs and heads, accompanied by sprays, stains, and gushes of red blood. Dismembered alien and human corpses appear regularly. Strong profanity (e.g., \"sh*t\" and \"f*ck\") can be heard in dialogue and seen in graffiti.",
+                        "checksum": "eabbe68d-8e61-15fe-a5e6-56d1281433a5"
+                    },
+                    {
+                        "id": 81527,
+                        "category": 5,
+                        "content_descriptions": [
+                            83083,
+                            83084
+                        ],
+                        "rating": 26,
+                        "checksum": "7acaa346-3281-46c1-8e0c-c5757817a7f9"
+                    }
+                ],
+                "aggregated_rating": 88.1666666666667,
+                "artworks": [
+                    {
+                        "id": 1499,
+                        "image_id": "qamyup2qyzgcqbqy53s6",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/qamyup2qyzgcqbqy53s6.jpg"
+                    },
+                    {
+                        "id": 1500,
+                        "image_id": "j9llqq3hq6i8uy8mwefe",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/j9llqq3hq6i8uy8mwefe.jpg"
+                    },
+                    {
+                        "id": 1501,
+                        "image_id": "pgjimzslwia4injjohsd",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/pgjimzslwia4injjohsd.jpg"
+                    },
+                    {
+                        "id": 1502,
+                        "image_id": "rmqekcym7oha6f2p18tm",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/rmqekcym7oha6f2p18tm.jpg"
+                    },
+                    {
+                        "id": 1503,
+                        "image_id": "ij8px9czrlpzclolwwsl",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ij8px9czrlpzclolwwsl.jpg"
+                    },
+                    {
+                        "id": 1504,
+                        "image_id": "sgnzetwlcrgehvwf6x4v",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/sgnzetwlcrgehvwf6x4v.jpg"
+                    },
+                    {
+                        "id": 1505,
+                        "image_id": "gquaqxdkfoc96hhk0imc",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/gquaqxdkfoc96hhk0imc.jpg"
+                    },
+                    {
+                        "id": 1506,
+                        "image_id": "d8svym457wotgzc6smev",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/d8svym457wotgzc6smev.jpg"
+                    },
+                    {
+                        "id": 1507,
+                        "image_id": "jn60dgd5s5qdtfcrlymz",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/jn60dgd5s5qdtfcrlymz.jpg"
+                    },
+                    {
+                        "id": 9884,
+                        "image_id": "ar7mk",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar7mk.jpg"
+                    },
+                    {
+                        "id": 10259,
+                        "image_id": "ar7wz",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar7wz.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 114332,
+                    "animated": false,
+                    "image_id": "co2g7w"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    }
+                ],
+                "name": "Dead Space",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "name": "PlayStation 3",
+                        "slug": "ps3",
+                        "websites": [
+                            {
+                                "id": 3,
+                                "url": "http://us.playstation.com/ps3/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 12,
+                        "name": "Xbox 360",
+                        "slug": "xbox360",
+                        "websites": [
+                            {
+                                "id": 4,
+                                "url": "http://www.xbox.com/en-US/xbox-360"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 85.44677895873849,
+                "screenshots": [
+                    {
+                        "id": 398,
+                        "height": 450,
+                        "image_id": "hj1lsmfhxysduatojr60"
+                    },
+                    {
+                        "id": 399,
+                        "height": 450,
+                        "image_id": "nxy7aqbsf76p6tx81675"
+                    },
+                    {
+                        "id": 400,
+                        "height": 450,
+                        "image_id": "oxev4x5svixjrn8mngvm"
+                    },
+                    {
+                        "id": 401,
+                        "height": 450,
+                        "image_id": "fdpzkez7ve4ukv28aqcu"
+                    },
+                    {
+                        "id": 402,
+                        "height": 450,
+                        "image_id": "ulkxjyhfhtiupjn3ix45"
+                    }
+                ],
+                "slug": "dead-space",
+                "summary": "Dead Space is a 2008 science fiction survival horror video game developed by EA Redwood Shores (now Visceral Games) for Microsoft Windows, PlayStation 3 and Xbox 360. The game was released on all platforms through October 2008. The game puts the player in control of an engineer named Isaac Clarke, who battles the Necromorphs, reanimated human corpses, aboard an interstellar mining ship, the USG Ishimura.",
+                "total_rating": 86.80672281270259,
+                "total_rating_count": 897
+            },
+            {
+                "id": 173433,
+                "artworks": [
+                    {
+                        "id": 53471,
+                        "image_id": "ar159b",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar159b.jpg"
+                    }
+                ],
+                "category": 9,
+                "cover": {
+                    "id": 197943,
+                    "animated": false,
+                    "image_id": "co48qf"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 12,
+                        "name": "Role-playing (RPG)",
+                        "slug": "role-playing-rpg"
+                    },
+                    {
+                        "id": 25,
+                        "name": "Hack and slash/Beat 'em up",
+                        "slug": "hack-and-slash-beat-em-up"
+                    }
+                ],
+                "name": "Blade of Darkness",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    {
+                        "id": 648599,
+                        "height": 1080,
+                        "image_id": "scdwgn"
+                    },
+                    {
+                        "id": 648600,
+                        "height": 1080,
+                        "image_id": "scdwgo"
+                    },
+                    {
+                        "id": 648601,
+                        "height": 1080,
+                        "image_id": "scdwgp"
+                    },
+                    {
+                        "id": 648602,
+                        "height": 1080,
+                        "image_id": "scdwgq"
+                    },
+                    {
+                        "id": 648603,
+                        "height": 1080,
+                        "image_id": "scdwgr"
+                    },
+                    {
+                        "id": 648604,
+                        "height": 1080,
+                        "image_id": "scdwgs"
+                    },
+                    {
+                        "id": 648605,
+                        "height": 1080,
+                        "image_id": "scdwgt"
+                    },
+                    {
+                        "id": 648606,
+                        "height": 1080,
+                        "image_id": "scdwgu"
+                    },
+                    {
+                        "id": 648607,
+                        "height": 1080,
+                        "image_id": "scdwgv"
+                    },
+                    {
+                        "id": 648608,
+                        "height": 1080,
+                        "image_id": "scdwgw"
+                    },
+                    {
+                        "id": 648609,
+                        "height": 1080,
+                        "image_id": "scdwgx"
+                    },
+                    {
+                        "id": 648610,
+                        "height": 1080,
+                        "image_id": "scdwgy"
+                    },
+                    {
+                        "id": 648611,
+                        "height": 1080,
+                        "image_id": "scdwgz"
+                    },
+                    {
+                        "id": 648612,
+                        "height": 1080,
+                        "image_id": "scdwh0"
+                    },
+                    {
+                        "id": 648613,
+                        "height": 1080,
+                        "image_id": "scdwh1"
+                    },
+                    {
+                        "id": 648614,
+                        "height": 1080,
+                        "image_id": "scdwh2"
+                    },
+                    {
+                        "id": 648615,
+                        "height": 1080,
+                        "image_id": "scdwh3"
+                    },
+                    {
+                        "id": 648616,
+                        "height": 1080,
+                        "image_id": "scdwh4"
+                    },
+                    {
+                        "id": 648617,
+                        "height": 1080,
+                        "image_id": "scdwh5"
+                    },
+                    {
+                        "id": 648618,
+                        "height": 1080,
+                        "image_id": "scdwh6"
+                    },
+                    {
+                        "id": 648619,
+                        "height": 1080,
+                        "image_id": "scdwh7"
+                    },
+                    {
+                        "id": 648620,
+                        "height": 1080,
+                        "image_id": "scdwh8"
+                    },
+                    {
+                        "id": 648621,
+                        "height": 1080,
+                        "image_id": "scdwh9"
+                    }
+                ],
+                "slug": "blade-of-darkness",
+                "storyline": "A grim new threat looms over The Central Kingdoms. The borders protected by the fierce King’s Knights are no longer secure. The fearsome orc clans, more numerous than ever, lurk on all roads. The proud nomadic peoples of the steppes are on the alert, for strange beasts prowl the darkness. Not even the stout dwarves, hidden in their underground palaces, seem safe from threat - from the unknown tunnels of its mines, a foul army of hideous creatures advances inexorably.\n\nChaos seizes the World. Only the memory of the oldest recalls the exploits of a hero and a few warriors, who in other times fought against the forces of Chaos. Ianna, the mother of all living beings, gave the hero a powerful sword to enter the abyss and defeat evil. But that happened a long time ago. A new hero is needed, a chosen one who is worthy to wield the Sword and destroy the enemy... this time forever.",
+                "summary": "Blade of Darkness is a hardcore fantasy action-adventure with unique combat mechanics and role-playing elements that pioneered the “soulsborne” genre. Pick one of four characters to hack and slash through a gory quest to save the world from the forces of Chaos."
+            },
+            {
+                "id": 94,
+                "age_ratings": [
+                    {
+                        "id": 1381,
+                        "category": 1,
+                        "rating": 8,
+                        "checksum": "c76e9a2d-f207-d95b-f729-d2b5ded968f1"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 183954,
+                    "animated": false,
+                    "image_id": "co3xxu"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 10,
+                        "name": "Racing",
+                        "slug": "racing"
+                    },
+                    {
+                        "id": 13,
+                        "name": "Simulator",
+                        "slug": "simulator"
+                    }
+                ],
+                "name": "Need for Speed: Porsche Unleashed",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "name": "PlayStation",
+                        "slug": "ps"
+                    },
+                    {
+                        "id": 24,
+                        "name": "Game Boy Advance",
+                        "slug": "gba"
+                    }
+                ],
+                "rating": 82.3050560969967,
+                "screenshots": [
+                    {
+                        "id": 58,
+                        "height": 525,
+                        "image_id": "qcvf5ppqdwhulynvm5pt"
+                    }
+                ],
+                "slug": "need-for-speed-porsche-unleashed",
+                "summary": "Unleash the power of Porsche! Push yourself to the limit and break the will of your opponents, as you climb into the driver's seat of Destination Software's Need For Speed Porsche Unleashed racing game for your Nintendo Game Boy Advance system, sub-licensed from series originator Electronic Arts. Need for Speed Porsche Unleashed features circuit track racing, streetcar excitement, open road thrills, crashes, traffic, and more. Feel the surge of adrenaline as your own driving savvy and years of Porsche excellence come together at your fingertips for a thrilling ride at breakneck speed. Features 25 different models of Porsche cars, link cable support for four players (multiple cartridge), and cartridge save ability with four slots.",
+                "total_rating": 82.3050560969967,
+                "total_rating_count": 143
+            },
+            {
+                "id": 481,
+                "age_ratings": [
+                    {
+                        "id": 6457,
+                        "category": 1,
+                        "content_descriptions": [
+                            8404,
+                            8405
+                        ],
+                        "rating": 11,
+                        "checksum": "a449ec38-afb7-97e9-1411-7880109b741f"
+                    },
+                    {
+                        "id": 21416,
+                        "category": 2,
+                        "content_descriptions": [
+                            20776
+                        ],
+                        "rating": 4,
+                        "checksum": "e6cace65-cf1b-f842-cace-778cfc2c0d71"
+                    }
+                ],
+                "aggregated_rating": 90.0,
+                "category": 0,
+                "cover": {
+                    "id": 134728,
+                    "animated": false,
+                    "image_id": "co2vyg"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 9,
+                        "name": "Puzzle",
+                        "slug": "puzzle"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    }
+                ],
+                "name": "Silent Hill 2",
+                "platforms": [
+                    {
+                        "id": 8,
+                        "name": "PlayStation 2",
+                        "slug": "ps2"
+                    }
+                ],
+                "rating": 91.534055891714,
+                "screenshots": [
+                    {
+                        "id": 384953,
+                        "height": 1080,
+                        "image_id": "sc8915"
+                    },
+                    {
+                        "id": 384954,
+                        "height": 1080,
+                        "image_id": "sc8916"
+                    },
+                    {
+                        "id": 384955,
+                        "height": 1080,
+                        "image_id": "sc8917"
+                    },
+                    {
+                        "id": 384957,
+                        "height": 1080,
+                        "image_id": "sc8919"
+                    },
+                    {
+                        "id": 384958,
+                        "height": 1080,
+                        "image_id": "sc891a"
+                    },
+                    {
+                        "id": 384959,
+                        "height": 1080,
+                        "image_id": "sc891b"
+                    }
+                ],
+                "slug": "silent-hill-2",
+                "storyline": "James Sunderland has arrived in the town of Silent Hill after receiving a letter from his wife Mary, telling him to meet her in their special place in Silent Hill. However his wife died three years ago, and has kept the secrets surrounding her death. James decides to honor the letter's request, wondering if this is a sick joke or if there is more to this. As he reaches the outskirts of the town, James finds that the road is blocked, and parks at an abandoned restroom. Little does he realize that this is the first step forward into the mystery of Silent Hill and his own past.",
+                "summary": "The second entry in the Silent Hill franchise, Silent Hill 2 is a narrative-focused third-person psychological horror game with exploration and puzzle-solving elements which follows James Sunderland, a man who receives a letter, seemingly sent by his three-years-deceased wife Mary, in which he is beckoned to the fog-ridden town of Silent Hill at the same time as numerous other people troubled by their past.",
+                "total_rating": 90.767027945857,
+                "total_rating_count": 737
+            },
+            {
+                "id": 732,
+                "age_ratings": [
+                    {
+                        "id": 31849,
+                        "category": 1,
+                        "content_descriptions": [
+                            31934,
+                            31935,
+                            31936,
+                            31937,
+                            31938
+                        ],
+                        "rating": 11,
+                        "synopsis": "No Rating Summary",
+                        "checksum": "2c29176a-eb80-76b2-2df9-38d65a5b92c8"
+                    },
+                    {
+                        "id": 47915,
+                        "category": 2,
+                        "content_descriptions": [
+                            52716,
+                            52717
+                        ],
+                        "rating": 5,
+                        "synopsis": "No Rating Summary",
+                        "checksum": "b712714a-8729-9f90-eb8a-787b7dfe4a37"
+                    },
+                    {
+                        "id": 47916,
+                        "category": 3,
+                        "content_descriptions": [
+                            52718,
+                            52719
+                        ],
+                        "rating": 17,
+                        "checksum": "6ee95cb7-10f8-702b-2318-0e07aaa463f2"
+                    },
+                    {
+                        "id": 47917,
+                        "category": 4,
+                        "rating": 22,
+                        "checksum": "3e210dde-13c1-f9ec-a2cd-c6a889d5376a"
+                    },
+                    {
+                        "id": 47918,
+                        "category": 5,
+                        "content_descriptions": [
+                            52720,
+                            52721,
+                            52722,
+                            52723,
+                            52724,
+                            52725
+                        ],
+                        "rating": 26,
+                        "checksum": "e2b05319-8f8b-18fc-24a2-5fe869f25de5"
+                    },
+                    {
+                        "id": 47919,
+                        "category": 6,
+                        "content_descriptions": [
+                            52726,
+                            52727,
+                            52728
+                        ],
+                        "rating": 33,
+                        "checksum": "b90584d4-a9ab-fc87-cbf9-fe6c8534fc5e"
+                    },
+                    {
+                        "id": 47920,
+                        "category": 7,
+                        "rating": 37,
+                        "synopsis": "Strong violence, Strong coarse language",
+                        "checksum": "8b494231-c9a3-8ead-7336-93611cae7a1f"
+                    }
+                ],
+                "aggregated_rating": 93.1428571428571,
+                "category": 0,
+                "cover": {
+                    "id": 120933,
+                    "animated": false,
+                    "image_id": "co2lb9"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Co-operative",
+                        "slug": "co-operative"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    },
+                    {
+                        "id": 10,
+                        "name": "Racing",
+                        "slug": "racing"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    }
+                ],
+                "name": "Grand Theft Auto: San Andreas",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 8,
+                        "name": "PlayStation 2",
+                        "slug": "ps2"
+                    },
+                    {
+                        "id": 9,
+                        "name": "PlayStation 3",
+                        "slug": "ps3",
+                        "websites": [
+                            {
+                                "id": 3,
+                                "url": "http://us.playstation.com/ps3/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 11,
+                        "name": "Xbox",
+                        "slug": "xbox"
+                    },
+                    {
+                        "id": 12,
+                        "name": "Xbox 360",
+                        "slug": "xbox360",
+                        "websites": [
+                            {
+                                "id": 4,
+                                "url": "http://www.xbox.com/en-US/xbox-360"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 14,
+                        "name": "Mac",
+                        "slug": "mac",
+                        "websites": [
+                            {
+                                "id": 5,
+                                "url": "https://www.apple.com/osx/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 34,
+                        "name": "Android",
+                        "slug": "android",
+                        "websites": [
+                            {
+                                "id": 7,
+                                "url": "http://www.android.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 39,
+                        "name": "iOS",
+                        "slug": "ios"
+                    },
+                    {
+                        "id": 48,
+                        "name": "PlayStation 4",
+                        "slug": "ps4--1",
+                        "websites": [
+                            {
+                                "id": 11,
+                                "url": "http://www.playstation.com/ps4/"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 90.2740492093922,
+                "screenshots": [
+                    {
+                        "id": 679,
+                        "height": 600,
+                        "image_id": "sojdbdt93e06wojplpsj"
+                    },
+                    {
+                        "id": 189150,
+                        "height": 228,
+                        "image_id": "hircn6ewsgu70ynlzis5"
+                    },
+                    {
+                        "id": 189151,
+                        "height": 228,
+                        "image_id": "eswubyh9h3uereuyumjq"
+                    },
+                    {
+                        "id": 189152,
+                        "height": 228,
+                        "image_id": "e11zpyhhjc9qdqgrx7v0"
+                    },
+                    {
+                        "id": 189153,
+                        "height": 228,
+                        "image_id": "dbbtmdz0q1536npbpr5o"
+                    },
+                    {
+                        "id": 778550,
+                        "height": 1080,
+                        "image_id": "scgoqe"
+                    },
+                    {
+                        "id": 778551,
+                        "height": 768,
+                        "image_id": "scgoqf"
+                    },
+                    {
+                        "id": 778552,
+                        "height": 1080,
+                        "image_id": "scgoqg"
+                    },
+                    {
+                        "id": 778553,
+                        "height": 1080,
+                        "image_id": "scgoqh"
+                    },
+                    {
+                        "id": 778554,
+                        "height": 1080,
+                        "image_id": "scgoqi"
+                    },
+                    {
+                        "id": 778555,
+                        "height": 1080,
+                        "image_id": "scgoqj"
+                    },
+                    {
+                        "id": 778556,
+                        "height": 1080,
+                        "image_id": "scgoqk"
+                    }
+                ],
+                "slug": "grand-theft-auto-san-andreas",
+                "storyline": "Five years ago, Carl Johnson escaped from the pressures of life in Los Santos, San Andreas, a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.\nNow, it’s the early 90’s. Carl’s got to go home. His mother has been murdered, his family has fallen apart and his childhood friends are all heading towards disaster.\n\nOn his return to the neighborhood, a couple of corrupt cops frame him for homicide. CJ is forced on a journey that takes him across the entire state of San Andreas, to save his family and to take control of the streets.",
+                "summary": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+                "total_rating": 91.70845317612465
+            }
+        ]
+    },
+    "picks": {
+        "title": "Our pick",
+        "list": [
+            {
+                "id": 119133,
+                "age_ratings": [
+                    {
+                        "id": 57164,
+                        "category": 2,
+                        "content_descriptions": [
+                            58828
+                        ],
+                        "rating": 4,
+                        "synopsis": "Advice for consumers This game has received a PEGI 16 because it features strong violence. Not suitable for persons under 16 years of age. Brief outline of the game Fantasy action role-playing game in which players travel through the 'Lands Between' in a quest to locate the fragments of the Elden Ring, restore it and become the Elden Lord. Content specific issues This game features realistic violence, involving human and fantasy characters. Characters can be knocked backwards and stunned by attacks, with large blood effects being used. When defeated, characters fall to the ground where their bodies remain. There is a scene in which a monster with multiple arms severs an arm with an axe.",
+                        "checksum": "ae1abb74-413c-f05a-2ed5-bad2be9e4927"
+                    },
+                    {
+                        "id": 57165,
+                        "category": 3,
+                        "content_descriptions": [
+                            58829
+                        ],
+                        "rating": 16,
+                        "checksum": "fd0c2a5a-06dc-37eb-d0d5-6ee1d96a4aa7"
+                    },
+                    {
+                        "id": 57166,
+                        "category": 1,
+                        "content_descriptions": [
+                            58830,
+                            58831,
+                            58832,
+                            58833
+                        ],
+                        "rating": 11,
+                        "synopsis": "This is an action role-playing game in which players assume the role of a character trying to retrieve a magical ring and become the Elden Lord. From a third-person perspective, players explore environments, collect items, and battle various enemies (e.g., knights, fantastical creatures) in melee combat. Players use swords, spears, axes, arrows, and magic to enemies; combat is highlighted by cries of pain, splatters of blood, and impact sounds. The game includes depictions of gore: collectible items that include severed fingers and tongues; a boss character cutting off its arm; severed arms hanging from a ceiling. During the course of the game, a humanoid monster is depicted partially nude, with scales/scars covering its breast and pelvic regions. The word “sh*t” appears in the dialogue.",
+                        "checksum": "701ef70f-aaef-fc49-aabc-7422014071ab"
+                    },
+                    {
+                        "id": 57167,
+                        "category": 4,
+                        "rating": 21,
+                        "checksum": "a04e0435-3545-f2d6-d6e7-cb1f5761c66a"
+                    },
+                    {
+                        "id": 57168,
+                        "category": 5,
+                        "content_descriptions": [
+                            58834
+                        ],
+                        "rating": 26,
+                        "checksum": "5b644ff8-3732-d02b-678c-9e50d8c6bb48"
+                    },
+                    {
+                        "id": 57169,
+                        "category": 6,
+                        "content_descriptions": [
+                            58835
+                        ],
+                        "rating": 32,
+                        "checksum": "75bcb319-3eac-9cd8-924e-ecf156135233"
+                    },
+                    {
+                        "id": 57170,
+                        "category": 7,
+                        "rating": 37,
+                        "synopsis": "Strong fantasy themes and violence, online interactivity",
+                        "checksum": "9cf08b40-86ad-c992-a0f0-ad17fd9b5b99"
+                    }
+                ],
+                "aggregated_rating": 96.9,
+                "artworks": [
+                    {
+                        "id": 52129,
+                        "image_id": "ar1481",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar1481.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 212094,
+                    "animated": false,
+                    "image_id": "co4jni"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Co-operative",
+                        "slug": "co-operative"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 12,
+                        "name": "Role-playing (RPG)",
+                        "slug": "role-playing-rpg"
+                    }
+                ],
+                "name": "Elden Ring",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 48,
+                        "name": "PlayStation 4",
+                        "slug": "ps4--1",
+                        "websites": [
+                            {
+                                "id": 11,
+                                "url": "http://www.playstation.com/ps4/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "name": "Xbox One",
+                        "slug": "xboxone",
+                        "websites": [
+                            {
+                                "id": 12,
+                                "url": "http://www.xbox.com/en-US/xbox-one"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 167,
+                        "name": "PlayStation 5",
+                        "slug": "ps5",
+                        "websites": [
+                            {
+                                "id": 281,
+                                "url": "https://www.playstation.com/en-us/ps5/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 169,
+                        "name": "Xbox Series X|S",
+                        "slug": "series-x",
+                        "websites": [
+                            {
+                                "id": 36,
+                                "url": "https://www.xbox.com/en-US/project-scarlett"
+                            },
+                            {
+                                "id": 105,
+                                "url": "https://news.xbox.com/en-us/2019/12/12/microsoft-unveils-xbox-series-x/"
+                            },
+                            {
+                                "id": 238,
+                                "url": "https://www.xbox.com/en-us/consoles/xbox-series-x"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 96.8764415822578,
+                "screenshots": [
+                    {
+                        "id": 487786,
+                        "height": 1080,
+                        "image_id": "scagdm"
+                    },
+                    {
+                        "id": 487787,
+                        "height": 1080,
+                        "image_id": "scagdn"
+                    },
+                    {
+                        "id": 487788,
+                        "height": 1080,
+                        "image_id": "scagdo"
+                    },
+                    {
+                        "id": 487789,
+                        "height": 1080,
+                        "image_id": "scagdp"
+                    },
+                    {
+                        "id": 487790,
+                        "height": 1080,
+                        "image_id": "scagdq"
+                    },
+                    {
+                        "id": 487791,
+                        "height": 1080,
+                        "image_id": "scagdr"
+                    },
+                    {
+                        "id": 487792,
+                        "height": 1080,
+                        "image_id": "scagds"
+                    },
+                    {
+                        "id": 703441,
+                        "height": 1215,
+                        "image_id": "scf2s1"
+                    }
+                ],
+                "slug": "elden-ring",
+                "summary": "Elden Ring is a fantasy, action and open world game with RPG elements such as stats, weapons and spells. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
+                "total_rating": 96.8882207911289,
+                "total_rating_count": 212
+            },
+            {
+                "id": 19817,
+                "age_ratings": [
+                    {
+                        "id": 84071,
+                        "category": 1,
+                        "content_descriptions": [
+                            86350,
+                            86351,
+                            86352
+                        ],
+                        "rating": 11,
+                        "checksum": "f0d59800-5512-5e0b-ee56-a55181b17858"
+                    }
+                ],
+                "artworks": [
+                    {
+                        "id": 9564,
+                        "image_id": "ar7do",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar7do.jpg"
+                    },
+                    {
+                        "id": 9565,
+                        "image_id": "ar7dp",
+                        "url": "//images.igdb.com/igdb/image/upload/t_thumb/ar7dp.jpg"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 226992,
+                    "animated": false,
+                    "image_id": "co4v5c"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    },
+                    {
+                        "id": 32,
+                        "name": "Indie",
+                        "slug": "indie"
+                    }
+                ],
+                "name": "Scorn",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "name": "Xbox One",
+                        "slug": "xboxone",
+                        "websites": [
+                            {
+                                "id": 12,
+                                "url": "http://www.xbox.com/en-US/xbox-one"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 169,
+                        "name": "Xbox Series X|S",
+                        "slug": "series-x",
+                        "websites": [
+                            {
+                                "id": 36,
+                                "url": "https://www.xbox.com/en-US/project-scarlett"
+                            },
+                            {
+                                "id": 105,
+                                "url": "https://news.xbox.com/en-us/2019/12/12/microsoft-unveils-xbox-series-x/"
+                            },
+                            {
+                                "id": 238,
+                                "url": "https://www.xbox.com/en-us/consoles/xbox-series-x"
+                            }
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    {
+                        "id": 25630,
+                        "height": 495,
+                        "image_id": "h0bl6le6rqd2rmi2ebfn"
+                    },
+                    {
+                        "id": 25631,
+                        "height": 492,
+                        "image_id": "uyqvqq7sreuce3mfq927"
+                    },
+                    {
+                        "id": 25632,
+                        "height": 492,
+                        "image_id": "fmyt3ahdungh6ngyqiqe"
+                    },
+                    {
+                        "id": 25633,
+                        "height": 495,
+                        "image_id": "ezq5wfc1nj3jmiyhdvu4"
+                    },
+                    {
+                        "id": 25634,
+                        "height": 1080,
+                        "image_id": "vgpnyascxdbuoomvyd18"
+                    },
+                    {
+                        "id": 269793,
+                        "height": 1080,
+                        "image_id": "sc5s69"
+                    },
+                    {
+                        "id": 269794,
+                        "height": 1080,
+                        "image_id": "sc5s6a"
+                    },
+                    {
+                        "id": 269795,
+                        "height": 1080,
+                        "image_id": "sc5s6b"
+                    },
+                    {
+                        "id": 269796,
+                        "height": 1080,
+                        "image_id": "sc5s6c"
+                    },
+                    {
+                        "id": 269797,
+                        "height": 1080,
+                        "image_id": "sc5s6d"
+                    }
+                ],
+                "slug": "scorn",
+                "summary": "Scorn is an atmospheric first person horror adventure game set in a nightmarish universe of odd forms and somber tapestry. It is designed around an idea of \"being thrown into the world\". Isolated and lost inside this dream-like world you will explore different interconnected regions in a non-linear fashion. The unsettling environment is a character itself. Every location contains its own theme (story), puzzles and characters that are integral in creating a cohesive lived in world. Throughout the game you will open up new areas, acquire different skill sets, weapons, various items and try to comprehend the sights presented to you."
+            },
+            {
+                "id": 115115,
+                "age_ratings": [
+                    {
+                        "id": 30518,
+                        "category": 1,
+                        "content_descriptions": [
+                            30319,
+                            30320,
+                            30321
+                        ],
+                        "rating": 11,
+                        "synopsis": "This is survival-horror action game in which players assume the role of a special units member (Jill Valentine) as she tries to escape a zombie outbreak. From a third-person perspective, players traverse various environments (e.g., subways, city streets, building corridors) as they avoid being attacked by zombies and large enemy creatures. Players use pistols, machine guns, shotguns, and explosives to defend themselves and kill creatures. Some attacks result in decapitation and/or dismemberment of enemies, often accompanied by large splatters of blood. Cutscenes depict additional acts of violence: a man executed at close range; a character impaled through the chest by a creature's tentacle. A handful of areas depict mutilated corpses/zombies with exposed organs and viscera. The words “f**k” and “sh*t” are heard in the dialogue.",
+                        "checksum": "1484b6c2-a740-1eb3-3bfc-f023df703cae"
+                    },
+                    {
+                        "id": 30519,
+                        "category": 2,
+                        "content_descriptions": [
+                            30322,
+                            30323
+                        ],
+                        "rating": 5,
+                        "synopsis": "This game has received a PEGI 18 which restricts availability to ADULTS ONLY and is not suitable for anyone below this age. This rating has been given due to graphic violence and use of strong language.. Not suitable for persons below 18 years of age.",
+                        "checksum": "121de854-6d28-f4b9-6361-2928ea6c0965"
+                    }
+                ],
+                "aggregated_rating": 80.8,
+                "category": 8,
+                "cover": {
+                    "id": 96667,
+                    "animated": false,
+                    "image_id": "co22l7"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Adventure",
+                        "slug": "adventure"
+                    }
+                ],
+                "name": "Resident Evil 3",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 48,
+                        "name": "PlayStation 4",
+                        "slug": "ps4--1",
+                        "websites": [
+                            {
+                                "id": 11,
+                                "url": "http://www.playstation.com/ps4/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "name": "Xbox One",
+                        "slug": "xboxone",
+                        "websites": [
+                            {
+                                "id": 12,
+                                "url": "http://www.xbox.com/en-US/xbox-one"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 167,
+                        "name": "PlayStation 5",
+                        "slug": "ps5",
+                        "websites": [
+                            {
+                                "id": 281,
+                                "url": "https://www.playstation.com/en-us/ps5/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 169,
+                        "name": "Xbox Series X|S",
+                        "slug": "series-x",
+                        "websites": [
+                            {
+                                "id": 36,
+                                "url": "https://www.xbox.com/en-US/project-scarlett"
+                            },
+                            {
+                                "id": 105,
+                                "url": "https://news.xbox.com/en-us/2019/12/12/microsoft-unveils-xbox-series-x/"
+                            },
+                            {
+                                "id": 238,
+                                "url": "https://www.xbox.com/en-us/consoles/xbox-series-x"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 79.58588275943791,
+                "screenshots": [
+                    {
+                        "id": 346721,
+                        "height": 1080,
+                        "image_id": "sc7fj5"
+                    },
+                    {
+                        "id": 346722,
+                        "height": 1080,
+                        "image_id": "sc7fj6"
+                    },
+                    {
+                        "id": 346723,
+                        "height": 1080,
+                        "image_id": "sc7fj7"
+                    },
+                    {
+                        "id": 346724,
+                        "height": 1080,
+                        "image_id": "sc7fj8"
+                    },
+                    {
+                        "id": 346725,
+                        "height": 1080,
+                        "image_id": "sc7fj9"
+                    },
+                    {
+                        "id": 346726,
+                        "height": 1080,
+                        "image_id": "sc7fja"
+                    },
+                    {
+                        "id": 346727,
+                        "height": 1080,
+                        "image_id": "sc7fjb"
+                    }
+                ],
+                "slug": "resident-evil-3",
+                "storyline": "Fight your way to freedom from the brink of despair\n\nA series of strange disappearances have been occurring in the American Midwest within a place called Racoon City. A specialist squad of the police force known as S.T.A.R.S. has been investigating the case, and have determined that the pharmaceutical company Umbrella and their biological weapon, the T-Virus, are behind the incidents—though they've lost several members in the process. Jill Valentine and the other surviving S.T.A.R.S. members try to make this truth known, but find that the police department itself is under Umbrella's sway and their reports are rejected out of hand.\n\nHowever, soon reports of a grisly \"cannibal virus\" begin to surface, and vicious dogs begin roaming the streets. With the viral plague spreading through the town and to her very doorstep, Jill is determined to survive.\nHowever, unbeknownst to Jill, an extremely powerful pursuer has already been dispatched to eliminate her.",
+                "summary": "Jill Valentine is one of the last remaining people in Raccoon City to witness the atrocities Umbrella performed. To stop her, Umbrella unleashes their ultimate secret weapon: Nemesis! Also includes Resident Evil Resistance, a new 1 vs 4 online multiplayer game set in the Resident Evil universe.",
+                "total_rating": 80.19294137971895
+            },
+            {
+                "id": 3047,
+                "age_ratings": [
+                    {
+                        "id": 1068,
+                        "category": 1,
+                        "content_descriptions": [
+                            2125,
+                            2126,
+                            2127
+                        ],
+                        "rating": 10,
+                        "synopsis": "This is a racing simulation game in which players compete with real-world cars at the fictional Horizon Festival in Colorado. Players can race in various modes (e.g., Circuit, Street, Speed Stunt) to earn experience points and unlock new cars. During the course of the game, some of the dialogue references suggestive material (e.g., “[A]ll these young women, half naked, screaming from passing cars,” “Ramona is, apparently, 'good on dirt,'” and “Let me think. . . feed the cat. . . water the plant. . . spank the monkey. . .”). Some sequences reference illicit substances (e.g., “Clean-living boy Darius Flynt has apparently never taken recreational drugs,” “drug-fueled jerks,” and “All those kids . . . taking drugs, fornicating!”). The words “sh*t” and “a*shole” can also be heard in the dialogue",
+                        "checksum": "27f4a811-8b9f-9bc5-2576-b28708f69cd7"
+                    },
+                    {
+                        "id": 13017,
+                        "category": 2,
+                        "content_descriptions": [
+                            17040,
+                            17041
+                        ],
+                        "rating": 3,
+                        "synopsis": "The content of this game is suitable for persons aged 12 years and over only.\r\nIt contains: Mild bad language\r\nThis game allows the player to interact with other players ONLINE",
+                        "checksum": "be4f404e-1d87-4cf2-c9e7-75d7111e665e"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 96226,
+                    "animated": false,
+                    "image_id": "co228y"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 10,
+                        "name": "Racing",
+                        "slug": "racing"
+                    }
+                ],
+                "name": "Forza Horizon",
+                "platforms": [
+                    {
+                        "id": 12,
+                        "name": "Xbox 360",
+                        "slug": "xbox360",
+                        "websites": [
+                            {
+                                "id": 4,
+                                "url": "http://www.xbox.com/en-US/xbox-360"
+                            }
+                        ]
+                    }
+                ],
+                "rating": 85.17201538583831,
+                "screenshots": [
+                    {
+                        "id": 3333,
+                        "height": 720,
+                        "image_id": "frombqxawgfwgljsictj"
+                    },
+                    {
+                        "id": 3334,
+                        "height": 720,
+                        "image_id": "z9aozphkkignejjgasmp"
+                    },
+                    {
+                        "id": 3335,
+                        "height": 720,
+                        "image_id": "pb64qrm66tfjmqrdkakr"
+                    }
+                ],
+                "slug": "forza-horizon",
+                "summary": "Forza Horizon is an action racing game set on the epic open roads of Colorado with a thrilling music festival backdrop. Combining stunning graphics and cutting-edge music with legendary Forza authenticity and a superb collection of cars to drive, Forza Horizon is an open-world automotive playground that puts a spotlight on speed, style, and the freedom of the open road. This is where cars belong!",
+                "total_rating": 83.52350769291915
+            },
+            {
+                "id": 200165,
+                "age_ratings": [
+                    {
+                        "id": 75145,
+                        "category": 2,
+                        "rating": 5,
+                        "checksum": "cb564813-f1b6-6fb0-d14b-d3379daab945"
+                    },
+                    {
+                        "id": 79460,
+                        "category": 5,
+                        "content_descriptions": [
+                            81379,
+                            81380
+                        ],
+                        "rating": 26,
+                        "checksum": "3fc825fc-eccb-64f8-6f5b-e38e21ea0b77"
+                    },
+                    {
+                        "id": 83113,
+                        "category": 1,
+                        "content_descriptions": [
+                            85299,
+                            85300,
+                            85301
+                        ],
+                        "rating": 11,
+                        "synopsis": "This is a first-person shooter in which players assume the role of members of an elite squadron on the trail of a Russian ultranationalist. Players defend the U.S. from Russian armed forces, engage in skirmishes and combat missions, and track the ultranationalist to discover clues to his movements, plans, and co-conspirators. Players use machine guns, sniper rifles, grenades, and missiles to kill enemy soldiers in frenetic, realistically-depicted combat. Action is highlighted by gunfire, explosions, blood-splatter effects, and cries of pain. The most intense depiction of violence occurs during a “No Russian” mission in which players take on the role of an undercover Ranger: several civilians are gunned down at an airport, and players are given the option to participate in the killings (e.g., players can shoot a wounded civilian crawling away) or to walk through without firing. The words “f**k” and “sh*t” are heard in the dialogue.",
+                        "checksum": "01463302-3d0f-6456-7783-d91fa6070ae6"
+                    }
+                ],
+                "category": 0,
+                "cover": {
+                    "id": 223340,
+                    "animated": false,
+                    "image_id": "co4sbw"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 5,
+                        "name": "Shooter",
+                        "slug": "shooter"
+                    }
+                ],
+                "name": "Call of Duty: Modern Warfare II",
+                "platforms": [
+                    {
+                        "id": 6,
+                        "name": "PC (Microsoft Windows)",
+                        "slug": "win",
+                        "websites": [
+                            {
+                                "id": 2,
+                                "url": "http://windows.microsoft.com/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 48,
+                        "name": "PlayStation 4",
+                        "slug": "ps4--1",
+                        "websites": [
+                            {
+                                "id": 11,
+                                "url": "http://www.playstation.com/ps4/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 49,
+                        "name": "Xbox One",
+                        "slug": "xboxone",
+                        "websites": [
+                            {
+                                "id": 12,
+                                "url": "http://www.xbox.com/en-US/xbox-one"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 167,
+                        "name": "PlayStation 5",
+                        "slug": "ps5",
+                        "websites": [
+                            {
+                                "id": 281,
+                                "url": "https://www.playstation.com/en-us/ps5/"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 169,
+                        "name": "Xbox Series X|S",
+                        "slug": "series-x",
+                        "websites": [
+                            {
+                                "id": 36,
+                                "url": "https://www.xbox.com/en-US/project-scarlett"
+                            },
+                            {
+                                "id": 105,
+                                "url": "https://news.xbox.com/en-us/2019/12/12/microsoft-unveils-xbox-series-x/"
+                            },
+                            {
+                                "id": 238,
+                                "url": "https://www.xbox.com/en-us/consoles/xbox-series-x"
+                            }
+                        ]
+                    }
+                ],
+                "screenshots": [
+                    {
+                        "id": 809459,
+                        "height": 1080,
+                        "image_id": "schckz"
+                    },
+                    {
+                        "id": 809460,
+                        "height": 1080,
+                        "image_id": "schcl0"
+                    },
+                    {
+                        "id": 809461,
+                        "height": 1080,
+                        "image_id": "schcl1"
+                    },
+                    {
+                        "id": 809462,
+                        "height": 1080,
+                        "image_id": "schcl2"
+                    },
+                    {
+                        "id": 809463,
+                        "height": 1080,
+                        "image_id": "schcl3"
+                    }
+                ],
+                "slug": "call-of-duty-modern-warfare-ii",
+                "storyline": "Task Force 141 makes its massive return with a global squad of iconic veterans, these Operators include Captain John Price, Simon \"Ghost\" Riley, John \"Soap\" MacTavish, Kyle 'Gaz' Garrick and introducing Mexican Special Forces Colonel Alejandro Vargas.",
+                "summary": "Call of Duty: Modern Warfare II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141."
+            },
+            {
+                "id": 139446,
+                "age_ratings": [
+                    {
+                        "id": 31119,
+                        "category": 1,
+                        "rating": 11,
+                        "checksum": "6c5c1c22-f59b-613d-343d-2c655628dc98"
+                    },
+                    {
+                        "id": 51110,
+                        "category": 2,
+                        "rating": 5,
+                        "checksum": "d0832a7b-730c-b78d-a789-f267d0db3c48"
+                    }
+                ],
+                "aggregated_rating": 97.3333333333333,
+                "category": 3,
+                "cover": {
+                    "id": 119849,
+                    "animated": false,
+                    "image_id": "co2kh5"
+                },
+                "game_modes": [
+                    {
+                        "id": 1,
+                        "name": "Single player",
+                        "slug": "single-player"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Multiplayer",
+                        "slug": "multiplayer"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": 4,
+                        "name": "Fighting",
+                        "slug": "fighting"
+                    }
+                ],
+                "rating": 89.8938033378283,
+                "screenshots": [
+                    {
+                        "id": 408497,
+                        "height": 787,
+                        "image_id": "sc8r75"
+                    },
+                    {
+                        "id": 408498,
+                        "height": 787,
+                        "image_id": "sc8r76"
+                    },
+                    {
+                        "id": 408499,
+                        "height": 787,
+                        "image_id": "sc8r77"
+                    },
+                    {
+                        "id": 408500,
+                        "height": 787,
+                        "image_id": "sc8r78"
+                    },
+                    {
+                        "id": 408501,
+                        "height": 787,
+                        "image_id": "sc8r79"
+                    }
+                ],
+                "slug": "mortal-kombat-11-ultimate",
+                "summary": "The definitive MK11 experience! Take control of Earthrealm's protectors in the game's TWO critically acclaimed, time-bending Story Campaigns as they race to stop Kronika from rewinding time and rebooting history. Friendships are tested, and new alliances forged, in the battle to save all of existence. MK11 Ultimate features the komplete 37-character roster, including new additions Rain, Mileena & Rambo.",
+                "total_rating": 93.6135683355808
+            }
+        ]
+    }
+}

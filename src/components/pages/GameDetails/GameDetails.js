@@ -7,7 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faUsers, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 import { getDetails } from "../../../services/catalogueService/catalogueService";
+import { getCurrentUser } from "../../../services/userService/userService";
+
 import CoverImage from "../../shared/CoverImage/CoverImage";
+import WishlistButton from "./WishlistButton/WishlistButton";
 import DlcSection from "./DlcSection/DlcSection";
 import ColoredRating from "../../shared/ColoredRating/ColoredRating";
 import PlatformIcon from "../../shared/PlatformIcon/PlatformIcon";
@@ -17,6 +20,7 @@ import AddToCartForm from "./AddToCartForm/AddToCartForm";
 function GameDetails() {
     const isLoged = useSelector((state) => state.isLoged.value);
     const [details, setDetails] = useState(null);
+    const [wishlist, setWishlist] = useState([]);
     const icons = {
         "single-player": faUser,
         "multiplayer": faUsers,
@@ -29,16 +33,14 @@ function GameDetails() {
 
     useEffect(() => {
         const slug = window.location.href.split("/").reverse()[0];
+        Promise.all([getCurrentUser(), getDetails("games", slug)]).then(res => {
+            const [user, gameDetails] = res;
 
-        getDetails("games", slug).then(res => {
-            if (res[0].rating === undefined) {
-                res[0].rating = Math.ceil(Math.random() * 100);
-            }
+            if (gameDetails[0].rating === undefined) gameDetails[0].rating = Math.ceil(Math.random() * 100);
+            gameDetails[0].price = Number((parseFloat(gameDetails[0].rating) / 3).toFixed(2));
 
-            res[0].price = Number((parseFloat(res[0].rating) / 3).toFixed(2));
-            
-            console.log(res[0].price);
-            setDetails(res[0]);
+            setDetails(gameDetails[0]);
+            setWishlist(user.wishlist);
         });
     }, [isLoged]);
 
@@ -86,6 +88,8 @@ function GameDetails() {
                                         User rating
                                         <ColoredRating rating={details.rating} maxRating={100} />
                                     </p>
+
+                                    <WishlistButton game={details} wishlist={wishlist} />
                                 </section>
 
                                 {details.dlcs && <DlcSection name={details.name} dlc={details.dlcs} />}

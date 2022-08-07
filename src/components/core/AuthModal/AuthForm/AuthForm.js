@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLoggedState } from "../../../../store/reducers/logedInSlice/logedInSlice";
+import { setCartState } from "../../../../store/reducers/cartSlice/cartSlice";
+
 import styles from "./AuthForm.module.css";
 
 import { loginUser, registerUser } from "../../../../services/authService/authService";
@@ -19,8 +22,9 @@ function AuthForm({ toggle }) {
     const [password, setPassword] = useState("");
     const [rePassword, setRePassword] = useState("");
     const [errors, setErrors] = useState([]);
-
+    const navigate = useNavigate();
     const dispatchLoggedState = useDispatch();
+    const dispatchCartState = useDispatch();
 
     const fields = {
         register: [
@@ -114,24 +118,17 @@ function AuthForm({ toggle }) {
             if (!inputOk) return;
 
             registerUser(username, email, password).then(res => {
-                // console.log(formatResponse(res));
-                if (res) {
-                    // setIslogged(true);
-                    // getCurrentUser().then()
-                    dispatchLoggedState(setLoggedState(true));
-                }
+                if (res) handleLogin(res);
             });
         } else {
             const inputOk = checkInput({ action: "login", input });
             if (!inputOk) return;
-
+            
             loginUser(usernameOrEmail, password).then(res => {
-                // console.log(formatResponse(res));
                 if (res) {
-                    // setIslogged(true);
-                    // getCurrentUser().then()
-                    dispatchLoggedState(setLoggedState(true));
-                }
+                    console.log(res);
+                    handleLogin(res)
+                };
             });
         };
     };
@@ -156,7 +153,7 @@ function AuthForm({ toggle }) {
 
         for (let { name, value } of input) {
             const minLength = name === "username" ? 3 : 6;
-            const maxLength = name === "username" ? 130 : 12;
+            const maxLength = name === "username" ? 130 : 100;
             const mainPattern = /^[a-zA-Z0-9]+/;
             const emailPattern = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.[a-zA-Z0-9]*/;
             const currentPattern = name === "email" ? emailPattern : mainPattern;
@@ -188,11 +185,11 @@ function AuthForm({ toggle }) {
         return errors.length === 0 ? true : false;
     };
 
-
-    
-    //////////////////////////////////////////////////////////////////////////////////////////
-
-
+    function handleLogin(res) {
+        navigate("/");
+        dispatchLoggedState(setLoggedState(true));
+        dispatchCartState(setCartState(res.attributes.cart.length));
+    };
 
     useEffect(() => {
         setIsRegistering(toggle);
