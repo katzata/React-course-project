@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setLoggedState } from "../../../../store/reducers/logedInSlice/logedInSlice";
 import { setCartState } from "../../../../store/reducers/cartSlice/cartSlice";
@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLifeRing } from "@fortawesome/free-solid-svg-icons";
 
 import ErrorList from "../../../shared/ErrorList/ErrorList";
+import Spinner from "../../../shared/Spinner/Spinner";
 
 function AuthForm({ toggle }) {
     const [isRegistering, setIsRegistering] = useState(false);
@@ -22,6 +23,8 @@ function AuthForm({ toggle }) {
     const [password, setPassword] = useState("");
     const [rePassword, setRePassword] = useState("");
     const [errors, setErrors] = useState([]);
+    const [loading, setLoading] = useState(false);
+    let location = useLocation();
     const navigate = useNavigate();
     const dispatchLoggedState = useDispatch();
     const dispatchCartState = useDispatch();
@@ -116,18 +119,25 @@ function AuthForm({ toggle }) {
         if (isRegistering) {
             const inputOk = checkInput({ action: "register", input });
             if (!inputOk) return;
+            setLoading(true);
 
             registerUser(username, email, password).then(res => {
-                if (res) handleLogin(res);
+                setLoading(true);
+                
+                if (res) {
+                    handleLogin(res);
+                };
             });
         } else {
             const inputOk = checkInput({ action: "login", input });
             if (!inputOk) return;
+            setLoading(true);
             
             loginUser(usernameOrEmail, password).then(res => {
+                setLoading(false);
+
                 if (res) {
-                    console.log(res);
-                    handleLogin(res)
+                    handleLogin(res);
                 };
             });
         };
@@ -186,7 +196,7 @@ function AuthForm({ toggle }) {
     };
 
     function handleLogin(res) {
-        navigate("/");
+        navigate(location.pathname, {replace: true});
         dispatchLoggedState(setLoggedState(true));
         dispatchCartState(setCartState(res.attributes.cart.length));
     };
@@ -217,6 +227,10 @@ function AuthForm({ toggle }) {
             <button className={styles.submit} type="submit">
                 {isRegistering ? "REGISTER" : "LOGIN"}
             </button>
+
+            {loading && <div className={styles.spinnerWrapper}>
+                <Spinner width={"14vw"} color={"rgb(145, 0, 0)"} />
+            </div>}
         </form>
     );
 };

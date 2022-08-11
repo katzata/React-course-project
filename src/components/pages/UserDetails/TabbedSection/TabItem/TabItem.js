@@ -6,7 +6,7 @@ function TabItem({ data, listName, handleRemove }) {
     if (listName === "purchases") data = data.attributes;
     const priceTotal = data && data.items ? data.items.map(el => el.price).reduce((a, b) => a + b) : null;
     const itemCount = data && data.items ? data.items.length : 0;
-
+    console.log(data, listName);
     return (
         <div className={styles.tabItem}>            
             {
@@ -50,16 +50,26 @@ function TabItem({ data, listName, handleRemove }) {
                         </div>
                     </>
                 :
-                    <a href={`/games/${data.slug}`}>
+                    <a className={styles.singleItem}  href={`/games/${data.slug}`}>
                         <CoverImage data={{
                             baseSize: "cover_big",
                             width: "auto",
                             name: data.name,
-                            imgeId: data.cover
+                            imgeId: data.cover || data.image_id
                         }} />
 
-                        <p>{data.name}</p>
-                        <p>{data.platform}</p>
+                        <p>
+                            Title
+                            <span>{data.name}</span>
+                        </p>
+                        <p>
+                            Platform
+                            <span>{data.platform}</span>
+                        </p>
+                        {listName !== "wishlist" && <p>
+                            Quantity
+                            <span>{data.quantity}</span>
+                        </p>}
                     </a>
             }
 

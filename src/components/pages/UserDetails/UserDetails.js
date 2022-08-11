@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImagePortrait, faFileArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 import TabbedSection from "./TabbedSection/TabbedSection";
+import Spinner from "../../shared/Spinner/Spinner";
 
 function UserDetails() {
     const [editing, setEditing] = useState(false);
@@ -116,8 +117,10 @@ function UserDetails() {
                         <TabbedSection data={{ collection, wishlist, purchases: purchaseHistory }} />
                     </div>
                 )
-                :
-                <p>Loading...</p>
+            :
+                <div className={styles.spinnerWrapper}>
+                    <Spinner width={"14vw"} color={"rgb(145, 0, 0)"} />
+                </div>
             }
         </section>
     );

@@ -16,6 +16,7 @@ import ColoredRating from "../../shared/ColoredRating/ColoredRating";
 import PlatformIcon from "../../shared/PlatformIcon/PlatformIcon";
 import EsrbIcon from "../../shared/EsrbIcon/EsrbIcon";
 import AddToCartForm from "./AddToCartForm/AddToCartForm";
+import Spinner from "../../shared/Spinner/Spinner";
 
 function GameDetails() {
     const isLoged = useSelector((state) => state.isLoged.value);
@@ -28,7 +29,7 @@ function GameDetails() {
     };
 
     function sortedPlatforms() {
-        return details.platforms.sort((a, b) => a.slug.localeCompare(b.slug));
+        return !details.platforms ? ["win"] : details.platforms.sort((a, b) => a.slug.localeCompare(b.slug));
     };
 
     useEffect(() => {
@@ -37,10 +38,13 @@ function GameDetails() {
             const [user, gameDetails] = res;
 
             if (gameDetails[0].rating === undefined) gameDetails[0].rating = Math.ceil(Math.random() * 100);
-            gameDetails[0].price = Number((parseFloat(gameDetails[0].rating) / 3).toFixed(2));
+            if (gameDetails[0].cover === undefined) gameDetails[0].cover = {image_id: undefined}
+            if (gameDetails[0].platforms === undefined) gameDetails[0].platforms = [{ id: 6, name: 'PC (Microsoft Windows)', slug: 'win', websites: Array(1) }]
 
+            gameDetails[0].price = Number((parseFloat(gameDetails[0].rating) / 3).toFixed(2));
+            console.log(gameDetails[0]);
             setDetails(gameDetails[0]);
-            setWishlist(user.wishlist);
+            setWishlist((user && user.wishlist) || []);
         });
     }, [isLoged]);
 
@@ -76,7 +80,7 @@ function GameDetails() {
                                     <div className={styles.gameModes}>
                                         <h3>Game Modes</h3>
 
-                                        {details.game_modes.map(el => {
+                                        {details.game_modes && details.game_modes.map(el => {
                                             return <span key={el.slug}>
                                                 <FontAwesomeIcon icon={icons[el.slug]} />
                                                 {el.name}
@@ -89,7 +93,7 @@ function GameDetails() {
                                         <ColoredRating rating={details.rating} maxRating={100} />
                                     </p>
 
-                                    <WishlistButton game={details} wishlist={wishlist} />
+                                    {isLoged && <WishlistButton game={details} wishlist={wishlist} />}
                                 </section>
 
                                 {details.dlcs && <DlcSection name={details.name} dlc={details.dlcs} />}
@@ -113,7 +117,7 @@ function GameDetails() {
                             <h3>Similar games</h3>
 
                             <div className={styles.similarGamesList}>
-                                {details.similar_games.map((el, idx) => {
+                                {details.similar_games && details.similar_games.map((el, idx) => {
                                     return (
                                         <a className={styles.similarGame} href={`/games/${el.slug}`} key={idx}>
                                             <CoverImage data={{
@@ -137,7 +141,9 @@ function GameDetails() {
                         </section>
                     </>
                 :
-                    <p>Loading...</p>
+                    <div className={styles.spinnerWrapper}>
+                        <Spinner width={"14vw"} color={"rgb(145, 0, 0)"} />
+                    </div>
             }
         </section>
     );

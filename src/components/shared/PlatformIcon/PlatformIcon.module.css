@@ -21,7 +21,10 @@
 .atarilynx,
 .atarist,
 .atarixegs,
+.browser,
 .commodoreamiga,
+.c64,
+.dos,
 .dreamcast,
 .gameboyadvance,
 .gameboycolor,
@@ -37,7 +40,7 @@
 .nes,
 .nintendo3ds,
 .nintendo64,
-.nintendods,
+.nds,
 .nintendodsi,
 .nintendoswitch,
 .pc,
@@ -64,6 +67,14 @@
     height: 100%;
     transition-duration: .2s;
     cursor: pointer;
+}
+
+.browser {
+    height: 92%;
+}
+
+.dos {
+    height: 110%;
 }
 
 .gamecube {

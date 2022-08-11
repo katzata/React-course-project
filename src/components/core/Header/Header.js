@@ -11,7 +11,7 @@ import logo from "../../../assets/logo2.png";
 import NavList from "../../shared/NavList/NavList";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faCartShopping, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
     const isLoged = useSelector((state) => state.isLoged.value);
@@ -20,9 +20,9 @@ function Header() {
     const dispatchLoggedState = useDispatch();
 
     const pageNavLinks = [
-        { path:"/", title:"HOME" },
-        { path:"/catalogue", title:"CATALOGUE" },
-        { path:"/deals", title:"DEALS" }
+        { path: "/", title:"HOME" },
+        { path: "/catalogue", title:"CATALOGUE" },
+        { path: "/search", title: <FontAwesomeIcon icon={faMagnifyingGlass} /> }
     ];
 
     const userNavLinks = {
@@ -44,9 +44,7 @@ function Header() {
 
     function handleLogout() {
         logoutUser().then(res => {
-            if (res) {
-                dispatchLoggedState(setLoggedState());
-            }
+            if (res) dispatchLoggedState(setLoggedState());
         });
     };
 

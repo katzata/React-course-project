@@ -9,8 +9,8 @@
 .tabItem a {
     height: 100%;
     flex-grow: 2;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
 .tabItem a img {
@@ -20,10 +20,24 @@
 
 .tabItem p {
     color: #f2f2f2;
+    font-size: 14px;
 }
 
 .tabItem button {
     margin: auto 20px;
+}
+
+.singleItem {
+    display: grid;
+    grid-template-columns: 39px 1fr 180px 80px;
+    grid-template-rows: 52px;
+}
+
+.singleItem p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .multiCoverContainer {

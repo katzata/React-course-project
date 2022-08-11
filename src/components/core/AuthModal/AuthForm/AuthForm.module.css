@@ -66,3 +66,19 @@
     background-color: #912121;
     border-color: #912121;
 }
+
+.spinnerWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, .50);
+}
+
+.spinnerWrapper div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

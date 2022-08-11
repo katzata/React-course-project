@@ -1,21 +1,14 @@
-import { useEffect, useState } from "react";
-// import { useSearchParams } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 import styles from "./Catalogue.module.css";
 import { getFeatured } from "../../../services/catalogueService/catalogueService";
 
 import FeaturedSection from "./FeaturedSection/FeaturedSection";
 import SearchSection from "./SearchSection/SearchSection";
-// import CatalogueMainSection from "./CatalogueMainSection/CatalogueMainSection"; 
+import Spinner from "../../shared/Spinner/Spinner";
 
 function Catalogue() {
     const [featured, setFeatured] = useState(null);
-    // let [searchParams] = useSearchParams();
-
-    // async function checkQuery() {
-    //     const platform = await searchParams.get("platform");
-    //     console.log(platform);
-    //     // const list = await getGames();
-    // };
+    const sectionRef = useRef();
 
     useEffect(() => {
         getFeatured().then(res => {
@@ -24,16 +17,16 @@ function Catalogue() {
     }, [])
 
     return (
-        <section className={styles.catalogue}>
+        <section ref={sectionRef} className={styles.catalogue}>
             {
                 featured
                 ?
                     <>
                         <FeaturedSection data={featured} />
-                        <SearchSection />
+                        <SearchSection section={sectionRef} />
                     </>
                 :
-                    <p>Loading...</p>
+                    <Spinner width={"10vw"} color={"rgb(145, 0, 0)"} />
             }
         </section>
     );

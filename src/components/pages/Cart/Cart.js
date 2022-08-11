@@ -9,6 +9,7 @@ import { removeItem, clearCart } from "../../../services/cartService/cartService
 
 import CartItem from "./CartItem/CartItem";
 import CartControls from "./CartControls/CartControls";
+import Spinner from "../../shared/Spinner/Spinner";
 
 function Cart() {
     const [data, setData] = useState(null);
@@ -49,7 +50,7 @@ function Cart() {
     }, [isLoged, navigate]);
 
     return (
-        <>
+        <section className={styles.cartSection}>
             {
                 data
                 ?    
@@ -58,14 +59,16 @@ function Cart() {
                             <CartControls cart={data && data.cart} address={data.address} handleClear={handleClear} />
                         </div>
 
-                        <section className={styles.cartSection}>
+                        <section className={styles.cartData}>
                             {data && data.cart && data.cart.map(el => <CartItem data={el} handleRemove={handleRemove} key={el.slug}/>)}
                         </section>
                     </>
                 :
-                    <p>Loading...</p>
+                    <div className={styles.spinnerWrapper}>
+                        <Spinner width={"14vw"} color={"rgb(145, 0, 0)"} />
+                    </div>
             }
-        </>
+        </section>
     );
 };
 

@@ -11,8 +11,10 @@ export async function getRecommended() {
 };
 
 export function search(itemType, name) {
-    const url = `${urlPrefix}/${itemType}/search?name=${name}`;
-    return requestHttpData(url);
+    const queryUrl = `${urlPrefix}/${itemType}/search?name=${name}`;
+    // const countUrl = `${urlPrefix}/${itemType}/count?name=${name}`;
+
+    return requestHttpData(queryUrl)
 };
 
 export function getDetails(itemType, slug) {
@@ -78,6 +80,10 @@ async function requestLocalData(localFile) {
 
 function doFetch(url, options) {
     return fetch(url, options)
+        // .then(res => {
+        //     console.log(res);
+        //     return res;
+        // })
         .then(res => res.json())
         .then(res => res);
 };

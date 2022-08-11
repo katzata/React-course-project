@@ -8,7 +8,7 @@ import styles from "./CartControls.module.css";
 import { buyItem } from "../../../../services/buyService/buyService";
 import { /* setAddress,  */getSomeUser } from "../../../../services/userService/userService";
 
-
+import Spinner from "../../../shared/Spinner/Spinner";
 
 // import { getCurrentUser } from "../../../../services/userService/userService";
 
@@ -21,6 +21,7 @@ function CartControls({ cart, address,  handleClear }) {
     const [editingAddress, setEditingAddress] = useState(false);
     const [sendAddress, setSendAddress] = useState(address);
     const [invalidAddress, setInvalidAddress] = useState(false);
+    const [loading, setLoading] = useState(false);
     const subTotal = getSubTotal();
 
     const addressStyles = {
@@ -41,9 +42,9 @@ function CartControls({ cart, address,  handleClear }) {
         if (cart && cart.length > 0) {
             const result = cart.map(el => Number(el.price) * el.quantity).reduce((a, b) => a + b);
             return Number(result.toFixed(2));
-        } else {
-            return 0;
         };
+
+        return 0;
     };
     
     function handleTotal() {
@@ -72,10 +73,13 @@ function CartControls({ cart, address,  handleClear }) {
     };
 
     function clearCart(status) {
+        if (!loading) setLoading(true);
+        
         handleClear(status).then(res => {
             if (res) {
                 handleTotal();
                 setWithDelivery(false);
+                setLoading(false);
             };
         });
     };
@@ -89,7 +93,13 @@ function CartControls({ cart, address,  handleClear }) {
         e.preventDefault();
 
         if (!invalidRecipient && !invalidAddress) {
-            buyItem({ cart, total, isGift, recipient, withDelivery, sendAddress }).then(res => res && clearCart(true));
+            setLoading(true);
+
+            buyItem({ cart, total, isGift, recipient, withDelivery, sendAddress }).then(res => {
+                if (res) {
+                    clearCart(true);
+                };
+            });
         } else {
             // !!!ERROR!!!
             if (invalidRecipient) console.log("invalidRecipient");
@@ -149,7 +159,7 @@ function CartControls({ cart, address,  handleClear }) {
                 type="text"
                 value={sendAddress}
                 onChange={handleAddressEdit}
-                disabled={checkCart()}
+                disabled={!loading && checkCart()}
             />
             {/* <FontAwesomeIcon icon={faPenToSquare} onClick={() => setEditingAddress(editing => !editing)}/> */}
         </FieldWrapper>
@@ -166,7 +176,7 @@ function CartControls({ cart, address,  handleClear }) {
 
             <form className={styles.checkoutForm} onSubmit={handleSubmit}>
                 <FieldWrapper text={"Purchase"}>
-                    <select className={styles.checkoutRecipient} onChange={(e) => handleGift(e.target.value === "1")} disabled={checkCart()}>
+                    <select className={styles.checkoutRecipient} onChange={(e) => handleGift(e.target.value === "1")} disabled={!loading && checkCart()}>
                         <option value={0}>For myself</option>
                         <option value={1}>As gift</option>
                     </select>
@@ -175,7 +185,7 @@ function CartControls({ cart, address,  handleClear }) {
                 {isGift ? recipientInput : null}
 
                 <FieldWrapper text={"Acquire"}>
-                    <select className={styles.checkoutAcquisition} onChange={(e) => handleAcquisition(e.target.value === "1")} disabled={checkCart()}>
+                    <select className={styles.checkoutAcquisition} onChange={(e) => handleAcquisition(e.target.value === "1")} disabled={!loading && checkCart()}>
                         <option value={0}>Collect</option>
                         <option value={1}>Dellivery</option>
                     </select>
@@ -189,12 +199,16 @@ function CartControls({ cart, address,  handleClear }) {
                 </div>
 
                 <div className={styles.checkoutButtonWrapper}>
-                    <button className={styles.checkoutButton} disabled={checkCart()}>Buy</button>
+                    <button className={styles.checkoutButton} disabled={!loading && checkCart()}>Buy</button>
                 </div>
 
             </form>
             
-            <button className={styles.clearCart} onClick={clearCart} disabled={checkCart()}>Clear Cart</button>
+            <button className={styles.clearCart} onClick={clearCart} disabled={!loading && checkCart()}>Clear Cart</button>
+            
+            {loading && <div className={styles.spinnerWrapper}>
+                <Spinner color={"rgb(145, 0, 0)"}/>
+            </div>}
         </div>
     );
 };

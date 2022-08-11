@@ -102,6 +102,7 @@
 }
 
 .buyContainer {
+    position: relative;
     margin-bottom: 30px;
     gap: 10px;
     flex-wrap: wrap;
@@ -124,11 +125,13 @@
 }
 
 .platformsSection {
-    padding: 0 25px;
+    padding: 0 15px;
     padding-bottom: 15px;
     margin-right: auto;
     background-color: rgba(255, 255, 255, .5);
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
 }
 
 .platformsSection p {
@@ -137,12 +140,14 @@
 }
 
 .platforms {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.platforms svg {
-    margin: 0 .2vw;
+.platforms div {
+    margin: 0 0 .8vw;
 }
 
 .additionalDetails {
@@ -245,4 +250,17 @@
 .similarGame:hover p {
     opacity: 1;
     transform: translateX(0%);
+}
+
+.spinnerWrapper {
+    position: relative;
+    min-width: 100%;
+    min-height: calc(100vh - 125px);
+}
+
+.spinnerWrapper div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

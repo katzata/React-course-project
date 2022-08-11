@@ -7,7 +7,9 @@
     box-shadow: 0 1px 5px 1px rgba(255, 255, 255, .3);
 }
 
-.addToCartForm * {
+.addToCartForm input,
+.addToCartForm button,
+.addToCartForm select {
     transition-duration: .22s;
     color: white;
 }
@@ -23,6 +25,7 @@
 }
 
 .addToCartForm select {
+    width: 100%;
     height: 100%;
     margin-right: 3px;
 }
@@ -103,4 +106,21 @@
 
 .addToCartForm button[disabled]:hover {
     box-shadow: inset 0 0 20px 0px rgba(255, 255, 255, .3);
+}
+
+.spinnerWrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    height: 96%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.spinnerWrapper div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
 }
