@@ -1,15 +1,13 @@
 import styles from "./ErrorList.module.css";
 
-function ErrorList({ errors }) {
+import { handleFormErrors } from "../../../services/errorService/errorService";
+
+function ErrorList({ action, errors }) {
+    const existingErrors = handleFormErrors({ action, errors })
+
     return (
         <div className={styles.errorsContainer}>
-            {errors.map((err, idx) => {
-                return (
-                    <p className={styles.error} key={idx}>
-                        {err}
-                    </p>
-                );
-            })}
+            {existingErrors.map((err, idx) => <p className={styles.error} key={idx}>{err}</p>)}
         </div>
     );
 };

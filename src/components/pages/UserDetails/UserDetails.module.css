@@ -10,11 +10,12 @@
 }
 
 .userDetailsTop {
-    width: 85%;
+    width: 94%;
     margin: 0 auto 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 16px;
 }
 
 .userDetailsForm,
@@ -23,11 +24,6 @@
     width: 50%;
     height: 250px;
     max-width: 320px;
-}
-
-.userDetailsForm {
-    position: relative;
-    /* box-shadow: 0 0 1px 1px white; */
 }
 
 .userDetailsForm fieldset {
@@ -69,17 +65,13 @@
 }
 
 .userDetailsImgWrapper {
+    position: relative;
     width: 50%;
+    padding: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-}
-
-.uploadImageIcon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 .defaultImage {
@@ -94,14 +86,36 @@
     border-radius: 4px;
 }
 
+.uploadImage {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 80%;
+}
+
+.uploadImage input {
+    width: 100%;
+}
+
+.uploadImage button {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
 .saveButton,
-.editButton {
+.editButton,
+.uploadButton {
     width: 100px;
     padding: 10px;
     background-color: rgb(23, 23, 23);
     border: 1px solid rgba(255, 255, 255, .15);
     border-radius: 3px;
     transition-duration: .22s;
+}
+
+.uploadButton {
+    margin-top: 10px;
+    margin: auto;
 }
 
 .saveButton {

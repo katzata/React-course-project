@@ -1,11 +1,5 @@
 import Parse from "../shared/parseApi";
 
-export function isLoged() {
-    const storage = Object.keys(window.localStorage);
-    const userCheck = storage.some(el => el.includes("currentUser"));
-    return userCheck;
-};
-
 export async function getCurrentUser(raw) {
     const user = await Parse.User.current();
     if (!user) return;
@@ -37,15 +31,14 @@ export async function editUser({ username, email, address }) {
 };
 
 export async function addToWishlist(item) {
-    const user = await Parse.User.current();
+    const user = await Parse.User.current("raw");
     const { wishlist } = user.attributes;
-    // console.log(item);
+
     for (const { name, slug } of wishlist) {
         if (item.name === name && item.slug === slug) return false;
     };
 
     user.set("wishlist", [...wishlist, item]);
-
     return parseSave(user);
 };
 
@@ -92,6 +85,13 @@ export async function getCollection(collectionId) {
     return collectionQuery.find().then(res => res[0].attributes.collection);
 };
 
+export async function uploadImage(data) {
+    const imageFile = new Parse.File("avatar", data)
+    const user = await Parse.User.current();
+    user.set("avatar", imageFile);
+    return parseSave(user);
+};
+
 function parseSave(classObject) {
     return classObject.save()
         .then((res) => res)
@@ -104,7 +104,7 @@ function parseSave(classObject) {
 
 function formatResponse(res, collection, purchases) {
     const { className, id, attributes } = res;
-    const { username, email, address, cart, wishlist } = attributes;
+    const { username, email, address, cart, wishlist, avatar } = attributes;
 
     return {
         className,
@@ -115,6 +115,7 @@ function formatResponse(res, collection, purchases) {
         cart,
         wishlist,
         collection,
-        purchases
+        purchases,
+        avatar
     };
 };

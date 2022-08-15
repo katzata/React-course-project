@@ -24,7 +24,7 @@ export function getDetails(itemType, slug) {
 
 export async function getPlatforms(query) {
     let url = `${urlPrefix}/platforms`;
-    if (query) url += `/${query}`;
+    if (query) url += `?query=${query}`;
 
     return requestHttpData(url);
 };
@@ -34,10 +34,16 @@ export async function getSingleGame(query) {
     return requestHttpData(url);
 };
 
-export async function getGames(query) {
-    const url = `${urlPrefix}/games/${query}`;
+export async function getGames(page) {
+    const url = `${urlPrefix}/catalogue/games?page=${page * 50}`;
+
     return requestHttpData(url);
 };
+
+export async function getCount() {
+    const url = `${urlPrefix}/games/count`;
+    return requestHttpData(url);
+}
 
 export async function getFeatured() {
     return requestLocalData("./local/featured.json");
@@ -57,7 +63,7 @@ async function requestHttpData(url, query) {
     const options = {
         method: "POST",
         headers: {
-            "Content-type": "application/x-www-form-urlencoded"
+            "Content-type": "application/x-www-form-urlencoded",
         }
     };
 
@@ -79,11 +85,7 @@ async function requestLocalData(localFile) {
 };
 
 function doFetch(url, options) {
-    return fetch(url, options)
-        // .then(res => {
-        //     console.log(res);
-        //     return res;
-        // })
+    return fetch(url)
         .then(res => res.json())
         .then(res => res);
 };

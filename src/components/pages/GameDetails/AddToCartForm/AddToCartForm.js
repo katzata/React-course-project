@@ -65,10 +65,10 @@ function AddToCartForm({ game, platforms }) {
 
                 <button disabled={!isLoged}>Add to cart</button>
 
-                <span className={styles.logedWarning} style={warningStyles}>
+                {!isLoged && <span className={styles.logedWarning} style={warningStyles}>
                     <span className={styles.warningTriangle}></span>
                     You have to log in to make purchases.
-                </span>
+                </span>}
 
                 {isLoged && loading && <div className={styles.spinnerWrapper}>
                     <Spinner width={"28px"} color={"rgb(225, 0, 0)"} />

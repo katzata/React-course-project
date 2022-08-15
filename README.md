@@ -6,6 +6,7 @@ In this app users can create accounts to purchase/gift games to other registered
 ##Pages:
 - Home
 - Catalogue
+- Search
 - Profile
 - Cart
 

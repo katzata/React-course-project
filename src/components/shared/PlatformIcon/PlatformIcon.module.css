@@ -44,6 +44,7 @@
 .nintendodsi,
 .nintendoswitch,
 .pc,
+.pc98,
 .playstation1,
 .playstation2,
 .playstation3,
@@ -87,6 +88,10 @@
 
 .nintendoswitch {
     height: 115%;
+}
+
+.pc98 {
+    height: 110%;
 }
 
 .playstation3 {

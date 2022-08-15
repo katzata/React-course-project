@@ -1,21 +1,19 @@
 .platformDetails {
+    width: 100%;
+    min-height: 100vh;
     padding-top: 95px;
     /* background-color: aliceblue; */
 }
 
 .platformDetails article {
-    padding: 20px 5vw;
-    text-align: justify;
-    color: rgba(255, 255, 255, .7);
-}
-
-.platformDetails div {
     width: 22vw;
     height: 22vw;
-    padding: 20px;
+    padding: 20px 5vw;
     min-width: 100px;
     min-height: 100px;
     margin: 50px 15px 5px 2px;
+    text-align: justify;
+    color: rgba(255, 255, 255, .7);
     float: left;
     box-shadow: 0 0 2px 0px rgba(255, 255, 255, 1);
 }
@@ -23,22 +21,20 @@
 .platformDetails h1 {
     margin-bottom: 16px;
     text-align: center;
+    color: white;
     font-family: 'Lato', sans-serif;
     font-size: 24px;
 }
 
 .titleBorder {
-    /* border-bottom-width: 10px; */
-    /* border-width: 3px;
-    border-style: solid; */
     text-decoration: underline;
-    /* border-image: linear-gradient(to right,
-                red,
-                rgba(0, 0, 0, 0)) 1 100% 1; */
-    /* border-bottom: 10px solid ); */
 }
 
 .platformDetails p {
     line-height: 1.3;
     font-family: 'Open Sans', sans-serif;
+}
+
+.platformDetails > div {
+    margin: 30px auto;
 }

@@ -13,13 +13,11 @@ import GameDetails from "../components/pages/GameDetails/GameDetails";
 const routes = (
     <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/catalogue" element={<Catalogue />} />
+        <Route path="/catalogue/:section" element={<Catalogue />} />
         <Route path="/search" element={<Search />} />
         <Route path="/profile" element={<UserDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/404" element={<NotFound />} />
-        
-        <Route path="/platforms/" element={<Platforms />} />
         <Route path="/platforms/:platform" element={<PlatformDetails />} />
         <Route path="/games/:slug" element={<GameDetails />} />
         

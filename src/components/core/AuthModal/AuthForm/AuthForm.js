@@ -22,7 +22,7 @@ function AuthForm({ toggle }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [rePassword, setRePassword] = useState("");
-    const [errors, setErrors] = useState([]);
+    const [errorz, setErrorz] = useState([]);
     const [loading, setLoading] = useState(false);
     let location = useLocation();
     const navigate = useNavigate();
@@ -97,47 +97,50 @@ function AuthForm({ toggle }) {
     function handleChange(e, field) {
         e.preventDefault();
         const { name, value } = e.target;
+
         field.onChange(value.trim());
-        
+        checkInput({ action: "input", field: { name, value } });
+
         if (name !== "rePassword") {
-            const existingErrors = errors.filter(el => el.indexOf(field.name) >= 0);
+            // console.log(errorz);
+            // const existingErrors = errorz.filter(el => el.field === field.name);
 
-            if (existingErrors.length > 0) {
-                const lengthError = existingErrors.filter(el => el.includes(field.min) || el.includes(field.max))[0];
+            // if (existingErrors.length > 0) {
+            //     const lengthError = existingErrors.filter(el => (el.includes(field.min) && el.includes(name)) || (el.includes(field.max) && el.includes(name)))[0];
 
-                if (value.length >= field.min && value.length <= field.max) {
-                    setErrors(prevErrors => prevErrors.filter(el => el !== lengthError));
-                };
-            };
+            //     if (value.length >= field.min && value.length <= field.max) {
+            //         setErrorz(prevErrors => prevErrors.filter(el => el !== lengthError));
+            //     };
+            // };
         };
     };
 
     function handleSubmit(e) {
         e.preventDefault();
         const input = isRegistering ? fields.register : fields.login;
-        
+
         if (isRegistering) {
-            const inputOk = checkInput({ action: "register", input });
+            const inputOk = checkInput({ action: "submit" });
             if (!inputOk) return;
             setLoading(true);
 
             registerUser(username, email, password).then(res => {
-                setLoading(true);
+                setLoading(false);
                 
-                if (res) {
-                    handleLogin(res);
-                };
+                if (res) handleLogin(res);
             });
         } else {
-            const inputOk = checkInput({ action: "login", input });
+            const inputOk = checkInput({ action: "submit" });
             if (!inputOk) return;
             setLoading(true);
             
             loginUser(usernameOrEmail, password).then(res => {
                 setLoading(false);
-
-                if (res) {
-                    handleLogin(res);
+                
+                if (res.message) {
+                    setErrorz([{type: "credentials", name: "username or password"}]);
+                } else {
+                    handleLogin(res)
                 };
             });
         };
@@ -150,49 +153,87 @@ function AuthForm({ toggle }) {
             field("");
         };
 
-        setErrors([]);
+        setErrorz([]);
     };
 
 
     //////////////////////////////////////////////////////////////////////////////////////////
     
-
-
-    function checkInput({ action, input }) {
-        const currentErrors = [];
-
-        for (let { name, value } of input) {
-            const minLength = name === "username" ? 3 : 6;
-            const maxLength = name === "username" ? 130 : 100;
-            const mainPattern = /^[a-zA-Z0-9]+/;
-            const emailPattern = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.[a-zA-Z0-9]*/;
-            const currentPattern = name === "email" ? emailPattern : mainPattern;
-            
-            value = value.trim();
-
-            if (name !== "rePassword") {
-                if (action === "register") {
-                    if (value.length < minLength) {
-                        currentErrors.push({ type: "length", field: name, opt: "minimum", value: minLength });
-                    };
-
-                    if (value.length > maxLength) {
-                        currentErrors.push({ type: "length", field: name, opt: "maximum", value: maxLength });
-                    };
-                };
-
-                if (!value.match(currentPattern)) {
-                    currentErrors.push({ type: "invalid", field: name });
-                };
-            };
-        };
-
-        if (currentErrors.length > 0) {
-            const formatedErrors = handleFormErrors({ action: "register", currentErrors });
-            setErrors(formatedErrors);
+    function checkInput({ action, field }) {
+        if (!isRegistering) {
+            setErrorz([]);
+            return true;
         };
         
-        return errors.length === 0 ? true : false;
+        if (action === "input") {
+            const minLength = field.name === "username" || field.name === "usernameOrEmail" ? 3 : 6;
+            const maxLength = field.name === "username" || field.name === "usernameOrEmail" ? 32 : 12;
+            const mainPattern = /^[a-zA-Z0-9]+/;
+            const emailPattern = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.[a-zA-Z0-9]*/;
+            const currentPattern = field.name === "email" ? emailPattern : mainPattern;
+            const existingErrors = [...errorz];
+
+            for (let i = 0; i < existingErrors.length; i++) {
+                if (existingErrors[i].name === field.name) {
+                    if (existingErrors[i].type === "invalid") {
+                        if (field.value.match(currentPattern) !== null) {
+                            existingErrors.splice(i, 1);
+                            setErrorz(existingErrors);
+                            break;
+                        };
+                    };
+
+
+                    if (existingErrors[i].type === "length") {
+                        if (field.value.length >= minLength && field.value.length <= maxLength) {
+                            existingErrors.splice(i, 1);
+                            setErrorz(existingErrors);
+                            break;
+                        };
+                    };
+                };
+            };
+        } else {
+            const input = isRegistering ? fields.register : fields.login;
+            const newErrors = [];
+
+            for (const {name, value} of input) {
+                if (name !== "rePassword"){
+                    const mainPattern = /^[a-zA-Z0-9]+/;
+                    const emailPattern = /[a-zA-Z0-9]*@[a-zA-Z0-9]*\.[a-zA-Z0-9]*/;
+                    const currentPattern = name === "email" ? emailPattern : mainPattern;
+                    const minLength = name === "username" || name === "usernameOrEmail" ? 3 : 6;
+                    const maxLength = name === "username" || name === "usernameOrEmail" ? 32 : 120;
+
+                    const patternCheck = value.match(currentPattern);
+                    const minLengthCheck = value.length >= minLength;
+                    const maxLengthCheck = value.length <= maxLength;
+
+                    if (!patternCheck) newErrors.push({ type: "invalid", name });
+
+                    if (!minLengthCheck || !maxLengthCheck) {
+                        newErrors.push({
+                            type: "length",
+                            name,
+                            opt: !minLengthCheck ? "minimum" : "maximum",
+                            value: !minLengthCheck ? minLength : maxLength
+                        });
+                    };
+
+                } else {
+                    if (value !== input[2].value) {
+                        newErrors.push({
+                            type: "rePass",
+                            name,
+                            opt: "Passwords do not match."
+                        });
+                    }
+                };
+            };
+
+            setErrorz(newErrors);
+            return newErrors.length === 0;
+        };
     };
 
     function handleLogin(res) {
@@ -204,11 +245,12 @@ function AuthForm({ toggle }) {
     useEffect(() => {
         setIsRegistering(toggle);
         resetFields();
+        setErrorz([]);
     }, [toggle]);
-    
+    // console.log(errorz.length > 0);
     return (
         <form className={styles.authForm} onSubmit={handleSubmit}>
-            <ErrorList errors={errors}/>
+            {errorz.length > 0 && <ErrorList action={isRegistering ? "register" : "login"} errors={errorz} />}
 
             {(isRegistering ? fields.register : fields.login).map(el => {
                 return (
@@ -217,7 +259,7 @@ function AuthForm({ toggle }) {
 
                         {isRegistering ? <span className={styles.required}>*</span> : null}
 
-                        <input id={el.name} type={el.type} value={el.value} onChange={(e) => handleChange(e, el)} />
+                        <input id={el.name} name={el.name} type={el.type} value={el.value} onChange={(e) => handleChange(e, el)} />
                     </label>
                 );
             })}

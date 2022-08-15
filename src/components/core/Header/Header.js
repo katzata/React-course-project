@@ -8,7 +8,7 @@ import { setLoggedState } from "../../../store/reducers/logedInSlice/logedInSlic
 
 import AuthModal from "../AuthModal/AuthModal";
 import logo from "../../../assets/logo2.png";
-import NavList from "../../shared/NavList/NavList";
+import NavList from "./NavList/NavList";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +21,7 @@ function Header() {
 
     const pageNavLinks = [
         { path: "/", title:"HOME" },
-        { path: "/catalogue", title:"CATALOGUE" },
+        { path: "/catalogue/games", title:"CATALOGUE" },
         { path: "/search", title: <FontAwesomeIcon icon={faMagnifyingGlass} /> }
     ];
 

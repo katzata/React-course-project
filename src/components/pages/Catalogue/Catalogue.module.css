@@ -2,3 +2,26 @@
     width: 100%;
     padding-top: 170px;
 }
+
+.catalogue > div {
+    margin: auto;
+}
+
+.catalogue > section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+}
+
+.pagination button {
+    color: white;
+    margin: 8px;
+    cursor: pointer;
+}

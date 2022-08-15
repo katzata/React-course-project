@@ -1,54 +1,19 @@
 // import { useState, useEffect } from "react";
 import styles from "./SearchResult.module.css";
 
-import EsrbIcon from "../../../../shared/EsrbIcon/EsrbIcon";
-import CoverImage from "../../../../shared/CoverImage/CoverImage";
+import EsrbIcon from "../EsrbIcon/EsrbIcon";
+import CoverImage from "../CoverImage/CoverImage";
 
 function SearchResult({ data }) {
-    // const [screenshot, setScreenshot] = useState(0);
-    // const [hovering, setHovering] = useState(false);
-    // const [customInterval, setCustomInterval] = useState(null);
-
     if (!data.age_ratings) data.age_ratings = [{ id: 19954, category: 1, content_descriptions: Array(3), rating: 6}];
     if (!data.cover) data.cover = { image_id: undefined };
     if (!data.genres) data.genres = [{ id: 10, name: "N/A", slug: "N/A" }];
     if (!data.game_modes) data.game_modes = [{ id: "xxxxx", name: "N/A", slug: "N/A" }];
     
-    const coverStyle = {
-        
-    };
-
-    // function handleHover(status) {
-    //     if (status) {
-    //         setCustomInterval(setInterval(() => {
-    //             console.log(screenshot);
-    //             setScreenshot(current => (current + 1 <= data.screenshots.length ? current + 1 : 0));
-    //             // console.log(screenshot);
-    //         }, 1200))
-    //     } else {
-    //         setCustomInterval(clearInterval(customInterval))
-    //     };
-    // };
-
-    // useEffect(() => {
-    //     const interval = setInterval;
-    //     // console.log(hovering);
-    //     // if (hovering) {
-    //     //     interval(() => {
-    //     //         setScreenshot(current => current + 1);
-    //     //         console.log(screenshot);
-    //     //     }, 1200);
-    //     // } else {
-    //     //     clearInterval(interval);
-    //     // };
-
-    //     return () => clearInterval(customInterval);
-    // }, [customInterval])
-
     return (
         <a href={`/games/${data.slug}`} className={styles.searchResult}>
             <div className={styles.imagesContainer}>
-                <div style={coverStyle} className={styles.imageWrapper}>
+                <div className={styles.imageWrapper}>
                     <CoverImage data={{
                         baseSize: "cover_big",
                         width: "100%",

@@ -1,6 +1,7 @@
 import Parse from "../shared/parseApi";
 
 export async function registerUser(username, email, password) {
+    if (username === "" || email === "" || password === "") return false;
     let user = new Parse.User();
 
     user.set("username", username);
@@ -17,15 +18,15 @@ export async function registerUser(username, email, password) {
         .catch(err => {
             // !!!ERROR!!!
             console.log(err);
+            return false;
         });
 };
 
 export async function loginUser(username, password) {
-    try {
-        return await Parse.User.logIn(username, password);
-    } catch (error) {
-        return null;
-    };
+
+    return Parse.User.logIn(username, password)
+        .then(res => res)
+        .catch(err => err);
 };
 
 export async function logoutUser() {

@@ -1,30 +1,47 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Catalogue.module.css";
-import { getFeatured } from "../../../services/catalogueService/catalogueService";
+import { getGames, getCount } from "../../../services/catalogueService/catalogueService";
 
-import FeaturedSection from "./FeaturedSection/FeaturedSection";
-import SearchSection from "./SearchSection/SearchSection";
+import { useLocation, useSearchParams } from "react-router-dom";
+
+import SearchResult from "../../shared/SearchResult/SearchResult";
 import Spinner from "../../shared/Spinner/Spinner";
 
 function Catalogue() {
-    const [featured, setFeatured] = useState(null);
-    const sectionRef = useRef();
+    const [searchParams, setSearchParams] = useSearchParams();
+    const [currentPage, setCurrentPage] = useState(searchParams.get("page") || 0);
+    const [pagesTotal, setPagesTotal] = useState();
+    const [results, setResults] = useState(0);
+    const location = useLocation().pathname.split("/")[2];
 
     useEffect(() => {
-        getFeatured().then(res => {
-            setFeatured(res)
-        });
-    }, [])
+        console.log(searchParams.get("page"));
+        if (!searchParams) {
+            setSearchParams({ page: 0 });
+        }
+
+        const queryType = searchParams.get("type");
+        const queryData = searchParams.get("data");
+
+        Promise.all([getGames(currentPage), getCount()]).then(res => {
+            const calc = Math.ceil(res[1].count / 50);
+            setResults(res[0]);
+            setPagesTotal(calc)
+        })
+    }, [searchParams])
 
     return (
-        <section ref={sectionRef} className={styles.catalogue}>
+        <section className={styles.catalogue}>
             {
-                featured
+                results
                 ?
-                    <>
-                        <FeaturedSection data={featured} />
-                        <SearchSection section={sectionRef} />
-                    </>
+                    <section>
+                        {results.map(el => <SearchResult data={el} key={el.id}/>)}
+
+                        <div className={styles.pagination}>
+                            {[...Array(pagesTotal).fill(0)].map((_, idx) => <button onClick={() => { setCurrentPage(idx); setSearchParams({ page: idx }) }} key={idx + "_button"}>{idx + 1}</button>)}
+                        </div>
+                    </section>
                 :
                     <Spinner width={"10vw"} color={"rgb(145, 0, 0)"} />
             }

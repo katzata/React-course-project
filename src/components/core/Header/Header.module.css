@@ -16,7 +16,7 @@ header {
     font-family: 'Lato', sans-serif;
     transition-timing-function: ease-in-out;
     color: white;
-    z-index: 3;
+    z-index: 9999999999999;
 }
 
 header nav {
@@ -54,5 +54,11 @@ header nav ul:last-child,
 @media screen and (max-width: 1024px) {
     .logo {
         height: 62%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .logo {
+        height: 52%;
     }
 }

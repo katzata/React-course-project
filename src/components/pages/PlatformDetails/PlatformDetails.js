@@ -4,38 +4,31 @@ import styles from "./PlatformDetails.module.css";
 
 import { getPlatforms } from "../../../services/catalogueService/catalogueService";
 
-import PlatformIcon from "../../shared/PlatformIcon/PlatformIcon";
+import Spinner from "../../shared/Spinner/Spinner";
+import TabbedSection from "../../shared/TabbedSection/TabbedSection";
 
 
 function PlatformDetails() {
     const [details, setDetails] = useState(null);
     const platform = useLocation().pathname.split("/")[2];
-    
-    function handleArticle() {
-        return (
-            <article>
-                <PlatformIcon currentIcon={platform} style={{ height: "auto" }} />
-                <h1><span className={styles.titleBorder}>{details.name}</span></h1>
-                <p>{details.description}</p>
-            </article>
-        );
-    };
-
-    // function handleDescription() {
-        
-    // };
 
     useEffect(() => {
         getPlatforms(platform).then(res => {
-            console.log(res);
-            // res.description = res.description.slice(3, res.description.length - 4);
-            setDetails(res);
+            setDetails(res[0]);
         });
     }, [platform]);
 
     return (
         <section className={styles.platformDetails}>
-            {details && handleArticle()}
+            <h1>{details && details.name}</h1>
+
+            {
+                details
+                ?
+                    <TabbedSection data={Object.assign({}, details.versions)} />
+                :
+                    <Spinner width={"18vw"} color={"rgb(145, 0, 0)"} />
+            }
         </section>
     );
 };

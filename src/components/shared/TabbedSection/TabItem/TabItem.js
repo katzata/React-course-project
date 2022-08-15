@@ -1,12 +1,12 @@
 import styles from "./TabItem.module.css";
-
-import CoverImage from "../../../../shared/CoverImage/CoverImage";
-import RemoveButton from "../../../../shared/RemoveButton/RemoveButton";
+import CoverImage from "../../CoverImage/CoverImage";
+import RemoveButton from "../../RemoveButton/RemoveButton";
 
 function TabItem({ data, listName, handleRemove }) {
     if (listName === "purchases") data = data.attributes;
     const priceTotal = data && data.items ? data.items.map(el => el.price).reduce((a, b) => a + b) : null;
     const itemCount = data && data.items ? data.items.length : 0;
+    console.log(data, listName);
     return (
         <div className={styles.tabItem}>            
             {
