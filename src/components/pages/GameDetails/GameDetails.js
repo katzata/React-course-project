@@ -4,28 +4,34 @@ import styles from "./GameDetails.module.css";
 import { useSelector } from "react-redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faUsers, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faUsers, faUserGroup, faDisplay } from "@fortawesome/free-solid-svg-icons";
 
 import { getDetails } from "../../../services/catalogueService/catalogueService";
 import { getCurrentUser } from "../../../services/userService/userService";
 
 import CoverImage from "../../shared/CoverImage/CoverImage";
+import TwitchSection from "./TwitchSection/TwitchSection";
 import WishlistButton from "./WishlistButton/WishlistButton";
 import DlcSection from "./DlcSection/DlcSection";
 import ColoredRating from "../../shared/ColoredRating/ColoredRating";
 import PlatformIcon from "../../shared/PlatformIcon/PlatformIcon";
 import EsrbIcon from "../../shared/EsrbIcon/EsrbIcon";
 import AddToCartForm from "./AddToCartForm/AddToCartForm";
+import ScreenshotSection from "./ScreenshotSection/ScreenshotSection";
+import SimilarGames from "./SimilarGames/SimilarGames";
 import Spinner from "../../shared/Spinner/Spinner";
 
 function GameDetails() {
     const isLoged = useSelector((state) => state.isLoged.value);
     const [details, setDetails] = useState(null);
     const [wishlist, setWishlist] = useState([]);
+    const [modalVisible, setModalVisible] = useState(false);
+
     const icons = {
         "single-player": faUser,
         "multiplayer": faUsers,
-        "co-operative": faUserGroup
+        "co-operative": faUserGroup,
+        "split-screen": faDisplay
     };
 
     function sortedPlatforms() {
@@ -40,6 +46,7 @@ function GameDetails() {
             if (gameDetails[0].rating === undefined) gameDetails[0].rating = Math.ceil(Math.random() * 100);
             if (gameDetails[0].cover === undefined) gameDetails[0].cover = {image_id: undefined}
             if (gameDetails[0].platforms === undefined) gameDetails[0].platforms = [{ id: 6, name: 'PC (Microsoft Windows)', slug: 'win', websites: Array(1) }]
+            if (gameDetails[0].screenshots === undefined) gameDetails[0].screenshots = [];
 
             gameDetails[0].price = Number((parseFloat(gameDetails[0].rating) / 3).toFixed(2));
             console.log(gameDetails[0]);
@@ -48,24 +55,33 @@ function GameDetails() {
         });
     }, [isLoged]);
 
+    const sectionStyles = {
+        position: modalVisible ? "fixed" : "static"
+    };
+
     return (
-        <section className={styles.gameDetails}>
+        <section style={sectionStyles} className={styles.gameDetails}>
             {
                 details !== null
                 ? 
                     <>
                         <article className={styles.description}>
-                            <div className={styles.cover}>
-                                <CoverImage data={{
-                                    baseSize: "720p",
-                                    width: "100%",
-                                    name: details.name,
-                                    imgeId: details.cover.image_id
-                                }} />
-                                
-                                <div className={styles.esrb}>
-                                    {details.age_ratings && details.age_ratings.map((el, idx) => <EsrbIcon icon={el.rating} width={"11%"} key={el.rating} />)}
+                            <div className={styles.coverContainer}>
+                                <div className={styles.cover}>
+                                    <CoverImage data={{
+                                        baseSize: "720p",
+                                        width: "100%",
+                                        name: details.name,
+                                        imgeId: details.cover.image_id
+                                    }} />
+
+                                    <div className={styles.esrb}>
+                                        {details.age_ratings && details.age_ratings.map((el, idx) => <EsrbIcon icon={el.rating} width={"11%"} key={el.rating} />)}
+                                    </div>
+
                                 </div>
+
+                                <TwitchSection name={details.name} />
                             </div>
 
                             <div className={styles.infoContainer}>
@@ -112,33 +128,10 @@ function GameDetails() {
                             <h4>Game Plot</h4>
                             <p>{details.storyline || details.summary}</p>
                         </section>
+
+                        <ScreenshotSection screenshots={details.screenshots} modalVisible={modalVisible} clickHandler={setModalVisible} />
                         
-                        <section className={styles.similarGames}>
-                            <h3>Similar games</h3>
-
-                            <div className={styles.similarGamesList}>
-                                {details.similar_games && details.similar_games.map((el, idx) => {
-                                    return (
-                                        <a className={styles.similarGame} href={`/games/${el.slug}`} key={idx}>
-                                            <CoverImage data={{
-                                                baseSize: "cover_big",
-                                                width: "14vw",
-                                                name: el.name,
-                                                imgeId: el.cover && el.cover.image_id
-                                            }} />
-
-                                            <h5>{el.name}</h5>
-
-                                            <h6>
-                                                <ColoredRating rating={el.aggregated_rating} maxRating="100" />
-                                            </h6>
-
-                                            <p>5.00 $</p>
-                                        </a>
-                                    )
-                                })}
-                            </div>
-                        </section>
+                        <SimilarGames games={details.similar_games} />
                     </>
                 :
                     <div className={styles.spinnerWrapper}>

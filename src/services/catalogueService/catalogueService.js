@@ -34,14 +34,16 @@ export async function getSingleGame(query) {
     return requestHttpData(url);
 };
 
-export async function getGames(page) {
-    const url = `${urlPrefix}/catalogue/games?page=${page * 50}`;
-
+export async function getGames(page, platform) {
+    let url = `${urlPrefix}/catalogue/games?page=${page * 50}`;
+    if (platform) url += `&platform=${platform}`;
     return requestHttpData(url);
 };
 
-export async function getCount() {
-    const url = `${urlPrefix}/games/count`;
+export async function getCount(section, id) {
+    let url = `${urlPrefix}/games/count`;
+    if (id) url += `?platform=${id}`
+
     return requestHttpData(url);
 }
 

@@ -15,19 +15,26 @@ function Catalogue() {
     const location = useLocation().pathname.split("/")[2];
 
     useEffect(() => {
-        console.log(searchParams.get("page"));
+        const platformId = searchParams.get("platform");
+
         if (!searchParams) {
             setSearchParams({ page: 0 });
         }
 
-        const queryType = searchParams.get("type");
-        const queryData = searchParams.get("data");
+        if (platformId) {
+            Promise.all([getGames(currentPage, platformId), getCount(platformId)]).then(res => {
+                const calc = Math.ceil(res[1].count / 50);
+                setResults(res[0]);
+                setPagesTotal(calc)
+            });
+        } else {
+            Promise.all([getGames(currentPage), getCount()]).then(res => {
+                const calc = Math.ceil(res[1].count / 50);
+                setResults(res[0]);
+                setPagesTotal(calc)
+            });
+        };
 
-        Promise.all([getGames(currentPage), getCount()]).then(res => {
-            const calc = Math.ceil(res[1].count / 50);
-            setResults(res[0]);
-            setPagesTotal(calc)
-        })
     }, [searchParams])
 
     return (

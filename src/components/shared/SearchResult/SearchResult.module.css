@@ -29,15 +29,21 @@
 }
 
 .imageWrapper:hover {
-    transform: scale(1.15, 1.15);
+    transform: scale(1.35, 1.35);
 }
 
-.imageWrapper:hover img {
-    filter: brightness(50%);
+.imageWrapper:hover > img {
+    opacity: 0;
 }
 
-.imageWrapper:hover .genresContainer {
-    opacity: 1;
+
+.screenshotWrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    transition-duration: .12s;
 }
 
 .genresContainer {

@@ -1,0 +1,74 @@
+.twitchSection {
+    width: 100%;
+    max-width: 100%;
+    min-height: 126px;
+    padding: 5px 0px 10px;
+    margin: 10px auto;
+    background-color: #772ce8;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 2px 1px #bf94ff;
+}
+
+.twitchSection > h4 {
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.streamsContainer {
+    width: 100%;
+    box-shadow: inset 0 0 2px 2px #442279;
+}
+
+.streamsContainer {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    overflow: auto;
+    background-color: #56279b;
+}
+
+.stream {
+    position: relative;
+    min-width: 120px;
+    height: 68px;
+    margin: auto 5px;
+    display: inline;
+    color: white;
+    overflow: hidden;
+}
+
+.stream h5,
+.streamImg {
+    transition-duration: .12s;
+}
+
+.stream h5 {
+    position: relative;
+    padding: 1px 2px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 3px 3px 0 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.streamImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.stream:hover h5 {
+    opacity: 1;
+}
+
+.stream:hover .streamImg {
+    filter: brightness(50%);
+    box-shadow: 0 0 3px 2px #bf94ff;
+}

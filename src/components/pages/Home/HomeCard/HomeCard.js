@@ -5,7 +5,7 @@ import { faArrowRight, faSquareArrowUpRight } from "@fortawesome/free-solid-svg-
 import CoverImage from "../../../shared/CoverImage/CoverImage";
 
 function HomeCard({ data }) {
-    const { name, slug, versions } = data;
+    const { id, name, slug, versions } = data;
     const { platform_logo } = versions[0];
     // console.log(data);
     return (
@@ -19,9 +19,10 @@ function HomeCard({ data }) {
                 }}
                 fit={false}
             />
+            
             <h3>{name}</h3>
 
-            <a href={`/catalogue?platform=${slug}`} className={styles.exploreLink}>
+            <a href={`/catalogue/games?platform=${id}`} className={styles.exploreLink}>
                 Explore games <FontAwesomeIcon icon={faSquareArrowUpRight} />
             </a>
 

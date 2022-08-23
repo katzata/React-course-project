@@ -1,21 +1,29 @@
 .gameDetails {
-    max-width: 100vw;
+    max-width: 100%;
     padding-top: 125px;
     color: #ffffff;
 }
 
+
 .description {
-    max-width: 100vw;
+    max-width: 100%;
     margin-bottom: 0vw;
     align-items: center;
     justify-content: center;
+}
+
+.description > div {
+    width: 43%;
+}
+
+.coverContainer {
+    margin-bottom: auto;
 }
 
 .cover {
     width: 42vw;
     max-width: 600px;
     position: relative;
-    margin-bottom: auto;
 }
 
 .esrb {
@@ -57,11 +65,6 @@
 .infoContainer section {
     flex-wrap: wrap;
     align-items: center;
-}
-
-.similarGames h3,
-.similarGame {
-    position: relative;
 }
 
 .gameModes {
@@ -159,97 +162,6 @@
 .additionalDetails h4 {
     margin-bottom: 16px;
     font-size: 20px;
-}
-
-.similarGames {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, .15);
-}
-
-.similarGames h3 {
-    padding: 2px 0 4px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-}
-
-.similarGames h3::after {
-    content: "";
-    position: absolute;
-    bottom: -14px;
-    left: 50%;
-    right: 0;
-    width: 4vw;
-    height: 2px;
-    transform: translateX(-50%);
-    border-top: 2px solid #a62626;
-    z-index: -1;
-}
-
-.similarGamesList {
-    width: 100%;
-    padding: 8px 0;
-    display: flex;
-    overflow-x: auto;
-}
-
-.similarGame {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2vw auto;
-    color: #bbbbbb;
-    text-shadow: 0 2px 2px #a62626;
-}
-.similarGame img,
-.similarGame h5,
-.similarGame h6,
-.similarGame p {
-    transition-duration: .16s;
-}
-
-.similarGame h5 {
-    margin-top: 8px;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.similarGame h6 {
-    right: 0;
-    top: -5px;
-    white-space: nowrap;
-    transform: translateX(20%);
-    font-size: 12px;
-    opacity: 0;
-}
-
-.similarGame h6,
-.similarGame p {
-    position: absolute;
-}
-
-.similarGame p {
-    left: 0;
-    top: 110px;
-    font-size: 17px;
-    transform: translateX(-20%);
-    font-weight: 500;
-    opacity: 0;
-}
-
-.similarGame:hover img {
-    display: flex;
-    transform: scale(1.12, 1.12);
-    filter: brightness(40%);
-}
-
-.similarGame:hover h5 {
-    color: #ffffff;
-}
-
-.similarGame:hover h6,
-.similarGame:hover p {
-    opacity: 1;
-    transform: translateX(0%);
 }
 
 .spinnerWrapper {

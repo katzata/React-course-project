@@ -1,11 +1,11 @@
 // import styles from "./CoverImage.modules.css";
 
-function CoverImage({ data, fit = true }) {
+function CoverImage({ data, fit }) {
     const baseUrl = `https://images.igdb.com/igdb/image/upload`;
     const styles = {
         width: (data.width ? `${data.width}` : "100%"),
         height: ((data.height || data.width) ? "100%" : "auto"),
-        objectFit: !fit ? "scale-down" : "cover"
+        objectFit: !fit ? "cover" : fit
     };
 
     return <img 

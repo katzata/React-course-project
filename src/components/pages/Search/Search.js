@@ -38,7 +38,7 @@ function Search() {
     };
 
     function handleScroll() {
-        const difference = sectionRef.current.offsetHeight - window.innerHeight;
+        const difference = (sectionRef.current.offsetHeight - window.innerHeight) - 2;
 
         if (window.scrollY >= difference && currentLimit < resultsCount) {
             handleCache(searchResults, Object.keys(cache)[0], currentLimit + 30);

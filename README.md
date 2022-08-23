@@ -1,6 +1,6 @@
 #Games Store
 
-In this app users can create accounts to purchase/gift games to other registered users (unregistered users can not purchase or gift games). Games can be purchased multiple times thus increasing the quantity of a specific game in the user's collection. Users have a wishlist to monitor specific games.
+In this app users can create accounts to purchase games for different platforms. Games can be purchased multiple times thus increasing the quantity of a specific game in the user's collection. Users have a wishlist to monitor specific games.
 <br/>
 
 ##Pages:
@@ -25,6 +25,11 @@ User authentication is done via modal therefore it will be present on any page w
 - Redux
 - - react-redux
 - - @reduxjs/toolkit
+<br/>
+- IGDB api
+- - initial game database
+<br/>
+- Twitch api
 <br/><br/>
 
 ##Folder structure

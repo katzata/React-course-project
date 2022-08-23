@@ -46,7 +46,6 @@
     left: 0;
     top: 0;
     padding: 2px 5px 2px 4px;
-    /* margin-right: auto; */
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     transform: translate(-1px, -1px);
@@ -72,7 +71,7 @@
     color: rgb(200, 200, 200);
     font-size: 13px;
     line-height: 14px;
-    transition-duration: .22s;
+    transition-duration: .18s;
 }
 
 .exploreLink {
