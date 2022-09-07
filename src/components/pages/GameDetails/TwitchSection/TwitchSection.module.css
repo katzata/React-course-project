@@ -31,6 +31,11 @@
     background-color: #56279b;
 }
 
+.streamsContainer > .spinnerWrapper {
+    display: inline;
+    margin: auto;
+}
+
 .stream {
     position: relative;
     min-width: 120px;

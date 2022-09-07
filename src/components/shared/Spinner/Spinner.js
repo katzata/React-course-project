@@ -6,7 +6,7 @@ function Spinner({ width = "210px", height, color, strokeWidth }) {
         height: height ? `${height}` : `${width}`,
     }
     return (
-        <div style={containerStyle} className={styles.spinnerContainer}>
+        <div style={containerStyle} className={styles.spinner}>
             {[0, 1, 2].map(el => {
                 const internalStyles = {
                     width: `${100 - ((el * 20) + el * 5)}%`,

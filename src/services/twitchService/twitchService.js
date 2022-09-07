@@ -1,5 +1,5 @@
-// const urlPrefix = "https://proxy.kashchiev.com";
-const urlPrefix = "http://192.168.0.185:80";
+const urlPrefix = "https://proxy.kashchiev.com";
+// const urlPrefix = "http://192.168.0.185:80";
 
 export async function getStreams(game) {
     if (!game) return null;

@@ -55,7 +55,9 @@ function TwitchSection({ name }) {
                         }
                     </>
                 :
-                    <Spinner width={"80px"} color={"rgb(255, 255, 255)"} />
+                    <div className={styles.spinnerWrapper}>
+                        <Spinner width={"80px"} color={"rgb(255, 255, 255)"} />
+                    </div>
             }
         </div>
     </div>;

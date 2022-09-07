@@ -10,16 +10,19 @@ function SimilarGames({ games }) {
         <div className={styles.similarGamesList}>
             {games && games.map((el, idx) => {
                 return <a className={styles.similarGame} href={`/games/${el.slug}`} key={idx}>
-                    <CoverImage data={{
-                        baseSize: "cover_big",
-                        width: "14vw",
-                        name: el.name,
-                        imgeId: el.cover && el.cover.image_id
-                    }} />
+                    <div className={styles.coverWrapper}>
+                        <CoverImage data={{
+                            baseSize: "cover_big",
+                            width: "100%",
+                            name: el.name,
+                            imgeId: el.cover && el.cover.image_id
+                        }} />
+
+                        <h6><ColoredRating rating={el.aggregated_rating} maxRating="100" /></h6>
+                        <p>5.00 $</p>
+                    </div>
 
                     <h5>{el.name}</h5>
-                    <h6><ColoredRating rating={el.aggregated_rating} maxRating="100" /></h6>
-                    <p>5.00 $</p>
                 </a>
             })}
         </div>

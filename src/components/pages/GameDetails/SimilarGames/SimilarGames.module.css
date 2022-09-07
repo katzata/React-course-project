@@ -31,7 +31,7 @@
 }
 
 .similarGamesList {
-    padding: 8px 0;
+    padding: 1.12vw 0;
     display: flex;
     overflow-x: auto;
 }
@@ -57,30 +57,35 @@
     font-size: 14px;
 }
 
-.similarGame h6 {
+.coverWrapper {
+    position: relative;
+    width: 13.994565217391305vw;
+    height: 18.61413043478261vw;
+}
+
+.coverWrapper h6 {
     right: 0;
     top: -5px;
     white-space: nowrap;
     transform: translateX(20%);
-    font-size: 12px;
     opacity: 0;
 }
 
-.similarGame h6,
-.similarGame p {
+.coverWrapper h6,
+.coverWrapper p {
     position: absolute;
+    font-size: calc(17px + .2vw);
 }
 
-.similarGame p {
+.coverWrapper p {
     left: 0;
-    top: 110px;
-    font-size: 17px;
+    bottom: -10px;
     transform: translateX(-20%);
     font-weight: 500;
     opacity: 0;
 }
 
-.similarGame:hover img {
+.coverWrapper:hover img {
     display: flex;
     transform: scale(1.12, 1.12);
     filter: brightness(40%);
@@ -91,7 +96,7 @@
 }
 
 .similarGame:hover h6,
-.similarGame:hover p {
+.coverWrapper:hover p {
     opacity: 1;
     transform: translateX(0%);
 }

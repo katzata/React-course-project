@@ -17,12 +17,12 @@
 }
 
 .coverContainer {
+    width: 42vw;
+    max-width: 600px;
     margin-bottom: auto;
 }
 
 .cover {
-    width: 42vw;
-    max-width: 600px;
     position: relative;
 }
 
