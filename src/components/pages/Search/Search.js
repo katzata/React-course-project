@@ -53,6 +53,7 @@ function Search() {
     };
 
     useEffect(() => {
+        console.log(currentParams, Object.keys(cache)[0], searchResults.length, resultsCount);
         if (currentParams && currentParams === Object.keys(cache)[0] && searchResults.length === 0) {
             setSearchResults(cache[currentParams].results);
             setResultsCount(cache[currentParams].resultsCount);
@@ -76,13 +77,15 @@ function Search() {
 
             <div className={styles.searchResults}>
                 {
-                    searchResults.length > 0 && !loading
+                    !loading
                     ?
                         <>
                             {[...Array(currentLimit).fill(0)].map((_, idx) => searchResults[idx] && <SearchResult data={searchResults[idx]} key={searchResults[idx].id} />)}
                         </>
                     :
-                        <Spinner width={"10vw"} color={"rgb(145, 0, 0)"} />
+                        <div style={{margin:"auto"}}>
+                            <Spinner width={"10vw"} color={"rgb(145, 0, 0)"} />
+                        </div>
                 }
             </div>
         </section>

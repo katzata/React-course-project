@@ -116,23 +116,27 @@ function AuthForm({ toggle }) {
     };
 
     function handleSubmit(e) {
-        e.preventDefault();
         const input = isRegistering ? fields.register : fields.login;
+        e.preventDefault();
+        setLoading(true);
 
         if (isRegistering) {
             const inputOk = checkInput({ action: "submit" });
-            if (!inputOk) return;
-            setLoading(true);
+            if (!inputOk) return setLoading(false);
 
-            registerUser(username, email, password).then(res => {
-                setLoading(false);
-                
-                if (res) handleLogin(res);
-            });
+            registerUser(username, email, password).then(res => handleLogin(res))
+                .catch(err => {
+                    let message = "username";
+
+                    if (err.message.includes("email")) message = "email";
+
+                    setErrorz([{ type: "duplicate", name: message }]);
+                    console.log(message);
+                })
+                .finally(() => setLoading(false));
         } else {
             const inputOk = checkInput({ action: "submit" });
-            if (!inputOk) return;
-            setLoading(true);
+            if (!inputOk) return setLoading(false);
             
             loginUser(usernameOrEmail, password).then(res => {
                 setLoading(false);

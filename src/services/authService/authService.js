@@ -17,8 +17,7 @@ export async function registerUser(username, email, password) {
         })
         .catch(err => {
             // !!!ERROR!!!
-            console.log(err);
-            return false;
+            throw new Error(err.message);
         });
 };
 

@@ -146,7 +146,7 @@ function ScreenshotsModal({ screenshots, modalVisible, clickHandler }) {
             <button className={styles.arrowButtonR} onClick={() => setCurrentImage(current => current - 1 > -1 ? current - 1 : screenshots.length - 1)}></button>
 
             <div className={styles.dotButtonsContainer}>
-                {screenshots.map(el => <button className={styles.dotButton}></button>)}
+                {screenshots.map(el => <button className={styles.dotButton} key={el.id}></button>)}
             </div>
         </div>
     </div>;

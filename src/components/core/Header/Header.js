@@ -22,14 +22,39 @@ function Header() {
     const pageNavLinks = [
         { path: "/", title:"HOME" },
         { path: "/catalogue/games", title:"CATALOGUE" },
-        { path: "/search", title: <FontAwesomeIcon icon={faMagnifyingGlass} /> }
+        {
+            path: "/search",
+            title: (
+                <div style={{ position: "relative" }}>
+                    <FontAwesomeIcon style={{ position: "absolute", left: "0", top: "3px" }} icon={faMagnifyingGlass} color={"rgba(0, 0, 0, .4)"}/>
+                    <FontAwesomeIcon style={{ position: "relative" }} icon={faMagnifyingGlass} />
+                </div>
+            )
+        }
     ];
 
     const userNavLinks = {
         guest: [],
         user: [
-            { path: "/profile", title: <FontAwesomeIcon icon={faUser}/> },
-            { path: "/cart", title: <FontAwesomeIcon icon={faCartShopping}/>, badge: true },
+            {
+                path: "/profile",
+                title: (
+                    <div style={{ position: "relative" }}>
+                        <FontAwesomeIcon style={{ position: "absolute", left: "0", top: "3px" }} icon={faUser} color={"rgba(0, 0, 0, .3)"} />
+                        <FontAwesomeIcon style={{ position: "relative" }} icon={faUser} />
+                    </div>
+                )
+            },
+            { 
+                path: "/cart",
+                title: (
+                    <div style={{ position: "relative" }}>
+                        <FontAwesomeIcon style={{ position: "absolute", left: "0", top: "3px" }} icon={faCartShopping} color={"rgba(0, 0, 0, .4)"} />
+                        <FontAwesomeIcon style={{ position: "relative" }} icon={faCartShopping} />
+                    </div>
+                ),
+                badge: true 
+            },
             { path: "#", title: "LOGOUT", fn: handleLogout }
         ],
     };
@@ -50,7 +75,6 @@ function Header() {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-
         return () => window.removeEventListener("scroll", handleScroll);
     }, [isLoged]);
 
